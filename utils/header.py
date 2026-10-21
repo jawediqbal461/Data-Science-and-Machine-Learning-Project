@@ -259,7 +259,7 @@ def render_header() -> None:
             st.session_state["_prev_project_option"] = selected
 
         with col_actions:
-            a1, a2, a3 = st.columns([1.3, 1.5, 1.5])
+            a1, a2, a3 = st.columns([0.9, 1.9, 1.2])
             with a1:
                 test_mode = st.toggle(
                     "🧪 Test",
