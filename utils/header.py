@@ -262,9 +262,9 @@ def render_header() -> None:
             a1, a2, a3 = st.columns([0.9, 1.9, 1.2])
             with a1:
                 test_mode = st.toggle(
-                    "🧪 Test",
+                    "🧪",
                     value=st.session_state.simulate_missing_dataset,
-                    help="Developer tool: simulate what happens when no dataset is loaded.",
+                    help="🧪 Test Mode — simulate what happens when no dataset is loaded.",
                     key="simulate_missing_dataset",
                 )
             with a2:
