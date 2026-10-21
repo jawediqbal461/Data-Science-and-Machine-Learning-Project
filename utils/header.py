@@ -238,16 +238,13 @@ def render_header() -> None:
     source. Call once near the top of every page."""
     _init_state()
 
-    # Defensive guard: st.segmented_control (used below, key="project_option")
-    # allows the user to click the currently-active pill again to DESELECT
-    # it, which returns None. Because the widget is bound via key=, that
-    # writes None straight into st.session_state.project_option. Every
-    # downstream lookup — BUNDLED_FILES[...], TRACK_PILL_LABELS[...],
-    # TARGET_COLUMNS[...] — then raises KeyError on the next rerun. This
-    # must run BEFORE the widget below is instantiated (session_state for a
-    # keyed widget can only be reassigned pre-instantiation), so any stray
-    # None (or any other non-track value) is snapped back to the last known
-    # good track, defaulting to "SALES" if there is none yet.
+    # Final failsafe: "project_option" is the app's logical active-track state,
+    # kept decoupled from the segmented_control widget's own key below (see
+    # that block for why). Nothing should ever assign it outside PROJECT_OPTIONS,
+    # but if it ever does (bad session restore, future bug, etc.), snap it back
+    # to the last known good track before any BUNDLED_FILES[...] /
+    # TRACK_PILL_LABELS[...] / TARGET_COLUMNS[...] / BENCHMARK_INFO[...] lookup
+    # can raise a KeyError on it.
     if st.session_state.get("project_option") not in PROJECT_OPTIONS:
         st.session_state.project_option = (
             st.session_state.get("_prev_project_option")
@@ -278,12 +275,30 @@ def render_header() -> None:
             )
 
         with col_tabs:
+            # IMPORTANT: the widget below uses its OWN key ("_project_option_widget"),
+            # never "project_option" directly. st.segmented_control's default
+            # selection_mode="single" lets a user deselect the active pill by
+            # clicking it again, which returns None — and because a keyed widget
+            # resyncs st.session_state[key] from the frontend the instant it is
+            # instantiated (not before), a pre-widget guard on the SAME key gets
+            # silently overwritten on that very rerun. Keeping a separate widget
+            # key means a deselect can only ever blank out "_project_option_widget";
+            # the app's logical "project_option" (read everywhere else — app.py,
+            # every page, model_cache, BUNDLED_FILES/TARGET_COLUMNS/BENCHMARK_INFO
+            # lookups) is only ever assigned a value from PROJECT_OPTIONS below, so
+            # it can never become None.
+            widget_key = "_project_option_widget"
+            if st.session_state.get(widget_key) not in PROJECT_OPTIONS:
+                # Re-sync the pill's own display state (e.g. after a deselect
+                # click blanked it) to whatever track is logically still active.
+                st.session_state[widget_key] = st.session_state.project_option
+
             try:
                 selected = st.segmented_control(
                     "Project Track",
                     options=PROJECT_OPTIONS,
                     format_func=lambda k: TRACK_PILL_LABELS[k],
-                    key="project_option",
+                    key=widget_key,
                     label_visibility="collapsed",
                 )
             except Exception:
@@ -291,15 +306,22 @@ def render_header() -> None:
                     "Project Track",
                     options=PROJECT_OPTIONS,
                     format_func=lambda k: TRACK_PILL_LABELS[k],
-                    key="project_option",
+                    key=widget_key,
                     horizontal=True,
                     label_visibility="collapsed",
                 )
-            if selected and selected != st.session_state.get("_prev_project_option", selected):
-                st.session_state.column_mapping = {}
-                if st.session_state.active_source_key == "bundled":
-                    st.session_state.active_df = None
-            st.session_state["_prev_project_option"] = selected
+
+            if selected in PROJECT_OPTIONS:
+                if selected != st.session_state.get("_prev_project_option", selected):
+                    st.session_state.column_mapping = {}
+                    if st.session_state.active_source_key == "bundled":
+                        st.session_state.active_df = None
+                st.session_state.project_option = selected
+                st.session_state["_prev_project_option"] = selected
+            # else: selected is None (the active pill was clicked again and
+            # deselected) — project_option is deliberately left unchanged, so
+            # every downstream lookup this run still sees a valid track. The
+            # widget_key reset above re-highlights the correct pill next rerun.
 
         with col_actions:
             a1, a2, a3 = st.columns([0.9, 1.9, 1.2])
