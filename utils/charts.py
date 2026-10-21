@@ -56,7 +56,9 @@ EDA_CHARTS_CATALOG = {
         {"id": "CHART_S7", "title": "Correlation Matrix Heatmap", "type": "heatmap", "caption": "Evaluates linear correlation among numerical transaction features (Sales, Discount, Shipping, Profit)."},
         {"id": "CHART_S8", "title": "Actual vs Predicted Profit Scatter", "type": "scatter_fit", "caption": "Assesses model fit accuracy against the 45-degree identity reference line."},
         {"id": "CHART_S9", "title": "Regression Residuals Distribution", "type": "residual", "caption": "Validates residual normality and checks for homoscedasticity across predicted profit scales."},
-        {"id": "CHART_S10", "title": "Feature Importance Ranking", "type": "horizontal_bar", "caption": "Ranks feature predictive weight, confirming Discount and Unit Price as top profit drivers."}
+        {"id": "CHART_S10", "title": "Feature Importance Ranking", "type": "horizontal_bar", "caption": "Ranks feature predictive weight, confirming Discount and Unit Price as top profit drivers."},
+        {"id": "CHART_S11", "title": "Monthly Sales Trend", "type": "line", "caption": "Tracks total realized sales revenue month over month to surface seasonality and growth trend."},
+        {"id": "CHART_S12", "title": "Monthly Profit Trend", "type": "line", "caption": "Tracks total realized profit month over month, highlighting any months where margin diverges from revenue."}
     ],
     "CHURN": [
         {"id": "CHART_C1", "title": "Overall Customer Churn Rate Distribution", "type": "donut", "caption": "Shows ratio of retained versus churned subscribers in the active dataset."},
@@ -211,6 +213,30 @@ def _s1_profit_histogram(df):
     fig = px.histogram(df, x="Profit", nbins=30, color_discrete_sequence=[CHART_PALETTE[0]])
     fig.add_vline(x=0, line_dash="dash", line_color=CHART_PALETTE[3])
     return _dark_layout(fig)
+
+
+def _s_monthly_trend(df, value_col: str, color: str):
+    """Shared monthly line-trend builder for the Sales/Profit over-time charts."""
+    if "Order_Date" not in df.columns:
+        return None
+    trend = df.copy()
+    trend["Order_Date"] = pd.to_datetime(trend["Order_Date"], errors="coerce")
+    trend = trend.dropna(subset=["Order_Date"])
+    if trend.empty:
+        return None
+    trend["_month"] = trend["Order_Date"].dt.to_period("M").dt.to_timestamp()
+    grouped = trend.groupby("_month", as_index=False)[value_col].sum().sort_values("_month")
+    fig = px.line(grouped, x="_month", y=value_col, markers=True, color_discrete_sequence=[color])
+    fig.update_layout(xaxis_title="Month", yaxis_title=value_col)
+    return _dark_layout(fig)
+
+
+def _s11_monthly_sales_line(df):
+    return _s_monthly_trend(df, "Sales", CHART_PALETTE[0])
+
+
+def _s12_monthly_profit_line(df):
+    return _s_monthly_trend(df, "Profit", CHART_PALETTE[2])
 
 
 def _s2_discount_vs_profit(df):
@@ -566,6 +592,8 @@ def build_figure(
                 "CHART_S8": lambda: _s8_actual_vs_predicted(primary_ctx),
                 "CHART_S9": lambda: _s9_residuals(primary_ctx),
                 "CHART_S10": lambda: _horizontal_feature_importance(primary_ctx),
+                "CHART_S11": lambda: _s11_monthly_sales_line(df),
+                "CHART_S12": lambda: _s12_monthly_profit_line(df),
             }
         elif project_option == "CHURN":
             builders = {

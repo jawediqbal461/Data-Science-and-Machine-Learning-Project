@@ -58,6 +58,9 @@ def clean_dataframe(df: Any, project_option: str = "SALES") -> Tuple[Any, Dict[s
     if project_option == "SALES":
         if "Profit" in cleaned.columns:
             cleaned["Profit"] = pd.to_numeric(cleaned["Profit"], errors="coerce")
+        # Task 2: "Convert Order_Date to datetime."
+        if "Order_Date" in cleaned.columns:
+            cleaned["Order_Date"] = pd.to_datetime(cleaned["Order_Date"], errors="coerce")
     elif project_option == "CHURN":
         if "Churned" in cleaned.columns:
             cleaned["Churned"] = cleaned["Churned"].map({

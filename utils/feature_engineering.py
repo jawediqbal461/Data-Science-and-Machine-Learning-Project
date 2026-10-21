@@ -165,6 +165,13 @@ def engineer_features(df: Any, project_option: str = "SALES") -> Any:
     eps = 1e-6
 
     if project_option == "SALES":
+        if "Order_Date" in data.columns:
+            order_dt = pd.to_datetime(data["Order_Date"], errors="coerce")
+            data["Order_Year"] = order_dt.dt.year
+            data["Order_Month"] = order_dt.dt.month
+            data["Month_Name"] = order_dt.dt.strftime("%b")
+            data["Quarter"] = order_dt.dt.quarter
+            data["Day_Name"] = order_dt.dt.day_name()
         if "Discount" in data.columns and "Quantity" in data.columns:
             data["Discount_Per_Quantity"] = data["Discount"] / (data["Quantity"] + eps)
         if "Shipping_Cost" in data.columns and "Sales" in data.columns:

@@ -39,16 +39,59 @@ k2.metric("Duplicate Records", f"{int(active_df.duplicated().sum()):,}")
 k3.metric("Numerical Columns", f"{active_df.select_dtypes(include=['int64','float64','int32','float32']).shape[1]}")
 k4.metric("Categorical Columns", f"{active_df.select_dtypes(include=['object','category','bool']).shape[1]}")
 
-# Tabs for inspection
+# --- Filters + rows selector + filtered-data download (per the assignment's
+# Dataset/Customer Explorer page requirements) ---
+FILTER_COLUMNS = {
+    "SALES": ["Region", "Category", "Sub_Category"],
+    "CHURN": ["Contract_Type", "Internet_Service", "Payment_Method"],
+    "HR_ATTRITION": ["Department", "Job_Role", "Work_Mode"],
+}
+DATE_COLUMNS = {"SALES": "Order_Date", "CHURN": "Signup_Date", "HR_ATTRITION": "Hire_Date"}
+
+filtered_df = active_df.copy()
+with st.expander("🔎 Filters & Download", expanded=True):
+    n_rows = st.slider("Number of rows to preview:", min_value=5, max_value=min(200, len(active_df)), value=min(25, len(active_df)))
+
+    filter_cols_present = [c for c in FILTER_COLUMNS.get(project_opt, []) if c in filtered_df.columns]
+    if filter_cols_present:
+        fcols = st.columns(len(filter_cols_present))
+        for fc, col_name in zip(fcols, filter_cols_present):
+            options = sorted(filtered_df[col_name].dropna().unique().tolist())
+            selected = fc.multiselect(col_name, options, default=[])
+            if selected:
+                filtered_df = filtered_df[filtered_df[col_name].isin(selected)]
+
+    date_col = DATE_COLUMNS.get(project_opt)
+    if date_col and date_col in filtered_df.columns:
+        parsed_dates = pd.to_datetime(filtered_df[date_col], errors="coerce")
+        valid_dates = parsed_dates.dropna()
+        if not valid_dates.empty:
+            d_min, d_max = valid_dates.min().date(), valid_dates.max().date()
+            date_range = st.date_input(f"{date_col} range:", value=(d_min, d_max), min_value=d_min, max_value=d_max)
+            if isinstance(date_range, tuple) and len(date_range) == 2:
+                start, end = date_range
+                mask = (parsed_dates.dt.date >= start) & (parsed_dates.dt.date <= end)
+                filtered_df = filtered_df[mask.reindex(filtered_df.index, fill_value=False)]
+
+    st.caption(f"Filtered to **{len(filtered_df):,}** of {len(active_df):,} records.")
+    st.download_button(
+        "⬇️ Download Filtered Data (CSV)",
+        data=filtered_df.to_csv(index=False).encode("utf-8"),
+        file_name=f"{project_opt.lower()}_filtered_data.csv",
+        mime="text/csv",
+    )
+
+# Tabs for inspection — the preview tab reflects the filters above; the
+# statistics/quality tabs below still describe the full active dataset.
 tab1, tab2, tab3, tab4 = st.tabs(["📋 Data Preview", "📊 Summary Statistics", "🩺 Missing & Quality Profile", "ℹ️ Column Types"])
 
 with tab1:
-    st.markdown("**First 5 Rows**")
+    st.markdown(f"**Filtered Preview ({n_rows} of {len(filtered_df):,} rows)**")
+    st.dataframe(filtered_df.head(n_rows), use_container_width=True)
+    st.markdown("**First 5 Rows (full dataset)**")
     st.dataframe(active_df.head(5), use_container_width=True)
-    st.markdown("**Last 5 Rows**")
+    st.markdown("**Last 5 Rows (full dataset)**")
     st.dataframe(active_df.tail(5), use_container_width=True)
-    with st.expander("Full preview (first 25 rows)"):
-        st.dataframe(active_df.head(25), use_container_width=True)
 
 with tab2:
     st.markdown("#### Numeric Summary")
