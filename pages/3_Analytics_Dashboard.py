@@ -5,14 +5,13 @@ Interactive Exploratory Data Analysis & Diagnostic Charts.
 
 import streamlit as st
 from utils.header import render_header
-from utils.charts import (
-    EDA_CHARTS_CATALOG,
-    build_figure,
-    train_primary_model,
-    train_classifier_suite,
-    run_cross_validation,
+from utils.charts import EDA_CHARTS_CATALOG, build_figure
+from utils.model_cache import (
+    prepare_dataset,
+    get_primary_model_context,
+    get_classifier_suite_context,
+    get_cv_scores,
 )
-from utils.preprocessing import clean_dataframe
 
 st.set_page_config(page_title="Analytics Dashboard", page_icon="📈", layout="wide")
 render_header()
@@ -32,32 +31,22 @@ if raw_df is None:
     st.stop()
 
 
-@st.cache_data(show_spinner=False)
-def _clean(df, project_option: str):
-    cleaned_df, _ = clean_dataframe(df, project_option=project_option)
-    return cleaned_df
-
-
-@st.cache_resource(show_spinner=False)
-def _get_primary_model_context(df, project_option: str):
-    return train_primary_model(df, project_option)
-
-
-@st.cache_resource(show_spinner=False)
-def _get_classifier_suite_context(df, project_option: str):
-    return train_classifier_suite(df, project_option)
-
-
-@st.cache_resource(show_spinner=False)
-def _get_cv_scores(df, project_option: str):
-    return run_cross_validation(df, project_option)
-
-
 try:
-    active_df = _clean(raw_df, project_opt)
+    active_df, cleaning_summary = prepare_dataset(raw_df, project_opt)
 except Exception as e:
     st.error(f"Failed to prepare dataset for charting: {e}")
     st.stop()
+
+with st.expander("🧹 Data Cleaning & Feature Engineering Applied to This Run", expanded=False):
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Rows (raw → cleaned)", f"{cleaning_summary.get('initial_rows', 0):,} → {cleaning_summary.get('final_rows', 0):,}")
+    c2.metric("Duplicates Removed", f"{cleaning_summary.get('duplicates_removed', 0):,}")
+    c3.metric("Engineered Feature Columns", f"{active_df.shape[1] - raw_df.shape[1]:,}")
+    st.caption(
+        "Cleaning + feature engineering (utils.preprocessing.clean_dataframe + "
+        "utils.feature_engineering.engineer_features) run automatically on whichever "
+        "dataset is active — bundled or your own upload — before any chart or model below."
+    )
 
 needs_primary_model = any(
     chart["type"] in {"scatter_fit", "residual", "horizontal_bar", "confusion_matrix", "audit_bar"}
@@ -73,17 +62,17 @@ cv_scores = None
 with st.spinner("Training diagnostic models for this track..."):
     if needs_primary_model:
         try:
-            primary_ctx = _get_primary_model_context(active_df, project_opt)
+            primary_ctx = get_primary_model_context(active_df, project_opt)
         except Exception as e:
             st.warning(f"Model-dependent charts unavailable: {e}")
     if needs_classifier_suite:
         try:
-            multi_ctx = _get_classifier_suite_context(active_df, project_opt)
+            multi_ctx = get_classifier_suite_context(active_df, project_opt)
         except Exception as e:
             st.warning(f"ROC comparison unavailable: {e}")
     if needs_cv:
         try:
-            cv_scores = _get_cv_scores(active_df, project_opt)
+            cv_scores = get_cv_scores(active_df, project_opt)
         except Exception as e:
             st.warning(f"Cross-validation chart unavailable: {e}")
 

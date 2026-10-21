@@ -264,6 +264,7 @@ def train_and_evaluate(
         "metrics_table": results_table,
         "best_model_name": best_model_name,
         "best_score": best_score,
+        "best_pipeline": best_pipeline,
         "pipeline_path": pipeline_path,
         "train_shape": X_train.shape,
         "test_shape": X_test.shape

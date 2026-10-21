@@ -59,12 +59,23 @@ SOURCE_LABELS = {
 _HEADER_CSS = """
 <style>
 section[data-testid="stSidebarNav"] { padding-top: 0.5rem; }
+/* Streamlit's default block-container reserves a large top gap (originally
+   meant for the native toolbar). Our sticky header replaces that toolbar
+   visually, so pull the whole content area up to sit right under the real
+   (tiny, transparent) Streamlit header bar instead of leaving dead space. */
+div[data-testid="stAppViewContainer"] > .main .block-container {
+    padding-top: 1.5rem !important;
+}
+header[data-testid="stHeader"] {
+    background: transparent;
+    height: 2.2rem;
+}
 div.capstone-header {
     position: sticky; top: 0; z-index: 999;
     background: rgba(15, 23, 42, 0.97);
     border-bottom: 1px solid #1E293B;
     padding: 0.85rem 1.1rem 0.6rem 1.1rem;
-    margin: -1rem -1rem 1.1rem -1rem;
+    margin: -1.5rem -1rem 1.1rem -1rem;
     backdrop-filter: blur(6px);
 }
 div.capstone-header .cp-title-row { display:flex; align-items:center; gap:0.7rem; }
