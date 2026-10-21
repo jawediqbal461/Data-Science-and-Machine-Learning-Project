@@ -237,6 +237,24 @@ def render_header() -> None:
     st.session_state.active_df / active_meta in sync with the active
     source. Call once near the top of every page."""
     _init_state()
+
+    # Defensive guard: st.segmented_control (used below, key="project_option")
+    # allows the user to click the currently-active pill again to DESELECT
+    # it, which returns None. Because the widget is bound via key=, that
+    # writes None straight into st.session_state.project_option. Every
+    # downstream lookup — BUNDLED_FILES[...], TRACK_PILL_LABELS[...],
+    # TARGET_COLUMNS[...] — then raises KeyError on the next rerun. This
+    # must run BEFORE the widget below is instantiated (session_state for a
+    # keyed widget can only be reassigned pre-instantiation), so any stray
+    # None (or any other non-track value) is snapped back to the last known
+    # good track, defaulting to "SALES" if there is none yet.
+    if st.session_state.get("project_option") not in PROJECT_OPTIONS:
+        st.session_state.project_option = (
+            st.session_state.get("_prev_project_option")
+            if st.session_state.get("_prev_project_option") in PROJECT_OPTIONS
+            else "SALES"
+        )
+
     st.markdown(_HEADER_CSS, unsafe_allow_html=True)
 
     with st.container():
@@ -324,7 +342,7 @@ def render_header() -> None:
     meta_obj = None
 
     if selected_source == "bundled":
-        file_path = BUNDLED_FILES[st.session_state.project_option]
+        file_path = BUNDLED_FILES.get(st.session_state.project_option, BUNDLED_FILES["SALES"])
         try:
             active_df, meta_obj = _load_bundled(file_path)
         except Exception as e:
