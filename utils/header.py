@@ -129,21 +129,36 @@ def _load_bundled(file_path: str):
 
 def _build_submission_zip() -> bytes:
     """Zips the Python/config submission files (skips data caches, node
-    artifacts, and anything hidden) for the Download Zip button."""
+    artifacts, generated model/report artifacts, and anything hidden) for
+    the Download Zip button. Runtime-generated files under models/ and
+    reports/ are deliberately excluded: they are rewritten on every
+    training run (including concurrently, by other visitors' sessions),
+    so including them risks reading a file mid-write and is not meaningful
+    "source" to submit anyway."""
     root = os.getcwd()
-    skip_dirs = {".git", "__pycache__", "node_modules", "dist", ".aistudio", "data/incoming"}
+    skip_dirs = {
+        ".git", "__pycache__", "node_modules", "dist", ".aistudio",
+        "data/incoming", "models", "reports",
+    }
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
         for dirpath, dirnames, filenames in os.walk(root):
             rel_dir = os.path.relpath(dirpath, root)
             dirnames[:] = [d for d in dirnames if d not in skip_dirs and not d.startswith(".")]
             for fname in filenames:
-                if fname.endswith((".pyc", ".zip")):
+                if fname.endswith((".pyc", ".zip", ".pkl")):
                     continue
                 rel_path = os.path.normpath(os.path.join(rel_dir, fname))
                 if rel_path.split(os.sep)[0] in skip_dirs:
                     continue
-                zf.write(os.path.join(dirpath, fname), arcname=rel_path)
+                full_path = os.path.join(dirpath, fname)
+                try:
+                    zf.write(full_path, arcname=rel_path)
+                except OSError:
+                    # File vanished/changed mid-walk (e.g. another session's
+                    # concurrent training run) — skip it rather than crash
+                    # the whole page.
+                    continue
     buf.seek(0)
     return buf.getvalue()
 
@@ -283,14 +298,24 @@ def render_header() -> None:
                              help="Upload a dataset or connect another ingestion adapter"):
                     _upload_dialog()
             with a3:
-                st.download_button(
-                    "⬇️ Zip",
-                    data=_build_submission_zip(),
-                    file_name=f"Jawed_Iqbal_DataScience_Capstone_{st.session_state.project_option}_Submission.zip",
-                    mime="application/zip",
-                    use_container_width=True,
-                    help="Download the project source as a submission .zip",
-                )
+                try:
+                    zip_bytes = _build_submission_zip()
+                except Exception:
+                    zip_bytes = None
+                if zip_bytes is not None:
+                    st.download_button(
+                        "⬇️ Zip",
+                        data=zip_bytes,
+                        file_name=f"Jawed_Iqbal_DataScience_Capstone_{st.session_state.project_option}_Submission.zip",
+                        mime="application/zip",
+                        use_container_width=True,
+                        help="Download the project source as a submission .zip",
+                    )
+                else:
+                    st.button(
+                        "⬇️ Zip", use_container_width=True, disabled=True,
+                        help="Submission zip is temporarily unavailable — try again in a moment.",
+                    )
 
         st.markdown("</div>", unsafe_allow_html=True)
 
