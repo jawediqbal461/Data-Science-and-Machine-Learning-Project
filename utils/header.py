@@ -63,12 +63,11 @@ section[data-testid="stSidebarNav"] { padding-top: 0.5rem; }
    meant for the native toolbar). Our sticky header replaces that toolbar
    visually, so pull the whole content area up to sit right under the real
    (tiny, transparent) Streamlit header bar instead of leaving dead space. */
-div[data-testid="stAppViewContainer"] > .main .block-container {
+div[data-testid="stMainBlockContainer"] {
     padding-top: 1.5rem !important;
 }
 header[data-testid="stHeader"] {
     background: transparent;
-    height: 2.2rem;
 }
 div.capstone-header {
     position: sticky; top: 0; z-index: 999;
