@@ -9,6 +9,9 @@ from utils.data_source import BundledCSVSource
 from utils.validation import validate_dataset
 
 st.set_page_config(page_title="Dataset Explorer", page_icon="🔍", layout="wide")
+
+from utils.sidebar import render_control_panel
+render_control_panel()
 st.title("🔍 Comprehensive Dataset Explorer")
 
 # Get or load dataset

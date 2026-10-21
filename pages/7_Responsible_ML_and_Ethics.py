@@ -8,6 +8,9 @@ import pandas as pd
 
 st.set_page_config(page_title="Responsible ML & Ethics", page_icon="⚖️", layout="wide")
 
+from utils.sidebar import render_control_panel
+render_control_panel()
+
 st.title("⚖️ Responsible ML & Subgroup Fairness Review")
 
 st.warning(

@@ -7,6 +7,9 @@ import streamlit as st
 
 st.set_page_config(page_title="Executive Overview — Capstone", page_icon="🏠", layout="wide")
 
+from utils.sidebar import render_control_panel
+render_control_panel()
+
 st.title("🏛️ Data Science & ML Capstone: Executive Overview")
 st.markdown("### Capstone Assignment Project by **Jawed Iqbal**")
 st.caption("Course: Data Science and Machine Learning | Submission Deadline: 22 October 2026")

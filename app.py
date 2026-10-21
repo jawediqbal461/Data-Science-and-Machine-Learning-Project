@@ -7,7 +7,6 @@ Student: Jawed Iqbal | Course: Data Science and Machine Learning
 Multi-Source Data Ingestion Architecture & Predictive Analytics Platform
 """
 
-import os
 import streamlit as st
 
 # Configure page layout and aesthetics
@@ -18,160 +17,19 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-from utils.data_source import (
-    BundledCSVSource,
-    UploadedFileSource,
-    WebhookPushSource,
-    DatabaseReadOnlySource,
-    RestAPIPullSource,
-    DataSourceMeta
-)
-from utils.validation import validate_dataset, ValidationReport
-from utils.preprocessing import clean_dataframe, EXCLUSION_RULES
-from utils.recommendations import RECOMMENDATIONS
+from utils.sidebar import render_control_panel, TRACK_LABELS, TARGET_COLUMNS
+from utils.validation import validate_dataset
 
-# Session state initialization per §2.4
-if "active_source_key" not in st.session_state:
-    st.session_state.active_source_key = "bundled"
+# Renders the shared ingestion/upload + track-switcher control panel at the
+# top of the sidebar, and syncs st.session_state.active_df / active_meta.
+render_control_panel()
 
-if "project_option" not in st.session_state:
-    st.session_state.project_option = "SALES"
-
-if "column_mapping" not in st.session_state:
-    st.session_state.column_mapping = {}
-
-if "active_data_hash" not in st.session_state:
-    st.session_state.active_data_hash = ""
-
-if "active_df" not in st.session_state:
-    st.session_state.active_df = None
-
-
-# Caching logic per §2.4 & §7
-@st.cache_data
-def load_bundled_data(file_path: str, project_option: str):
-    source = BundledCSVSource(file_path=file_path)
-    return source.load()
-
-
-# SIDEBAR: Project Option & Data Source Selector
-st.sidebar.title("🎛️ Capstone Control Panel")
-st.sidebar.caption("Student: **Jawed Iqbal** | DS & ML Capstone")
-
-# Project Track Switcher
-project_options = ["SALES", "CHURN", "HR_ATTRITION"]
-selected_track = st.sidebar.selectbox(
-    "Select Project Track:",
-    project_options,
-    index=project_options.index(st.session_state.project_option)
-)
-if selected_track != st.session_state.project_option:
-    st.session_state.project_option = selected_track
-    st.session_state.column_mapping = {}
-    st.session_state.active_df = None
-    st.rerun()
-
-track_labels = {
-    "SALES": "1: Sales Analytics & Profit Prediction",
-    "CHURN": "2: Customer Churn Prediction",
-    "HR_ATTRITION": "3: HR Analytics & Employee Attrition"
-}
-target_columns = {
-    "SALES": "Profit",
-    "CHURN": "Churned",
-    "HR_ATTRITION": "Attrition"
-}
-bundled_files = {
-    "SALES": "data/sales_dataset.csv",
-    "CHURN": "data/churn_dataset.csv",
-    "HR_ATTRITION": "data/hr_attrition_dataset.csv"
-}
-
-st.sidebar.markdown(f"**Track**: {track_labels[st.session_state.project_option]}")
-st.sidebar.markdown(f"**Target Column**: `{target_columns[st.session_state.project_option]}`")
-st.sidebar.markdown("---")
-
-# Data Source Selection (§2)
-st.sidebar.subheader("📥 Data Ingestion Mode")
-source_options = {
-    "bundled": "1. Bundled CSV Archive (Default)",
-    "upload": "2. User File Upload (Session-Only)",
-    "webhook": "3. Webhook Drop Zone (HMAC Verified)",
-    "database": "4. Database Read-Only (SQL SELECT)",
-    "api": "5. External REST API Endpoint"
-}
-
-selected_source = st.sidebar.radio(
-    "Active Ingestion Adapter:",
-    list(source_options.keys()),
-    format_func=lambda k: source_options[k]
-)
-st.session_state.active_source_key = selected_source
-
-# Render source-specific parameters in sidebar
-current_adapter = None
-active_df = None
-meta_obj = None
-
-if selected_source == "bundled":
-    current_adapter = BundledCSVSource(file_path=bundled_files[st.session_state.project_option])
-    st.sidebar.info(f"Using {current_adapter.describe()}")
-    try:
-        active_df, meta_obj = current_adapter.load()
-    except Exception as e:
-        st.sidebar.error(f"Error loading bundled data: {e}")
-
-elif selected_source == "upload":
-    uploaded = st.sidebar.file_uploader("Upload CSV or Excel dataset:", type=["csv", "xlsx", "xls"])
-    if uploaded is not None:
-        current_adapter = UploadedFileSource(uploaded_file=uploaded, filename=uploaded.name)
-        active_df, meta_obj = current_adapter.load()
-        st.session_state.active_df = active_df
-    else:
-        st.sidebar.warning("Awaiting file upload...")
-
-elif selected_source == "webhook":
-    current_adapter = WebhookPushSource(incoming_dir="data/incoming")
-    st.sidebar.info(current_adapter.describe())
-    try:
-        active_df, meta_obj = current_adapter.load()
-    except Exception as e:
-        st.sidebar.warning(f"No webhook file yet: {e}")
-
-elif selected_source == "database":
-    current_adapter = DatabaseReadOnlySource(table_name="capstone_records")
-    st.sidebar.info(current_adapter.describe())
-    st.sidebar.code("SELECT * FROM capstone_records WHERE is_active=true", language="sql")
-
-elif selected_source == "api":
-    current_adapter = RestAPIPullSource(endpoint_url="https://api.analytics-pipeline.org/v1/stream")
-    st.sidebar.info(current_adapter.describe())
-
-# Sidebar Status Display per §2.1
-if current_adapter:
-    st.sidebar.caption(f"**Currently using**: {current_adapter.describe()}")
-if meta_obj:
-    st.sidebar.markdown(f"**Loaded At**: `{meta_obj.loaded_at[:19]}Z`")
-    st.sidebar.markdown(f"**Rows**: `{meta_obj.row_count}` | **Columns**: `{meta_obj.column_count}`")
-    st.sidebar.caption(f"SHA256: `{meta_obj.sha256[:16]}...`")
-
-if st.sidebar.button("🔄 Reload Bundled Data"):
-    st.cache_data.clear()
-    st.session_state.active_source_key = "bundled"
-    st.rerun()
-
-# Streamlit Cloud Ephemeral Notice per §2.5
-st.sidebar.markdown("---")
-st.sidebar.warning(
-    "⚠️ **Streamlit Cloud Deployment Reality**: "
-    "Streamlit Community Cloud has an ephemeral filesystem. Uploaded files and webhook-received files "
-    "do not survive a restart. The bundled demo dataset is always available. For persistent storage, "
-    "connect external Supabase/S3 (documented in README)."
-)
+active_df = st.session_state.active_df
+meta_obj = st.session_state.active_meta
 
 # MAIN APP BODY
 st.title("Data Science & Machine Learning Capstone Platform")
-st.markdown(f"### {track_labels[st.session_state.project_option]}")
+st.markdown(f"### {TRACK_LABELS[st.session_state.project_option]}")
 
 # Ethical banner if HR_ATTRITION per §5
 if st.session_state.project_option == "HR_ATTRITION":
@@ -186,13 +44,13 @@ if active_df is None:
     st.error(
         "🛑 **MISSING_DATASET STATE**: "
         "No active dataset is currently loaded. Please ensure `data/dataset.csv` exists or upload a dataset "
-        "using the `UploadedFileSource` in the left sidebar. Analysis and modeling are locked until data arrives."
+        "using the Data Ingestion Mode panel in the left sidebar. Analysis and modeling are locked until data arrives."
     )
     st.stop()
 
 # Schema Validation Gate per §2.6
 st.subheader("🔍 Schema Validation Gate")
-target_col = target_columns[st.session_state.project_option]
+target_col = TARGET_COLUMNS[st.session_state.project_option]
 
 if st.session_state.project_option == "SALES":
     required_cols = ["Sales", "Quantity", "Discount", "Shipping_Cost", "Region", "Category", "Sub_Category"]

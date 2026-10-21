@@ -4,6 +4,7 @@ Interactive Exploratory Data Analysis & Diagnostic Charts.
 """
 
 import streamlit as st
+from utils.sidebar import render_control_panel
 from utils.charts import (
     EDA_CHARTS_CATALOG,
     build_figure,
@@ -11,53 +12,51 @@ from utils.charts import (
     train_classifier_suite,
     run_cross_validation,
 )
-from utils.data_source import BundledCSVSource
 from utils.preprocessing import clean_dataframe
 
 st.set_page_config(page_title="Analytics Dashboard", page_icon="📈", layout="wide")
-project_opt = st.session_state.get("project_option", "SALES")
+render_control_panel()
+
+project_opt = st.session_state.project_option
 
 st.title(f"📈 Exploratory Data Analysis: {project_opt} Track")
 charts = EDA_CHARTS_CATALOG.get(project_opt, [])
 st.markdown(f"Displaying **{len(charts)} mandatory visualizations** calibrated for viva presentation with non-causal observations.")
 
-PATH_MAP = {
-    "SALES": "data/sales_dataset.csv",
-    "CHURN": "data/churn_dataset.csv",
-    "HR_ATTRITION": "data/hr_attrition_dataset.csv",
-}
+raw_df = st.session_state.get("active_df")
+if raw_df is None:
+    st.error(
+        "🛑 No active dataset loaded. Choose a Data Ingestion Mode (or upload a file) in the left sidebar "
+        "to populate this dashboard."
+    )
+    st.stop()
 
 
 @st.cache_data(show_spinner=False)
-def _load_clean_data(project_option: str):
-    source = BundledCSVSource(file_path=PATH_MAP.get(project_option, "data/dataset.csv"))
-    raw_df, _ = source.load()
-    cleaned_df, _ = clean_dataframe(raw_df, project_option=project_option)
+def _clean(df, project_option: str):
+    cleaned_df, _ = clean_dataframe(df, project_option=project_option)
     return cleaned_df
 
 
 @st.cache_resource(show_spinner=False)
-def _get_primary_model_context(project_option: str, row_count: int):
-    df = _load_clean_data(project_option)
+def _get_primary_model_context(df, project_option: str):
     return train_primary_model(df, project_option)
 
 
 @st.cache_resource(show_spinner=False)
-def _get_classifier_suite_context(project_option: str, row_count: int):
-    df = _load_clean_data(project_option)
+def _get_classifier_suite_context(df, project_option: str):
     return train_classifier_suite(df, project_option)
 
 
 @st.cache_resource(show_spinner=False)
-def _get_cv_scores(project_option: str, row_count: int):
-    df = _load_clean_data(project_option)
+def _get_cv_scores(df, project_option: str):
     return run_cross_validation(df, project_option)
 
 
 try:
-    active_df = _load_clean_data(project_opt)
+    active_df = _clean(raw_df, project_opt)
 except Exception as e:
-    st.error(f"Failed to load dataset for charting: {e}")
+    st.error(f"Failed to prepare dataset for charting: {e}")
     st.stop()
 
 needs_primary_model = any(
@@ -74,17 +73,17 @@ cv_scores = None
 with st.spinner("Training diagnostic models for this track..."):
     if needs_primary_model:
         try:
-            primary_ctx = _get_primary_model_context(project_opt, len(active_df))
+            primary_ctx = _get_primary_model_context(active_df, project_opt)
         except Exception as e:
             st.warning(f"Model-dependent charts unavailable: {e}")
     if needs_classifier_suite:
         try:
-            multi_ctx = _get_classifier_suite_context(project_opt, len(active_df))
+            multi_ctx = _get_classifier_suite_context(active_df, project_opt)
         except Exception as e:
             st.warning(f"ROC comparison unavailable: {e}")
     if needs_cv:
         try:
-            cv_scores = _get_cv_scores(project_opt, len(active_df))
+            cv_scores = _get_cv_scores(active_df, project_opt)
         except Exception as e:
             st.warning(f"Cross-validation chart unavailable: {e}")
 

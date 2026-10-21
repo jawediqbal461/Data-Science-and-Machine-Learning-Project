@@ -7,6 +7,9 @@ import streamlit as st
 from utils.recommendations import RECOMMENDATIONS
 
 st.set_page_config(page_title="Business Recommendations", page_icon="💡", layout="wide")
+
+from utils.sidebar import render_control_panel
+render_control_panel()
 project_opt = st.session_state.get("project_option", "SALES")
 
 st.title(f"💡 Actionable Business Recommendations: {project_opt}")

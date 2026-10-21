@@ -11,6 +11,9 @@ from utils.prediction import (
 )
 
 st.set_page_config(page_title="Predictive Inference Engine", page_icon="🔮", layout="wide")
+
+from utils.sidebar import render_control_panel
+render_control_panel()
 project_opt = st.session_state.get("project_option", "SALES")
 
 st.title(f"🔮 Real-Time Predictive Inference: {project_opt}")
