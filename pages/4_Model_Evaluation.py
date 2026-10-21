@@ -9,8 +9,8 @@ from utils.modeling import TRACK_MODELS
 
 st.set_page_config(page_title="Model Evaluation", page_icon="🤖", layout="wide")
 
-from utils.sidebar import render_control_panel
-render_control_panel()
+from utils.header import render_header
+render_header()
 project_opt = st.session_state.get("project_option", "SALES")
 
 st.title(f"🤖 Machine Learning Model Evaluation: {project_opt}")

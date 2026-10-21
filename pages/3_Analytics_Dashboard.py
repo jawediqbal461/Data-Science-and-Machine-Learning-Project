@@ -4,7 +4,7 @@ Interactive Exploratory Data Analysis & Diagnostic Charts.
 """
 
 import streamlit as st
-from utils.sidebar import render_control_panel
+from utils.header import render_header
 from utils.charts import (
     EDA_CHARTS_CATALOG,
     build_figure,
@@ -15,7 +15,7 @@ from utils.charts import (
 from utils.preprocessing import clean_dataframe
 
 st.set_page_config(page_title="Analytics Dashboard", page_icon="📈", layout="wide")
-render_control_panel()
+render_header()
 
 project_opt = st.session_state.project_option
 
@@ -23,10 +23,10 @@ st.title(f"📈 Exploratory Data Analysis: {project_opt} Track")
 charts = EDA_CHARTS_CATALOG.get(project_opt, [])
 st.markdown(f"Displaying **{len(charts)} mandatory visualizations** calibrated for viva presentation with non-causal observations.")
 
-raw_df = st.session_state.get("active_df")
+raw_df = st.session_state.get("_effective_active_df")
 if raw_df is None:
     st.error(
-        "🛑 No active dataset loaded. Choose a Data Ingestion Mode (or upload a file) in the left sidebar "
+        "🛑 No active dataset loaded. Use the **Upload Dataset** button in the top navigation bar "
         "to populate this dashboard."
     )
     st.stop()

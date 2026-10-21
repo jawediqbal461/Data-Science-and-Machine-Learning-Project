@@ -10,13 +10,13 @@ from utils.validation import validate_dataset
 
 st.set_page_config(page_title="Dataset Explorer", page_icon="🔍", layout="wide")
 
-from utils.sidebar import render_control_panel
-render_control_panel()
+from utils.header import render_header
+render_header()
 st.title("🔍 Comprehensive Dataset Explorer")
 
 # Get or load dataset
 project_opt = st.session_state.get("project_option", "SALES")
-active_df = st.session_state.get("active_df")
+active_df = st.session_state.get("_effective_active_df")
 
 if active_df is None:
     path_map = {

@@ -9,8 +9,8 @@ from utils.data_source import BundledCSVSource, WebhookPushSource, DataSourceMet
 
 st.set_page_config(page_title="Global Data Overview", page_icon="🌐", layout="wide")
 
-from utils.sidebar import render_control_panel
-render_control_panel()
+from utils.header import render_header
+render_header()
 
 st.title("🌐 Global Data Overview: Cross-Source Aggregator")
 st.markdown("Dynamically fetches and aggregates statistics across all data sources available in the platform.")

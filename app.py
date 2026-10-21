@@ -17,15 +17,15 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-from utils.sidebar import render_control_panel, TRACK_LABELS, TARGET_COLUMNS
+from utils.header import render_header, TRACK_PILL_LABELS as TRACK_LABELS, TARGET_COLUMNS
 from utils.validation import validate_dataset
 
 # Renders the shared ingestion/upload + track-switcher control panel at the
 # top of the sidebar, and syncs st.session_state.active_df / active_meta.
-render_control_panel()
+render_header()
 
-active_df = st.session_state.active_df
-meta_obj = st.session_state.active_meta
+active_df = st.session_state.get("_effective_active_df")
+meta_obj = st.session_state.get("_effective_active_meta")
 
 # MAIN APP BODY
 st.title("Data Science & Machine Learning Capstone Platform")
@@ -44,7 +44,7 @@ if active_df is None:
     st.error(
         "🛑 **MISSING_DATASET STATE**: "
         "No active dataset is currently loaded. Please ensure `data/dataset.csv` exists or upload a dataset "
-        "using the Data Ingestion Mode panel in the left sidebar. Analysis and modeling are locked until data arrives."
+        "using the **Upload Dataset** button in the top navigation bar. Analysis and modeling are locked until data arrives."
     )
     st.stop()
 
