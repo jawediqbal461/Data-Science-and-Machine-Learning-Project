@@ -1,0 +1,401 @@
+Order_ID,Customer_ID,Customer_Name,Order_Date,Region,Category,Sub_Category,Sales,Quantity,Discount,Shipping_Cost,Ship_Mode,Profit,Customer_Rating,Returned,Total_Sale
+ORD-1001,CUST-201,Customer 1,2026-08-02,West,Technology,Copiers,1191.85,5,0.05,34.46,Standard Class,319.93,4.3,0,1132.26
+ORD-1002,CUST-202,Customer 2,2026-08-19,West,Technology,Phones,702.68,4,0.0,27.45,Same Day,185.77,3.6,0,702.68
+ORD-1003,CUST-203,Customer 3,2026-08-13,Central,Technology,Phones,620.13,7,0.05,13.61,First Class,124.78,3.4,0,589.12
+ORD-1004,CUST-204,Customer 4,2026-08-21,West,Furniture,Tables,734.3,5,0.4,26.45,Same Day,-363.04,2.0,0,440.58
+ORD-1005,CUST-205,Customer 5,2026-08-28,Central,Office Supplies,Paper,22.74,2,0.1,35.92,Standard Class,-12.55,3.5,0,20.47
+ORD-1006,CUST-206,Customer 6,2026-08-09,West,Furniture,Tables,631.44,8,0.2,11.51,First Class,-130.89,2.2,0,505.15
+ORD-1007,CUST-207,Customer 7,2026-08-21,West,Office Supplies,Storage,145.47,3,0.1,11.54,Same Day,1.2,3.7,0,130.92
+ORD-1008,CUST-208,Customer 8,2026-08-07,East,Office Supplies,Binders,25.31,1,0.0,37.2,Same Day,-9.82,2.3,0,25.31
+ORD-1009,CUST-209,Customer 9,2026-08-09,Central,Technology,Copiers,1433.04,8,0.4,10.71,Second Class,-305.22,2.3,0,859.82
+ORD-1010,CUST-210,Customer 10,2026-08-28,South,Office Supplies,Binders,24.84,6,0.05,25.38,Standard Class,-6.92,3.3,0,23.6
+ORD-1011,CUST-211,Customer 11,2026-08-15,West,Technology,Copiers,2067.33,3,0.3,28.86,Same Day,-156.26,2.6,0,1447.13
+ORD-1012,CUST-212,Customer 12,2026-08-15,Central,Office Supplies,Paper,60.9,2,0.5,35.04,First Class,-43.25,2.0,0,30.45
+ORD-1013,CUST-213,Customer 13,2026-08-10,West,Office Supplies,Storage,215.5,5,0.05,25.31,Standard Class,13.58,4.8,0,204.72
+ORD-1014,CUST-214,Customer 14,2026-08-12,East,Technology,Accessories,141.69,3,0.5,41.74,First Class,-70.54,2.8,1,70.84
+ORD-1015,CUST-215,Customer 15,2026-08-25,Central,Technology,Phones,889.0,4,0.0,8.43,Same Day,245.55,4.7,0,889.0
+ORD-1016,CUST-216,Customer 16,2026-08-18,East,Technology,Copiers,2314.96,8,0.05,15.6,Same Day,641.95,4.9,0,2199.21
+ORD-1017,CUST-217,Customer 17,2026-08-08,East,Office Supplies,Binders,59.78,7,0.2,22.52,Same Day,-13.79,2.0,0,47.82
+ORD-1018,CUST-218,Customer 18,2026-08-02,West,Furniture,Chairs,355.96,4,0.0,7.84,Standard Class,39.58,3.6,0,355.96
+ORD-1019,CUST-219,Customer 19,2026-08-19,Central,Technology,Copiers,1245.56,4,0.4,13.57,Second Class,-267.0,3.2,0,747.34
+ORD-1020,CUST-220,Customer 20,2026-08-15,South,Technology,Accessories,82.39,7,0.0,31.36,First Class,13.82,4.0,0,82.39
+ORD-1021,CUST-221,Customer 21,2026-08-07,West,Office Supplies,Storage,69.7,2,0.2,37.02,Standard Class,-21.78,2.3,0,55.76
+ORD-1022,CUST-222,Customer 22,2026-08-28,South,Technology,Accessories,97.35,3,0.1,39.98,Standard Class,1.53,4.0,0,87.61
+ORD-1023,CUST-223,Customer 23,2026-08-28,West,Technology,Copiers,2350.39,1,0.1,11.65,Same Day,488.92,4.1,0,2115.35
+ORD-1024,CUST-224,Customer 24,2026-08-23,South,Technology,Phones,451.08,7,0.3,15.61,Same Day,-69.4,2.4,0,315.76
+ORD-1025,CUST-225,Customer 25,2026-08-02,South,Technology,Phones,558.85,5,0.0,28.17,Standard Class,145.21,4.5,0,558.85
+ORD-1026,CUST-226,Customer 26,2026-08-28,West,Office Supplies,Binders,17.55,3,0.5,8.2,Second Class,-12.05,1.9,1,8.78
+ORD-1027,CUST-227,Customer 27,2026-08-19,East,Furniture,Chairs,352.64,4,0.0,29.78,Same Day,30.4,4.4,0,352.64
+ORD-1028,CUST-228,Customer 28,2026-08-25,Central,Furniture,Chairs,233.52,6,0.3,10.24,First Class,-74.15,2.7,0,163.46
+ORD-1029,CUST-229,Customer 29,2026-08-03,West,Technology,Accessories,62.46,2,0.1,25.24,Second Class,1.15,4.9,0,56.21
+ORD-1030,CUST-230,Customer 30,2026-08-22,East,Furniture,Tables,512.91,3,0.5,33.14,Standard Class,-331.26,3.1,0,256.45
+ORD-1031,CUST-231,Customer 31,2026-08-07,West,Technology,Accessories,201.26,2,0.5,11.22,First Class,-80.97,3.0,0,100.63
+ORD-1032,CUST-232,Customer 32,2026-08-02,Central,Office Supplies,Binders,55.75,5,0.0,8.69,Same Day,7.67,4.7,0,55.75
+ORD-1033,CUST-233,Customer 33,2026-08-23,West,Furniture,Chairs,206.55,5,0.4,27.07,Same Day,-101.71,2.9,1,123.93
+ORD-1034,CUST-234,Customer 34,2026-08-26,East,Office Supplies,Paper,54.96,6,0.05,22.19,Standard Class,-0.63,2.4,0,52.21
+ORD-1035,CUST-235,Customer 35,2026-08-24,West,Furniture,Chairs,383.44,4,0.2,36.2,Same Day,-75.83,3.7,0,306.75
+ORD-1036,CUST-236,Customer 36,2026-08-14,East,Technology,Phones,890.7,3,0.0,12.17,First Class,244.53,4.6,0,890.7
+ORD-1037,CUST-237,Customer 37,2026-08-15,East,Furniture,Chairs,283.88,2,0.0,39.34,Second Class,18.33,3.6,0,283.88
+ORD-1038,CUST-238,Customer 38,2026-08-25,Central,Furniture,Chairs,158.28,4,0.1,20.94,First Class,-11.54,3.5,0,142.45
+ORD-1039,CUST-239,Customer 39,2026-08-06,Central,Furniture,Bookcases,323.89,7,0.5,18.25,Standard Class,-201.63,2.0,0,161.94
+ORD-1040,CUST-240,Customer 40,2026-08-19,Central,Technology,Phones,622.86,7,0.2,22.46,Standard Class,-8.98,2.6,0,498.29
+ORD-1041,CUST-241,Customer 41,2026-08-22,East,Furniture,Chairs,150.57,7,0.5,32.47,Second Class,-100.32,2.5,1,75.28
+ORD-1042,CUST-242,Customer 42,2026-08-23,Central,Office Supplies,Binders,47.38,2,0.15,25.28,Same Day,-10.59,2.5,0,40.27
+ORD-1043,CUST-243,Customer 43,2026-08-10,Central,Office Supplies,Paper,45.24,4,0.3,32.09,Second Class,-21.88,3.0,0,31.67
+ORD-1044,CUST-244,Customer 44,2026-08-15,South,Office Supplies,Paper,37.2,5,0.3,36.43,First Class,-22.01,2.7,0,26.04
+ORD-1045,CUST-245,Customer 45,2026-08-25,East,Office Supplies,Binders,44.64,3,0.15,25.62,First Class,-10.69,2.0,0,37.94
+ORD-1046,CUST-246,Customer 46,2026-08-20,East,Office Supplies,Binders,51.28,4,0.05,5.98,Second Class,4.27,5.0,0,48.72
+ORD-1047,CUST-247,Customer 47,2026-08-23,West,Furniture,Tables,681.0,4,0.3,24.78,Second Class,-241.45,2.1,0,476.7
+ORD-1048,CUST-248,Customer 48,2026-08-05,West,Technology,Accessories,79.92,4,0.5,23.58,Second Class,-39.8,3.6,1,39.96
+ORD-1049,CUST-249,Customer 49,2026-08-06,South,Office Supplies,Storage,211.98,6,0.4,29.51,Same Day,-92.36,3.5,0,127.19
+ORD-1050,CUST-250,Customer 50,2026-08-09,South,Furniture,Tables,753.92,4,0.15,35.63,Same Day,-112.26,3.1,0,640.83
+ORD-1051,CUST-251,Customer 51,2026-08-08,South,Technology,Copiers,1175.2,5,0.2,17.79,Standard Class,75.15,3.4,0,940.16
+ORD-1052,CUST-252,Customer 52,2026-08-07,South,Office Supplies,Paper,23.84,4,0.3,18.24,Same Day,-12.06,2.6,0,16.69
+ORD-1053,CUST-253,Customer 53,2026-08-13,South,Furniture,Bookcases,377.02,1,0.3,24.08,First Class,-130.28,2.4,0,263.91
+ORD-1054,CUST-254,Customer 54,2026-08-22,South,Office Supplies,Storage,138.12,4,0.15,22.43,Standard Class,-13.12,2.6,0,117.4
+ORD-1055,CUST-255,Customer 55,2026-08-03,South,Office Supplies,Paper,75.2,8,0.5,6.08,Same Day,-38.53,3.0,0,37.6
+ORD-1056,CUST-256,Customer 56,2026-08-25,South,Technology,Accessories,58.56,3,0.3,18.09,Same Day,-13.09,2.5,0,40.99
+ORD-1057,CUST-257,Customer 57,2026-08-21,South,Furniture,Tables,750.95,5,0.4,5.78,Standard Class,-362.77,3.8,0,450.57
+ORD-1058,CUST-258,Customer 58,2026-08-16,West,Office Supplies,Paper,76.98,1,0.1,38.57,Second Class,-9.27,2.3,0,69.28
+ORD-1059,CUST-259,Customer 59,2026-08-06,West,Office Supplies,Paper,62.0,8,0.2,11.71,Standard Class,-8.4,3.4,0,49.6
+ORD-1060,CUST-260,Customer 60,2026-08-23,Central,Technology,Copiers,2286.22,1,0.3,20.87,Second Class,-168.38,2.0,0,1600.35
+ORD-1061,CUST-261,Customer 61,2026-08-14,East,Technology,Copiers,2160.45,5,0.0,36.85,Standard Class,741.42,3.8,0,2160.45
+ORD-1062,CUST-262,Customer 62,2026-08-12,Central,Technology,Copiers,820.26,6,0.3,37.89,Standard Class,-72.57,2.7,0,574.18
+ORD-1063,CUST-263,Customer 63,2026-08-25,South,Office Supplies,Paper,30.59,7,0.5,43.62,First Class,-32.13,3.0,0,15.29
+ORD-1064,CUST-264,Customer 64,2026-08-15,South,Furniture,Tables,443.4,5,0.1,38.23,Standard Class,-41.9,2.4,0,399.06
+ORD-1065,CUST-265,Customer 65,2026-08-09,East,Furniture,Bookcases,220.92,7,0.4,39.04,Second Class,-117.24,2.8,0,132.55
+ORD-1066,CUST-266,Customer 66,2026-08-18,Central,Furniture,Bookcases,286.75,5,0.5,42.92,Standard Class,-189.22,2.3,0,143.38
+ORD-1067,CUST-267,Customer 67,2026-08-08,East,Office Supplies,Binders,35.2,8,0.0,8.72,Second Class,3.55,3.9,0,35.2
+ORD-1068,CUST-268,Customer 68,2026-08-10,Central,Office Supplies,Storage,135.72,6,0.5,18.75,First Class,-78.07,2.5,0,67.86
+ORD-1069,CUST-269,Customer 69,2026-08-09,Central,Technology,Phones,607.76,4,0.5,43.04,Second Class,-272.48,2.2,0,303.88
+ORD-1070,CUST-270,Customer 70,2026-08-02,Central,Technology,Phones,563.75,5,0.05,17.09,Second Class,111.55,3.7,0,535.56
+ORD-1071,CUST-271,Customer 71,2026-08-11,Central,Office Supplies,Paper,26.16,8,0.0,27.96,Same Day,-5.43,2.8,0,26.16
+ORD-1072,CUST-272,Customer 72,2026-08-22,East,Technology,Accessories,69.36,8,0.0,21.03,Standard Class,13.78,4.2,0,69.36
+ORD-1073,CUST-273,Customer 73,2026-08-26,West,Technology,Phones,492.6,5,0.1,9.74,Same Day,65.07,4.3,0,443.34
+ORD-1074,CUST-274,Customer 74,2026-08-20,East,Office Supplies,Binders,55.92,8,0.15,39.41,Same Day,-16.32,2.4,0,47.53
+ORD-1075,CUST-200,Customer 0,2026-08-06,West,Office Supplies,Storage,211.62,2,0.1,30.02,First Class,-3.54,3.1,0,190.46
+ORD-1076,CUST-201,Customer 1,2026-08-08,East,Technology,Copiers,1050.46,2,0.3,23.02,Same Day,-82.74,2.4,0,735.32
+ORD-1077,CUST-202,Customer 2,2026-08-18,Central,Office Supplies,Binders,18.24,8,0.1,41.96,Second Class,-15.69,2.7,0,16.42
+ORD-1078,CUST-203,Customer 3,2026-08-27,East,Office Supplies,Paper,69.6,5,0.0,7.39,First Class,12.36,4.3,0,69.6
+ORD-1079,CUST-204,Customer 4,2026-08-20,Central,Furniture,Chairs,391.04,8,0.3,42.71,Same Day,-134.4,2.7,0,273.73
+ORD-1080,CUST-205,Customer 5,2026-08-22,West,Furniture,Bookcases,301.14,6,0.0,8.65,Standard Class,26.65,5.0,0,301.14
+ORD-1081,CUST-206,Customer 6,2026-08-27,Central,Office Supplies,Paper,48.24,3,0.4,41.64,Second Class,-33.06,3.8,0,28.94
+ORD-1082,CUST-207,Customer 7,2026-08-23,South,Technology,Accessories,119.4,6,0.2,31.81,Second Class,-7.95,2.5,0,95.52
+ORD-1083,CUST-208,Customer 8,2026-08-25,South,Furniture,Bookcases,364.07,7,0.5,6.47,Standard Class,-221.03,2.4,0,182.03
+ORD-1084,CUST-209,Customer 9,2026-08-25,South,Office Supplies,Paper,44.8,8,0.1,25.74,Same Day,-6.71,3.1,0,40.32
+ORD-1085,CUST-210,Customer 10,2026-08-20,West,Technology,Accessories,207.69,3,0.4,40.23,Same Day,-65.94,2.0,0,124.61
+ORD-1086,CUST-211,Customer 11,2026-08-15,East,Office Supplies,Paper,53.05,5,0.5,21.32,Second Class,-33.99,3.8,0,26.52
+ORD-1087,CUST-212,Customer 12,2026-08-16,West,Office Supplies,Paper,75.92,8,0.15,25.35,First Class,-9.38,2.6,0,64.53
+ORD-1088,CUST-213,Customer 13,2026-08-26,South,Technology,Accessories,115.2,3,0.5,34.85,Second Class,-57.72,3.5,0,57.6
+ORD-1089,CUST-214,Customer 14,2026-08-15,South,Furniture,Bookcases,366.15,5,0.15,34.04,Same Day,-53.89,3.5,0,311.23
+ORD-1090,CUST-215,Customer 15,2026-08-08,South,Furniture,Tables,523.18,7,0.2,39.78,Second Class,-120.55,2.9,0,418.54
+ORD-1091,CUST-216,Customer 16,2026-08-02,South,Technology,Accessories,169.92,8,0.3,20.44,Second Class,-25.17,2.8,0,118.94
+ORD-1092,CUST-217,Customer 17,2026-08-28,East,Office Supplies,Storage,199.14,6,0.4,8.99,Same Day,-79.27,1.8,1,119.48
+ORD-1093,CUST-218,Customer 18,2026-08-28,East,Technology,Accessories,107.55,5,0.3,30.99,First Class,-23.15,3.5,0,75.28
+ORD-1094,CUST-219,Customer 19,2026-08-10,South,Furniture,Bookcases,381.68,8,0.0,29.7,Second Class,26.29,4.3,0,381.68
+ORD-1095,CUST-220,Customer 20,2026-08-02,East,Office Supplies,Paper,78.68,7,0.0,22.75,First Class,8.21,4.8,0,78.68
+ORD-1096,CUST-221,Customer 21,2026-08-26,Central,Technology,Accessories,113.7,6,0.05,14.77,Same Day,22.52,4.2,0,108.02
+ORD-1097,CUST-222,Customer 22,2026-08-19,East,Technology,Phones,754.74,2,0.3,29.79,Second Class,-117.58,2.8,0,528.32
+ORD-1098,CUST-223,Customer 23,2026-08-22,East,Technology,Accessories,128.15,5,0.0,40.96,Same Day,24.62,4.8,0,128.15
+ORD-1099,CUST-224,Customer 24,2026-08-15,East,Technology,Accessories,217.92,6,0.15,30.56,Same Day,11.75,4.4,0,185.23
+ORD-1100,CUST-225,Customer 25,2026-08-10,Central,Technology,Accessories,68.16,8,0.3,27.88,First Class,-17.97,3.8,0,47.71
+ORD-1101,CUST-226,Customer 26,2026-08-10,West,Office Supplies,Binders,15.35,5,0.0,41.42,Same Day,-13.5,3.5,0,15.35
+ORD-1102,CUST-227,Customer 27,2026-08-21,East,Office Supplies,Binders,43.64,4,0.15,32.11,Second Class,-13.28,3.1,0,37.09
+ORD-1103,CUST-228,Customer 28,2026-08-14,West,Furniture,Tables,597.74,1,0.05,8.61,First Class,2.53,3.8,0,567.85
+ORD-1104,CUST-229,Customer 29,2026-08-16,East,Technology,Phones,715.44,6,0.15,38.22,First Class,34.79,4.8,0,608.12
+ORD-1105,CUST-230,Customer 30,2026-08-24,Central,Office Supplies,Binders,36.08,2,0.0,10.63,Second Class,2.96,4.7,0,36.08
+ORD-1106,CUST-231,Customer 31,2026-08-22,South,Office Supplies,Binders,50.58,2,0.0,15.58,Standard Class,3.88,4.0,0,50.58
+ORD-1107,CUST-232,Customer 32,2026-08-08,Central,Office Supplies,Binders,19.86,6,0.1,23.86,First Class,-8.35,3.6,0,17.87
+ORD-1108,CUST-233,Customer 33,2026-08-16,West,Office Supplies,Binders,44.2,5,0.0,10.59,Standard Class,4.6,3.7,0,44.2
+ORD-1109,CUST-234,Customer 34,2026-08-24,West,Technology,Phones,644.31,3,0.2,31.82,Same Day,-12.73,3.0,0,515.45
+ORD-1110,CUST-235,Customer 35,2026-08-12,East,Furniture,Bookcases,370.1,2,0.3,42.56,First Class,-135.46,1.9,0,259.07
+ORD-1111,CUST-236,Customer 36,2026-08-21,East,Furniture,Tables,763.28,4,0.0,44.24,First Class,43.37,4.2,0,763.28
+ORD-1112,CUST-237,Customer 37,2026-08-07,Central,Technology,Accessories,82.25,5,0.0,42.96,Same Day,9.14,3.4,0,82.25
+ORD-1113,CUST-238,Customer 38,2026-08-27,West,Technology,Accessories,218.08,4,0.1,7.74,Second Class,36.16,4.3,0,196.27
+ORD-1114,CUST-239,Customer 39,2026-08-04,East,Furniture,Chairs,247.05,1,0.05,44.5,First Class,-5.45,3.4,0,234.7
+ORD-1115,CUST-240,Customer 40,2026-08-02,West,Technology,Phones,844.98,6,0.1,28.55,Standard Class,106.88,3.5,0,760.48
+ORD-1116,CUST-241,Customer 41,2026-08-17,East,Office Supplies,Binders,48.56,2,0.4,22.93,First Class,-26.65,2.8,1,29.14
+ORD-1117,CUST-242,Customer 42,2026-08-14,East,Office Supplies,Paper,47.5,5,0.0,7.43,Same Day,7.48,4.7,0,47.5
+ORD-1118,CUST-243,Customer 43,2026-08-09,West,Furniture,Bookcases,142.08,8,0.0,17.88,Second Class,7.06,3.3,0,142.08
+ORD-1119,CUST-244,Customer 44,2026-08-21,Central,Furniture,Bookcases,256.1,5,0.3,8.97,Standard Class,-85.54,3.5,0,179.27
+ORD-1120,CUST-245,Customer 45,2026-08-09,East,Furniture,Tables,498.28,4,0.4,20.95,Standard Class,-247.55,2.4,0,298.97
+ORD-1121,CUST-246,Customer 46,2026-08-12,Central,Technology,Copiers,907.44,8,0.0,8.73,Standard Class,314.11,4.5,0,907.44
+ORD-1122,CUST-247,Customer 47,2026-08-24,East,Office Supplies,Paper,60.18,6,0.3,19.14,Same Day,-19.69,3.5,0,42.13
+ORD-1123,CUST-248,Customer 48,2026-08-28,West,Furniture,Bookcases,225.5,5,0.5,13.51,Same Day,-140.7,2.2,1,112.75
+ORD-1124,CUST-249,Customer 49,2026-08-23,Central,Technology,Accessories,187.24,4,0.5,43.98,Standard Class,-88.74,3.0,0,93.62
+ORD-1125,CUST-250,Customer 50,2026-08-28,Central,Technology,Phones,801.35,5,0.15,41.86,First Class,39.35,3.2,0,681.15
+ORD-1126,CUST-251,Customer 51,2026-08-15,East,Office Supplies,Storage,71.12,7,0.0,8.67,Second Class,9.33,3.9,0,71.12
+ORD-1127,CUST-252,Customer 52,2026-08-20,Central,Technology,Accessories,172.65,5,0.0,40.33,Second Class,39.12,3.5,0,172.65
+ORD-1128,CUST-253,Customer 53,2026-08-07,West,Office Supplies,Paper,46.6,5,0.3,24.43,Same Day,-19.09,2.6,0,32.62
+ORD-1129,CUST-254,Customer 54,2026-08-20,West,Furniture,Tables,419.94,2,0.4,26.08,First Class,-212.0,1.9,0,251.96
+ORD-1130,CUST-255,Customer 55,2026-08-01,West,Technology,Phones,922.65,5,0.05,35.57,First Class,179.53,3.8,0,876.52
+ORD-1131,CUST-256,Customer 56,2026-08-02,South,Office Supplies,Binders,20.82,3,0.5,33.15,First Class,-23.67,1.9,0,10.41
+ORD-1132,CUST-257,Customer 57,2026-08-13,South,Technology,Accessories,196.56,2,0.3,27.94,Same Day,-30.83,2.4,0,137.59
+ORD-1133,CUST-258,Customer 58,2026-08-19,West,Furniture,Chairs,441.2,8,0.2,8.53,Standard Class,-74.0,2.3,0,352.96
+ORD-1134,CUST-259,Customer 59,2026-08-21,South,Office Supplies,Paper,72.24,7,0.2,13.86,Second Class,-9.88,2.0,0,57.79
+ORD-1135,CUST-260,Customer 60,2026-08-05,West,Office Supplies,Storage,204.96,4,0.2,19.04,Second Class,-28.11,2.3,0,163.97
+ORD-1136,CUST-261,Customer 61,2026-08-19,Central,Technology,Phones,830.1,3,0.0,12.09,Same Day,227.59,4.0,0,830.1
+ORD-1137,CUST-262,Customer 62,2026-08-21,South,Office Supplies,Storage,198.3,6,0.2,11.04,Standard Class,-24.25,2.7,0,158.64
+ORD-1138,CUST-263,Customer 63,2026-08-12,Central,Furniture,Bookcases,225.58,1,0.0,17.42,Same Day,15.59,3.3,0,225.58
+ORD-1139,CUST-264,Customer 64,2026-08-21,Central,Technology,Copiers,1784.02,2,0.5,20.38,Standard Class,-632.56,2.7,0,892.01
+ORD-1140,CUST-265,Customer 65,2026-08-03,East,Furniture,Bookcases,270.4,8,0.0,23.02,First Class,17.83,5.0,0,270.4
+ORD-1141,CUST-266,Customer 66,2026-08-13,East,Technology,Phones,945.52,8,0.5,25.91,Second Class,-407.48,2.5,0,472.76
+ORD-1142,CUST-267,Customer 67,2026-08-13,South,Furniture,Bookcases,356.77,1,0.2,7.64,Standard Class,-67.27,2.9,0,285.42
+ORD-1143,CUST-268,Customer 68,2026-08-23,Central,Furniture,Bookcases,220.02,3,0.05,41.67,First Class,-10.07,3.7,0,209.02
+ORD-1144,CUST-269,Customer 69,2026-08-22,South,Technology,Copiers,1295.34,2,0.3,30.74,First Class,-102.97,3.4,0,906.74
+ORD-1145,CUST-270,Customer 70,2026-08-11,West,Office Supplies,Storage,141.33,7,0.0,19.5,Second Class,17.64,4.9,0,141.33
+ORD-1146,CUST-271,Customer 71,2026-08-18,South,Technology,Phones,527.46,3,0.15,38.78,Standard Class,21.41,4.1,0,448.34
+ORD-1147,CUST-272,Customer 72,2026-08-02,West,Office Supplies,Binders,41.88,3,0.05,11.49,Second Class,0.85,4.5,0,39.79
+ORD-1148,CUST-273,Customer 73,2026-08-08,South,Furniture,Bookcases,410.88,4,0.15,35.1,Same Day,-59.24,2.3,0,349.25
+ORD-1149,CUST-274,Customer 74,2026-08-14,Central,Furniture,Chairs,387.42,6,0.4,23.47,First Class,-179.85,3.4,0,232.45
+ORD-1150,CUST-200,Customer 0,2026-08-04,East,Technology,Copiers,2196.81,3,0.0,30.65,First Class,756.62,4.2,0,2196.81
+ORD-1151,CUST-201,Customer 1,2026-08-27,West,Furniture,Chairs,245.49,3,0.5,10.89,Same Day,-146.74,2.0,0,122.75
+ORD-1152,CUST-202,Customer 2,2026-08-01,South,Furniture,Chairs,168.63,7,0.5,19.96,Same Day,-105.79,3.8,0,84.31
+ORD-1153,CUST-203,Customer 3,2026-08-05,Central,Technology,Copiers,2066.22,6,0.05,6.53,Same Day,575.93,4.5,0,1962.91
+ORD-1154,CUST-204,Customer 4,2026-08-24,South,Furniture,Bookcases,391.76,1,0.0,15.24,Second Class,33.08,4.2,0,391.76
+ORD-1155,CUST-205,Customer 5,2026-08-27,South,Technology,Accessories,101.2,4,0.0,14.54,Same Day,26.57,3.3,0,101.2
+ORD-1156,CUST-206,Customer 6,2026-08-20,South,Office Supplies,Storage,161.11,1,0.1,33.74,First Class,-7.05,2.7,0,145.0
+ORD-1157,CUST-207,Customer 7,2026-08-17,Central,Technology,Copiers,1099.7,7,0.0,25.94,First Class,374.52,3.3,0,1099.7
+ORD-1158,CUST-208,Customer 8,2026-08-03,West,Furniture,Tables,631.4,1,0.2,15.15,Standard Class,-132.34,2.5,0,505.12
+ORD-1159,CUST-209,Customer 9,2026-08-27,Central,Technology,Copiers,2034.4,2,0.2,10.34,First Class,138.27,4.2,0,1627.52
+ORD-1160,CUST-210,Customer 10,2026-08-07,East,Office Supplies,Binders,43.44,8,0.05,7.52,Same Day,2.64,3.3,0,41.27
+ORD-1161,CUST-211,Customer 11,2026-08-07,West,Technology,Phones,916.68,6,0.5,20.93,Same Day,-393.38,2.3,0,458.34
+ORD-1162,CUST-212,Customer 12,2026-08-13,Central,Furniture,Chairs,245.64,6,0.2,22.48,Same Day,-48.29,3.3,0,196.51
+ORD-1163,CUST-213,Customer 13,2026-08-20,Central,Technology,Accessories,112.48,8,0.5,15.67,Standard Class,-49.01,3.3,1,56.24
+ORD-1164,CUST-214,Customer 14,2026-08-23,East,Office Supplies,Binders,19.62,6,0.2,31.44,First Class,-14.15,2.7,0,15.7
+ORD-1165,CUST-215,Customer 15,2026-08-14,South,Technology,Copiers,1362.48,8,0.0,34.07,First Class,463.24,4.3,0,1362.48
+ORD-1166,CUST-216,Customer 16,2026-08-05,Central,Office Supplies,Paper,60.28,2,0.3,19.53,Second Class,-19.87,3.7,0,42.2
+ORD-1167,CUST-217,Customer 17,2026-08-22,South,Technology,Phones,568.0,2,0.2,19.49,Standard Class,-7.8,3.0,0,454.4
+ORD-1168,CUST-218,Customer 18,2026-08-09,South,Furniture,Tables,707.84,8,0.05,26.18,Same Day,-3.39,2.4,0,672.45
+ORD-1169,CUST-219,Customer 19,2026-08-09,East,Technology,Phones,699.51,3,0.3,41.54,Standard Class,-114.55,2.3,0,489.66
+ORD-1170,CUST-220,Customer 20,2026-08-23,South,Technology,Copiers,1910.35,5,0.4,13.01,Second Class,-406.38,3.5,0,1146.21
+ORD-1171,CUST-221,Customer 21,2026-08-28,South,Technology,Copiers,1868.52,6,0.0,27.0,First Class,643.18,4.8,0,1868.52
+ORD-1172,CUST-222,Customer 22,2026-08-16,East,Office Supplies,Storage,186.99,3,0.5,13.97,Second Class,-102.82,3.4,1,93.5
+ORD-1173,CUST-223,Customer 23,2026-08-23,West,Furniture,Bookcases,260.22,6,0.5,10.19,Standard Class,-160.21,1.9,0,130.11
+ORD-1174,CUST-224,Customer 24,2026-08-15,South,Office Supplies,Binders,52.08,7,0.0,10.01,First Class,6.41,4.4,0,52.08
+ORD-1175,CUST-225,Customer 25,2026-08-17,South,Office Supplies,Storage,80.52,6,0.5,30.59,Second Class,-54.11,3.3,1,40.26
+ORD-1176,CUST-226,Customer 26,2026-08-17,West,Technology,Copiers,1286.61,3,0.05,17.91,Second Class,353.09,3.8,0,1222.28
+ORD-1177,CUST-227,Customer 27,2026-08-21,Central,Technology,Accessories,157.96,4,0.5,15.98,First Class,-66.42,3.0,1,78.98
+ORD-1178,CUST-228,Customer 28,2026-08-01,East,Office Supplies,Storage,87.39,3,0.2,38.7,Standard Class,-24.22,3.5,0,69.91
+ORD-1179,CUST-229,Customer 29,2026-08-21,West,Technology,Copiers,1841.8,5,0.3,29.72,Standard Class,-140.81,2.8,0,1289.26
+ORD-1180,CUST-230,Customer 30,2026-08-06,Central,Office Supplies,Binders,26.0,8,0.3,16.9,Standard Class,-12.48,3.2,0,18.2
+ORD-1181,CUST-231,Customer 31,2026-08-28,South,Furniture,Tables,372.4,8,0.05,17.5,First Class,-3.28,3.3,0,353.78
+ORD-1182,CUST-232,Customer 32,2026-08-15,Central,Furniture,Chairs,330.24,6,0.0,17.76,Same Day,32.52,3.4,0,330.24
+ORD-1183,CUST-233,Customer 33,2026-08-28,East,Technology,Phones,595.11,1,0.3,39.57,Same Day,-99.14,2.3,0,416.58
+ORD-1184,CUST-234,Customer 34,2026-08-10,East,Furniture,Bookcases,176.94,6,0.05,24.93,Same Day,-4.66,2.8,0,168.09
+ORD-1185,CUST-235,Customer 35,2026-08-10,South,Technology,Phones,702.73,7,0.1,13.61,First Class,92.94,3.3,0,632.46
+ORD-1186,CUST-236,Customer 36,2026-08-09,South,Office Supplies,Storage,105.68,8,0.0,38.89,Same Day,3.47,3.4,0,105.68
+ORD-1187,CUST-237,Customer 37,2026-08-25,Central,Furniture,Tables,490.35,1,0.5,12.79,First Class,-309.13,1.9,0,245.18
+ORD-1188,CUST-238,Customer 38,2026-08-12,Central,Office Supplies,Storage,80.58,2,0.0,20.76,First Class,6.2,4.2,0,80.58
+ORD-1189,CUST-239,Customer 39,2026-08-17,East,Technology,Copiers,1600.13,7,0.0,6.56,First Class,557.42,4.6,0,1600.13
+ORD-1190,CUST-240,Customer 40,2026-08-17,South,Technology,Copiers,1324.74,3,0.2,11.5,First Class,88.13,4.3,0,1059.79
+ORD-1191,CUST-241,Customer 41,2026-08-19,South,Office Supplies,Storage,136.0,5,0.0,19.73,Standard Class,16.59,5.0,0,136.0
+ORD-1192,CUST-242,Customer 42,2026-08-19,Central,Office Supplies,Storage,155.51,1,0.15,43.68,Second Class,-22.14,3.2,0,132.18
+ORD-1193,CUST-243,Customer 43,2026-08-15,South,Technology,Copiers,1036.42,7,0.1,6.26,Standard Class,215.14,3.5,0,932.78
+ORD-1194,CUST-244,Customer 44,2026-08-24,Central,Furniture,Chairs,391.65,7,0.3,25.07,Same Day,-127.52,3.5,0,274.15
+ORD-1195,CUST-245,Customer 45,2026-08-18,West,Office Supplies,Paper,53.64,4,0.4,26.02,First Class,-28.65,3.7,0,32.18
+ORD-1196,CUST-246,Customer 46,2026-08-08,Central,Office Supplies,Binders,42.45,5,0.1,43.29,First Class,-14.77,2.9,0,38.21
+ORD-1197,CUST-247,Customer 47,2026-08-24,Central,Furniture,Bookcases,327.08,4,0.4,17.68,First Class,-157.53,2.9,0,196.25
+ORD-1198,CUST-248,Customer 48,2026-08-10,Central,Furniture,Chairs,463.54,7,0.3,37.74,Second Class,-154.16,2.4,0,324.48
+ORD-1199,CUST-249,Customer 49,2026-08-23,West,Furniture,Tables,698.4,5,0.1,13.08,First Class,-47.14,3.7,0,628.56
+ORD-1200,CUST-250,Customer 50,2026-08-23,Central,Technology,Phones,571.24,4,0.5,14.03,Second Class,-245.53,1.9,0,285.62
+ORD-1201,CUST-251,Customer 51,2026-08-16,South,Technology,Copiers,808.29,3,0.5,44.12,Second Class,-300.55,2.6,0,404.14
+ORD-1202,CUST-252,Customer 52,2026-08-08,South,Office Supplies,Paper,39.25,5,0.0,41.32,Standard Class,-7.89,3.1,0,39.25
+ORD-1203,CUST-253,Customer 53,2026-08-06,West,Technology,Accessories,208.77,3,0.0,44.89,Same Day,48.85,4.6,0,208.77
+ORD-1204,CUST-254,Customer 54,2026-08-21,Central,Technology,Phones,734.0,5,0.0,42.14,First Class,188.66,3.7,0,734.0
+ORD-1205,CUST-255,Customer 55,2026-08-23,South,Technology,Copiers,1236.56,8,0.0,18.23,Same Day,425.5,4.4,0,1236.56
+ORD-1206,CUST-256,Customer 56,2026-08-17,East,Technology,Copiers,2065.2,6,0.1,12.02,Same Day,428.88,4.7,0,1858.68
+ORD-1207,CUST-257,Customer 57,2026-08-13,Central,Technology,Accessories,81.42,2,0.05,24.1,Second Class,10.71,3.2,0,77.35
+ORD-1208,CUST-258,Customer 58,2026-08-02,East,Furniture,Tables,431.16,6,0.0,15.46,First Class,28.31,4.4,0,431.16
+ORD-1209,CUST-259,Customer 59,2026-08-10,West,Furniture,Tables,493.26,3,0.5,41.92,First Class,-322.59,3.2,0,246.63
+ORD-1210,CUST-260,Customer 60,2026-08-16,Central,Office Supplies,Paper,77.44,4,0.4,11.13,First Class,-30.78,2.6,0,46.46
+ORD-1211,CUST-261,Customer 61,2026-08-27,East,Technology,Copiers,1640.82,2,0.5,33.15,Standard Class,-587.55,3.6,1,820.41
+ORD-1212,CUST-262,Customer 62,2026-08-17,East,Office Supplies,Storage,86.34,3,0.5,22.67,Second Class,-53.96,3.2,0,43.17
+ORD-1213,CUST-263,Customer 63,2026-08-01,South,Technology,Accessories,137.25,3,0.4,27.56,Same Day,-43.96,3.1,0,82.35
+ORD-1214,CUST-264,Customer 64,2026-08-02,South,Furniture,Chairs,352.4,4,0.0,21.95,Standard Class,33.51,4.2,0,352.4
+ORD-1215,CUST-265,Customer 65,2026-08-13,West,Furniture,Chairs,293.1,5,0.05,35.63,Same Day,0.4,3.9,0,278.44
+ORD-1216,CUST-266,Customer 66,2026-08-13,South,Furniture,Tables,659.64,2,0.5,10.32,First Class,-413.1,2.0,0,329.82
+ORD-1217,CUST-267,Customer 67,2026-08-27,East,Office Supplies,Paper,65.37,1,0.15,23.52,Same Day,-8.75,2.9,0,55.56
+ORD-1218,CUST-268,Customer 68,2026-08-22,East,Technology,Accessories,76.38,6,0.1,42.5,Standard Class,-3.25,1.9,0,68.74
+ORD-1219,CUST-269,Customer 69,2026-08-23,South,Office Supplies,Paper,32.36,4,0.0,28.76,Same Day,-4.38,3.0,0,32.36
+ORD-1220,CUST-270,Customer 70,2026-08-10,West,Technology,Copiers,1443.62,1,0.1,26.59,Standard Class,292.52,3.5,0,1299.26
+ORD-1221,CUST-271,Customer 71,2026-08-17,East,Office Supplies,Storage,152.4,6,0.2,14.48,Second Class,-21.03,3.8,0,121.92
+ORD-1222,CUST-272,Customer 72,2026-08-02,East,Furniture,Tables,286.55,5,0.05,30.04,Same Day,-9.15,2.9,0,272.22
+ORD-1223,CUST-273,Customer 73,2026-08-13,Central,Office Supplies,Storage,185.71,7,0.2,32.85,Same Day,-31.71,2.1,0,148.57
+ORD-1224,CUST-274,Customer 74,2026-08-02,East,Office Supplies,Binders,53.24,4,0.15,39.3,Second Class,-16.25,3.4,0,45.25
+ORD-1225,CUST-200,Customer 0,2026-08-28,South,Furniture,Bookcases,236.52,3,0.15,13.13,Standard Class,-31.27,3.6,0,201.04
+ORD-1226,CUST-201,Customer 1,2026-08-07,Central,Technology,Copiers,882.44,4,0.3,31.95,Standard Class,-74.55,3.5,0,617.71
+ORD-1227,CUST-202,Customer 2,2026-08-04,East,Furniture,Chairs,256.14,6,0.0,13.47,Second Class,25.35,4.9,0,256.14
+ORD-1228,CUST-203,Customer 3,2026-08-18,South,Technology,Copiers,1434.6,4,0.1,27.08,First Class,290.43,3.9,0,1291.14
+ORD-1229,CUST-204,Customer 4,2026-08-07,Central,Furniture,Tables,557.7,6,0.4,23.64,Same Day,-277.15,3.3,0,334.62
+ORD-1230,CUST-205,Customer 5,2026-08-19,Central,Furniture,Tables,587.51,1,0.1,34.65,Standard Class,-49.11,2.3,0,528.76
+ORD-1231,CUST-206,Customer 6,2026-08-21,South,Furniture,Chairs,265.44,4,0.3,27.79,Second Class,-90.75,2.8,0,185.81
+ORD-1232,CUST-207,Customer 7,2026-08-18,Central,Furniture,Tables,526.48,8,0.2,11.77,Same Day,-110.0,2.2,0,421.18
+ORD-1233,CUST-208,Customer 8,2026-08-21,West,Office Supplies,Paper,76.72,2,0.0,35.57,Same Day,2.65,3.4,0,76.72
+ORD-1234,CUST-209,Customer 9,2026-08-20,East,Technology,Copiers,814.62,3,0.5,23.24,Standard Class,-294.41,3.0,0,407.31
+ORD-1235,CUST-210,Customer 10,2026-08-10,South,Office Supplies,Binders,15.3,1,0.5,21.45,Standard Class,-16.23,2.9,0,7.65
+ORD-1236,CUST-211,Customer 11,2026-08-08,West,Office Supplies,Storage,189.0,7,0.05,9.28,Standard Class,17.08,4.1,0,179.55
+ORD-1237,CUST-212,Customer 12,2026-08-13,East,Office Supplies,Storage,190.45,5,0.15,36.8,Standard Class,-20.43,2.5,0,161.88
+ORD-1238,CUST-213,Customer 13,2026-08-13,South,Office Supplies,Paper,38.0,4,0.0,31.15,Standard Class,-4.1,2.0,0,38.0
+ORD-1239,CUST-214,Customer 14,2026-08-11,South,Office Supplies,Binders,43.65,1,0.05,8.31,Same Day,2.35,4.4,0,41.47
+ORD-1240,CUST-215,Customer 15,2026-08-18,West,Office Supplies,Paper,32.68,4,0.4,15.84,Standard Class,-17.45,3.2,0,19.61
+ORD-1241,CUST-216,Customer 16,2026-08-10,West,Technology,Accessories,213.45,1,0.05,35.09,Same Day,39.33,4.9,0,202.78
+ORD-1242,CUST-217,Customer 17,2026-08-03,East,Office Supplies,Paper,60.62,7,0.5,18.27,Second Class,-36.41,3.4,0,30.31
+ORD-1243,CUST-218,Customer 18,2026-08-11,Central,Technology,Phones,566.09,7,0.0,18.62,Same Day,151.06,4.9,0,566.09
+ORD-1244,CUST-219,Customer 19,2026-08-22,West,Office Supplies,Binders,37.04,8,0.2,27.12,Same Day,-13.81,2.7,0,29.63
+ORD-1245,CUST-220,Customer 20,2026-08-26,South,Technology,Copiers,2076.9,5,0.0,8.28,Second Class,723.6,3.9,0,2076.9
+ORD-1246,CUST-221,Customer 21,2026-08-25,East,Office Supplies,Binders,31.26,6,0.0,5.21,First Class,4.17,4.0,0,31.26
+ORD-1247,CUST-222,Customer 22,2026-08-18,Central,Technology,Phones,543.7,2,0.4,27.28,Same Day,-163.15,2.0,1,326.22
+ORD-1248,CUST-223,Customer 23,2026-08-24,West,Office Supplies,Storage,198.18,6,0.0,16.67,Same Day,29.0,4.6,0,198.18
+ORD-1249,CUST-224,Customer 24,2026-08-05,East,Office Supplies,Storage,169.65,3,0.05,10.55,First Class,14.44,3.7,0,161.17
+ORD-1250,CUST-225,Customer 25,2026-08-21,West,Technology,Accessories,121.6,5,0.4,36.31,First Class,-43.71,2.3,1,72.96
+ORD-1251,CUST-226,Customer 26,2026-08-20,South,Office Supplies,Storage,133.24,4,0.05,17.19,Same Day,7.78,3.8,0,126.58
+ORD-1252,CUST-227,Customer 27,2026-08-06,South,Furniture,Tables,508.38,6,0.05,17.02,Second Class,-1.72,2.8,0,482.96
+ORD-1253,CUST-228,Customer 28,2026-08-13,South,Furniture,Tables,830.64,8,0.1,18.04,First Class,-57.05,3.4,0,747.58
+ORD-1254,CUST-229,Customer 29,2026-08-23,Central,Technology,Copiers,1747.56,4,0.5,12.2,Standard Class,-616.53,3.7,0,873.78
+ORD-1255,CUST-230,Customer 30,2026-08-08,East,Furniture,Tables,741.38,2,0.3,31.92,Second Class,-264.84,3.1,0,518.97
+ORD-1256,CUST-231,Customer 31,2026-08-18,Central,Office Supplies,Paper,67.34,7,0.0,22.96,Same Day,5.63,4.2,0,67.34
+ORD-1257,CUST-232,Customer 32,2026-08-22,South,Office Supplies,Paper,62.1,6,0.5,28.75,Standard Class,-41.31,2.0,1,31.05
+ORD-1258,CUST-233,Customer 33,2026-08-14,Central,Technology,Copiers,1701.15,1,0.3,43.67,First Class,-136.55,3.7,0,1190.81
+ORD-1259,CUST-234,Customer 34,2026-08-25,West,Technology,Phones,561.0,5,0.5,27.32,Second Class,-246.55,2.7,0,280.5
+ORD-1260,CUST-235,Customer 35,2026-08-24,East,Furniture,Chairs,186.56,8,0.3,41.82,Standard Class,-72.7,2.0,0,130.59
+ORD-1261,CUST-236,Customer 36,2026-08-15,East,Furniture,Tables,523.2,6,0.1,25.84,First Class,-41.73,2.8,0,470.88
+ORD-1262,CUST-237,Customer 37,2026-08-22,South,Furniture,Chairs,165.65,5,0.0,5.9,First Class,17.52,4.4,0,165.65
+ORD-1263,CUST-238,Customer 38,2026-08-13,East,Office Supplies,Paper,53.1,3,0.2,27.39,Same Day,-14.14,2.3,0,42.48
+ORD-1264,CUST-239,Customer 39,2026-08-23,East,Technology,Copiers,1432.9,7,0.1,22.98,Same Day,291.72,3.9,0,1289.61
+ORD-1265,CUST-240,Customer 40,2026-08-22,East,Technology,Accessories,148.14,2,0.5,12.48,First Class,-61.29,2.2,1,74.07
+ORD-1266,CUST-241,Customer 41,2026-08-15,South,Office Supplies,Storage,155.52,6,0.3,28.48,First Class,-48.72,2.5,0,108.86
+ORD-1267,CUST-242,Customer 42,2026-08-10,East,Office Supplies,Storage,207.0,5,0.0,31.88,First Class,24.51,3.4,0,207.0
+ORD-1268,CUST-243,Customer 43,2026-08-16,West,Technology,Accessories,136.83,3,0.3,28.86,Same Day,-25.23,2.6,0,95.78
+ORD-1269,CUST-244,Customer 44,2026-08-28,East,Office Supplies,Paper,37.36,8,0.05,17.58,Same Day,-1.43,3.0,0,35.49
+ORD-1270,CUST-245,Customer 45,2026-08-16,Central,Technology,Accessories,83.16,3,0.3,43.55,Same Day,-25.74,2.6,0,58.21
+ORD-1271,CUST-246,Customer 46,2026-08-09,South,Office Supplies,Binders,22.56,8,0.0,36.84,Second Class,-10.22,2.4,0,22.56
+ORD-1272,CUST-247,Customer 47,2026-08-18,East,Office Supplies,Binders,50.13,3,0.4,26.99,Standard Class,-28.84,2.9,0,30.08
+ORD-1273,CUST-248,Customer 48,2026-08-02,Central,Office Supplies,Paper,52.8,8,0.3,9.1,Second Class,-14.2,2.4,0,36.96
+ORD-1274,CUST-249,Customer 49,2026-08-24,South,Furniture,Tables,513.44,2,0.0,36.03,Second Class,26.66,3.6,0,513.44
+ORD-1275,CUST-250,Customer 50,2026-08-19,Central,Office Supplies,Storage,86.59,7,0.05,36.39,Second Class,-5.03,3.4,0,82.26
+ORD-1276,CUST-251,Customer 51,2026-08-17,Central,Office Supplies,Binders,29.55,3,0.15,16.57,First Class,-6.92,3.7,0,25.12
+ORD-1277,CUST-252,Customer 52,2026-08-23,West,Technology,Accessories,218.72,1,0.05,33.06,Second Class,41.46,3.6,0,207.78
+ORD-1278,CUST-253,Customer 53,2026-08-21,Central,Technology,Copiers,1583.12,7,0.15,30.11,Same Day,209.59,4.0,0,1345.65
+ORD-1279,CUST-254,Customer 54,2026-08-01,West,Furniture,Bookcases,328.4,5,0.2,23.19,Same Day,-68.39,2.5,0,262.72
+ORD-1280,CUST-255,Customer 55,2026-08-11,West,Office Supplies,Binders,53.28,6,0.5,20.91,Same Day,-35.0,3.4,0,26.64
+ORD-1281,CUST-256,Customer 56,2026-08-27,Central,Furniture,Bookcases,289.83,3,0.4,36.53,Standard Class,-147.93,1.9,0,173.9
+ORD-1282,CUST-257,Customer 57,2026-08-23,South,Technology,Phones,670.65,3,0.0,44.67,Same Day,169.91,3.6,0,670.65
+ORD-1283,CUST-258,Customer 58,2026-08-12,East,Office Supplies,Binders,54.36,3,0.15,8.73,First Class,-4.04,2.3,0,46.21
+ORD-1284,CUST-259,Customer 59,2026-08-01,East,Technology,Accessories,173.4,5,0.1,22.17,Standard Class,22.34,4.5,0,156.06
+ORD-1285,CUST-260,Customer 60,2026-08-04,East,Furniture,Chairs,357.78,3,0.5,32.2,Standard Class,-220.39,1.8,0,178.89
+ORD-1286,CUST-261,Customer 61,2026-08-12,South,Office Supplies,Paper,24.24,8,0.3,8.57,Standard Class,-8.28,2.0,0,16.97
+ORD-1287,CUST-262,Customer 62,2026-08-06,Central,Technology,Accessories,159.06,3,0.05,7.74,Standard Class,36.67,4.3,0,151.11
+ORD-1288,CUST-263,Customer 63,2026-08-03,South,Furniture,Bookcases,308.44,4,0.05,41.8,Same Day,-7.47,3.5,0,293.02
+ORD-1289,CUST-264,Customer 64,2026-08-21,West,Technology,Phones,625.8,7,0.3,17.58,Second Class,-94.64,2.3,0,438.06
+ORD-1290,CUST-265,Customer 65,2026-08-20,West,Technology,Copiers,2046.35,5,0.0,38.92,First Class,700.65,3.6,0,2046.35
+ORD-1291,CUST-266,Customer 66,2026-08-21,East,Office Supplies,Binders,44.1,5,0.1,24.8,Standard Class,-7.27,2.3,0,39.69
+ORD-1292,CUST-267,Customer 67,2026-08-22,West,Office Supplies,Paper,76.02,6,0.05,20.47,Same Day,3.21,3.9,0,72.22
+ORD-1293,CUST-268,Customer 68,2026-08-26,East,Furniture,Chairs,355.58,1,0.0,15.49,Standard Class,36.47,4.9,0,355.58
+ORD-1294,CUST-269,Customer 69,2026-08-10,South,Office Supplies,Binders,34.09,7,0.3,8.3,Second Class,-10.82,2.4,0,23.86
+ORD-1295,CUST-270,Customer 70,2026-08-14,West,Office Supplies,Paper,52.17,3,0.3,28.46,Standard Class,-21.82,2.4,0,36.52
+ORD-1296,CUST-271,Customer 71,2026-08-24,East,Technology,Phones,912.32,2,0.0,23.13,Standard Class,246.2,3.8,0,912.32
+ORD-1297,CUST-272,Customer 72,2026-08-26,East,Technology,Phones,800.76,3,0.05,24.86,First Class,158.22,4.1,0,760.72
+ORD-1298,CUST-273,Customer 73,2026-08-01,Central,Technology,Accessories,177.45,3,0.15,34.32,Standard Class,5.79,4.6,0,150.83
+ORD-1299,CUST-274,Customer 74,2026-08-28,Central,Furniture,Tables,407.76,2,0.0,24.85,First Class,22.68,3.3,0,407.76
+ORD-1300,CUST-200,Customer 0,2026-08-28,East,Furniture,Chairs,420.65,5,0.0,14.14,Standard Class,44.82,3.3,0,420.65
+ORD-1301,CUST-201,Customer 1,2026-08-23,West,Technology,Phones,632.0,8,0.05,12.16,Standard Class,127.86,4.2,0,600.4
+ORD-1302,CUST-202,Customer 2,2026-08-04,South,Technology,Accessories,120.76,4,0.2,15.85,Standard Class,-1.51,2.9,0,96.61
+ORD-1303,CUST-203,Customer 3,2026-08-10,West,Technology,Phones,927.04,1,0.0,40.08,First Class,243.54,4.6,0,927.04
+ORD-1304,CUST-204,Customer 4,2026-08-08,Central,Technology,Copiers,812.72,8,0.1,16.66,First Class,164.01,4.5,0,731.45
+ORD-1305,CUST-205,Customer 5,2026-08-14,South,Furniture,Bookcases,419.36,8,0.1,34.3,Second Class,-30.49,2.1,0,377.42
+ORD-1306,CUST-206,Customer 6,2026-08-13,West,Technology,Copiers,1817.52,6,0.0,43.04,Standard Class,618.92,4.6,0,1817.52
+ORD-1307,CUST-207,Customer 7,2026-08-03,Central,Technology,Phones,659.92,4,0.0,43.9,Second Class,167.22,4.5,0,659.92
+ORD-1308,CUST-208,Customer 8,2026-08-17,West,Technology,Copiers,1921.36,7,0.2,23.34,Standard Class,125.16,4.2,0,1537.09
+ORD-1309,CUST-209,Customer 9,2026-08-09,East,Office Supplies,Binders,41.64,2,0.0,22.4,Second Class,-0.63,2.3,0,41.64
+ORD-1310,CUST-210,Customer 10,2026-08-25,Central,Furniture,Bookcases,215.4,6,0.15,14.34,Second Class,-29.43,2.1,0,183.09
+ORD-1311,CUST-211,Customer 11,2026-08-07,West,Technology,Phones,674.79,3,0.2,21.26,First Class,-8.5,3.7,0,539.83
+ORD-1312,CUST-212,Customer 12,2026-08-23,South,Furniture,Tables,761.5,5,0.0,11.3,First Class,56.4,4.7,0,761.5
+ORD-1313,CUST-213,Customer 13,2026-08-22,West,Technology,Accessories,65.52,3,0.1,43.74,Same Day,-5.7,2.8,0,58.97
+ORD-1314,CUST-214,Customer 14,2026-08-26,Central,Furniture,Chairs,483.23,1,0.4,27.24,Second Class,-223.52,2.0,1,289.94
+ORD-1315,CUST-215,Customer 15,2026-08-21,East,Technology,Phones,865.19,1,0.1,10.23,Same Day,117.03,3.9,0,778.67
+ORD-1316,CUST-216,Customer 16,2026-08-21,West,Office Supplies,Storage,206.8,5,0.0,5.87,Standard Class,34.88,3.6,0,206.8
+ORD-1317,CUST-217,Customer 17,2026-08-01,South,Technology,Phones,511.26,6,0.4,7.03,Same Day,-145.96,3.4,0,306.76
+ORD-1318,CUST-218,Customer 18,2026-08-02,South,Office Supplies,Binders,30.93,3,0.05,16.0,Same Day,-2.38,3.6,0,29.38
+ORD-1319,CUST-219,Customer 19,2026-08-07,East,Office Supplies,Binders,33.52,8,0.5,24.16,Standard Class,-26.42,2.4,1,16.76
+ORD-1320,CUST-220,Customer 20,2026-08-19,East,Office Supplies,Storage,218.3,1,0.2,24.19,Same Day,-31.51,2.5,0,174.64
+ORD-1321,CUST-221,Customer 21,2026-08-16,Central,Furniture,Tables,265.65,3,0.1,6.17,First Class,-18.41,1.9,0,239.08
+ORD-1322,CUST-222,Customer 22,2026-08-08,Central,Office Supplies,Paper,26.01,3,0.1,15.66,Standard Class,-4.18,3.3,0,23.41
+ORD-1323,CUST-223,Customer 23,2026-08-01,South,Furniture,Chairs,232.8,3,0.2,37.25,First Class,-52.15,3.6,0,186.24
+ORD-1324,CUST-224,Customer 24,2026-08-06,Central,Office Supplies,Storage,150.09,3,0.1,38.47,Same Day,-9.38,2.9,0,135.08
+ORD-1325,CUST-225,Customer 25,2026-08-20,South,Technology,Phones,566.31,1,0.1,5.8,Same Day,76.96,3.2,0,509.68
+ORD-1326,CUST-226,Customer 26,2026-08-05,East,Technology,Accessories,206.19,3,0.2,7.38,Second Class,5.3,4.3,0,164.95
+ORD-1327,CUST-227,Customer 27,2026-08-05,West,Office Supplies,Binders,31.82,2,0.3,28.44,First Class,-18.38,2.4,0,22.27
+ORD-1328,CUST-228,Customer 28,2026-08-19,East,Office Supplies,Binders,44.24,8,0.05,33.29,First Class,-7.56,2.2,0,42.03
+ORD-1329,CUST-229,Customer 29,2026-08-25,East,Furniture,Tables,326.4,5,0.0,42.95,Same Day,8.93,4.7,0,326.4
+ORD-1330,CUST-230,Customer 30,2026-08-05,West,Technology,Copiers,2273.64,6,0.1,30.59,Standard Class,465.23,4.9,0,2046.28
+ORD-1331,CUST-231,Customer 31,2026-08-22,Central,Office Supplies,Paper,40.8,4,0.2,11.72,Standard Class,-7.14,3.4,0,32.64
+ORD-1332,CUST-232,Customer 32,2026-08-02,Central,Furniture,Chairs,223.4,5,0.0,19.02,Standard Class,19.2,4.5,0,223.4
+ORD-1333,CUST-233,Customer 33,2026-08-13,South,Furniture,Bookcases,410.76,7,0.3,24.72,Same Day,-141.33,2.5,0,287.53
+ORD-1334,CUST-234,Customer 34,2026-08-11,West,Furniture,Bookcases,168.8,4,0.0,36.97,Standard Class,2.09,3.7,0,168.8
+ORD-1335,CUST-235,Customer 35,2026-08-03,Central,Technology,Phones,535.08,6,0.3,11.44,Standard Class,-79.49,2.9,0,374.56
+ORD-1336,CUST-236,Customer 36,2026-08-14,Central,Office Supplies,Storage,172.72,8,0.3,42.7,Second Class,-58.53,3.0,0,120.9
+ORD-1337,CUST-237,Customer 37,2026-08-10,East,Technology,Phones,552.78,6,0.1,21.37,First Class,68.84,4.4,0,497.5
+ORD-1338,CUST-238,Customer 38,2026-08-27,East,Technology,Phones,735.91,7,0.4,11.14,First Class,-210.51,1.8,1,441.55
+ORD-1339,CUST-239,Customer 39,2026-08-10,South,Technology,Phones,553.48,1,0.15,44.08,Same Day,21.11,4.7,0,470.46
+ORD-1340,CUST-240,Customer 40,2026-08-15,South,Furniture,Tables,304.7,5,0.5,20.5,First Class,-197.11,3.6,0,152.35
+ORD-1341,CUST-241,Customer 41,2026-08-22,West,Furniture,Tables,408.08,8,0.15,27.57,Second Class,-64.08,3.3,0,346.87
+ORD-1342,CUST-242,Customer 42,2026-08-27,West,Technology,Copiers,2093.1,6,0.3,43.83,Second Class,-164.05,2.9,0,1465.17
+ORD-1343,CUST-243,Customer 43,2026-08-28,South,Office Supplies,Binders,40.8,8,0.1,24.05,Standard Class,-7.17,2.6,0,36.72
+ORD-1344,CUST-244,Customer 44,2026-08-05,West,Office Supplies,Storage,79.26,3,0.4,11.92,Second Class,-34.89,3.7,0,47.56
+ORD-1345,CUST-245,Customer 45,2026-08-24,West,Furniture,Chairs,220.64,7,0.05,38.36,First Class,-4.31,2.4,0,209.61
+ORD-1346,CUST-246,Customer 46,2026-08-20,West,Technology,Accessories,143.85,7,0.15,25.79,Standard Class,5.51,4.6,0,122.27
+ORD-1347,CUST-247,Customer 47,2026-08-28,South,Technology,Accessories,75.18,3,0.0,42.0,Standard Class,7.26,4.6,0,75.18
+ORD-1348,CUST-248,Customer 48,2026-08-22,Central,Furniture,Tables,642.88,7,0.4,6.5,First Class,-311.18,2.6,0,385.73
+ORD-1349,CUST-249,Customer 49,2026-08-01,South,Technology,Accessories,167.4,6,0.0,34.83,First Class,39.64,4.8,0,167.4
+ORD-1350,CUST-250,Customer 50,2026-08-24,Central,Furniture,Tables,755.7,5,0.0,43.9,Second Class,42.9,3.4,0,755.7
+ORD-1351,CUST-251,Customer 51,2026-08-14,South,Furniture,Tables,612.99,7,0.0,12.52,Second Class,44.03,4.8,0,612.99
+ORD-1352,CUST-252,Customer 52,2026-08-28,South,Office Supplies,Binders,38.19,1,0.05,7.62,Same Day,1.92,3.4,0,36.28
+ORD-1353,CUST-253,Customer 53,2026-08-23,West,Technology,Phones,868.48,4,0.1,6.32,Standard Class,119.06,4.9,0,781.63
+ORD-1354,CUST-254,Customer 54,2026-08-20,East,Furniture,Tables,553.04,8,0.0,32.25,Second Class,31.34,3.9,0,553.04
+ORD-1355,CUST-255,Customer 55,2026-08-13,South,Technology,Accessories,108.54,6,0.15,34.96,Standard Class,-2.04,2.4,0,92.26
+ORD-1356,CUST-256,Customer 56,2026-08-17,West,Technology,Copiers,2171.36,4,0.1,32.11,First Class,443.14,4.4,0,1954.22
+ORD-1357,CUST-257,Customer 57,2026-08-20,West,Office Supplies,Paper,74.72,8,0.05,29.05,Standard Class,-0.41,2.2,0,70.98
+ORD-1358,CUST-258,Customer 58,2026-08-15,Central,Office Supplies,Storage,127.8,5,0.3,39.06,Same Day,-46.3,2.3,0,89.46
+ORD-1359,CUST-259,Customer 59,2026-08-20,Central,Office Supplies,Storage,153.51,7,0.0,25.46,First Class,17.45,4.2,0,153.51
+ORD-1360,CUST-260,Customer 60,2026-08-09,Central,Furniture,Bookcases,264.52,2,0.2,44.53,First Class,-65.43,3.5,0,211.62
+ORD-1361,CUST-261,Customer 61,2026-08-21,Central,Technology,Phones,899.84,4,0.3,31.42,Second Class,-138.55,3.2,0,629.89
+ORD-1362,CUST-262,Customer 62,2026-08-23,South,Furniture,Tables,492.73,7,0.0,28.32,Second Class,28.09,3.8,0,492.73
+ORD-1363,CUST-263,Customer 63,2026-08-18,East,Office Supplies,Storage,205.04,8,0.2,25.29,Second Class,-30.62,3.5,0,164.03
+ORD-1364,CUST-264,Customer 64,2026-08-11,East,Furniture,Chairs,194.8,8,0.15,34.01,Second Class,-31.14,3.7,0,165.58
+ORD-1365,CUST-265,Customer 65,2026-08-19,West,Technology,Accessories,176.52,4,0.15,21.82,First Class,10.69,3.9,0,150.04
+ORD-1366,CUST-266,Customer 66,2026-08-28,Central,Furniture,Chairs,168.8,8,0.0,23.89,Second Class,10.7,4.1,0,168.8
+ORD-1367,CUST-267,Customer 67,2026-08-19,South,Office Supplies,Binders,17.43,7,0.05,10.49,Second Class,-1.93,2.5,0,16.56
+ORD-1368,CUST-268,Customer 68,2026-08-15,South,Technology,Accessories,182.43,3,0.4,18.31,Second Class,-51.11,2.4,1,109.46
+ORD-1369,CUST-269,Customer 69,2026-08-13,Central,Technology,Phones,694.8,3,0.0,10.18,Same Day,190.47,4.3,0,694.8
+ORD-1370,CUST-270,Customer 70,2026-08-25,South,Furniture,Tables,272.64,1,0.1,34.23,Standard Class,-30.05,3.6,0,245.38
+ORD-1371,CUST-271,Customer 71,2026-08-04,East,Technology,Copiers,1802.7,1,0.1,14.05,First Class,372.95,3.8,0,1622.43
+ORD-1372,CUST-272,Customer 72,2026-08-17,South,Office Supplies,Storage,86.7,5,0.0,16.93,First Class,8.83,4.0,0,86.7
+ORD-1373,CUST-273,Customer 73,2026-08-26,Central,Furniture,Bookcases,222.81,3,0.4,19.37,Second Class,-110.24,2.1,0,133.69
+ORD-1374,CUST-274,Customer 74,2026-08-06,South,Technology,Phones,813.6,4,0.05,13.45,Standard Class,165.48,4.3,0,772.92
+ORD-1375,CUST-200,Customer 0,2026-08-02,West,Furniture,Bookcases,232.56,1,0.15,35.85,Standard Class,-39.92,3.0,0,197.68
+ORD-1376,CUST-201,Customer 1,2026-08-16,West,Office Supplies,Paper,61.38,1,0.3,22.77,Standard Class,-21.38,2.9,0,42.97
+ORD-1377,CUST-202,Customer 2,2026-08-23,East,Technology,Copiers,1281.79,1,0.0,31.5,First Class,436.03,4.3,0,1281.79
+ORD-1378,CUST-203,Customer 3,2026-08-27,East,Furniture,Chairs,248.94,2,0.0,24.91,Second Class,19.91,4.6,0,248.94
+ORD-1379,CUST-204,Customer 4,2026-08-16,East,Furniture,Bookcases,208.6,7,0.0,26.93,Second Class,10.09,4.4,0,208.6
+ORD-1380,CUST-205,Customer 5,2026-08-03,Central,Technology,Phones,785.82,1,0.0,38.41,Same Day,204.67,3.5,0,785.82
+ORD-1381,CUST-206,Customer 6,2026-08-02,West,Office Supplies,Storage,204.76,2,0.1,23.27,First Class,-1.12,2.3,0,184.28
+ORD-1382,CUST-207,Customer 7,2026-08-25,West,Technology,Phones,630.1,5,0.2,22.04,Standard Class,-8.82,2.0,0,504.08
+ORD-1383,CUST-208,Customer 8,2026-08-27,West,Technology,Phones,614.34,3,0.4,43.2,First Class,-189.3,3.6,1,368.6
+ORD-1384,CUST-209,Customer 9,2026-08-14,Central,Technology,Phones,650.16,7,0.4,15.87,Same Day,-188.39,3.2,0,390.1
+ORD-1385,CUST-210,Customer 10,2026-08-22,East,Technology,Phones,940.78,1,0.05,9.15,Same Day,193.9,4.6,0,893.74
+ORD-1386,CUST-211,Customer 11,2026-08-16,South,Technology,Copiers,2046.66,7,0.0,39.5,Second Class,700.53,4.1,0,2046.66
+ORD-1387,CUST-212,Customer 12,2026-08-22,West,Furniture,Tables,288.0,1,0.2,5.49,Second Class,-59.8,3.8,0,230.4
+ORD-1388,CUST-213,Customer 13,2026-08-27,Central,Office Supplies,Storage,129.26,2,0.1,24.28,Same Day,-4.54,2.1,0,116.33
+ORD-1389,CUST-214,Customer 14,2026-08-08,West,Technology,Copiers,1608.9,3,0.4,39.07,Second Class,-353.5,1.9,0,965.34
+ORD-1390,CUST-215,Customer 15,2026-08-15,Central,Furniture,Chairs,342.68,4,0.3,21.13,Second Class,-111.26,2.0,0,239.88
+ORD-1391,CUST-216,Customer 16,2026-08-18,South,Technology,Accessories,103.76,8,0.4,34.81,Standard Class,-38.83,2.0,0,62.26
+ORD-1392,CUST-217,Customer 17,2026-08-02,West,Technology,Copiers,2224.2,5,0.5,13.27,Same Day,-783.78,3.7,0,1112.1
+ORD-1393,CUST-218,Customer 18,2026-08-22,East,Furniture,Tables,680.0,8,0.2,33.64,Standard Class,-149.46,2.0,0,544.0
+ORD-1394,CUST-219,Customer 19,2026-08-02,East,Technology,Accessories,191.1,6,0.15,26.91,First Class,10.26,4.5,0,162.44
+ORD-1395,CUST-220,Customer 20,2026-08-27,East,Furniture,Chairs,187.46,7,0.1,12.5,Same Day,-8.75,2.2,0,168.71
+ORD-1396,CUST-221,Customer 21,2026-08-15,East,Office Supplies,Binders,49.08,2,0.0,42.07,Standard Class,-7.01,3.3,0,49.08
+ORD-1397,CUST-222,Customer 22,2026-08-14,South,Office Supplies,Storage,214.23,3,0.0,26.21,Standard Class,28.08,4.2,0,214.23
+ORD-1398,CUST-223,Customer 23,2026-08-13,South,Office Supplies,Paper,63.84,3,0.05,9.14,First Class,5.92,4.1,0,60.65
+ORD-1399,CUST-224,Customer 24,2026-08-05,South,Office Supplies,Storage,103.76,4,0.2,43.82,Same Day,-27.9,3.4,0,83.01
+ORD-1400,CUST-225,Customer 25,2026-08-10,South,Office Supplies,Storage,194.9,5,0.5,39.43,Second Class,-117.12,2.2,0,97.45

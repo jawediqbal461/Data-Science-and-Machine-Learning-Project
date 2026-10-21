@@ -1,0 +1,7 @@
+{
+  "name": "Data Science & ML Capstone Platform",
+  "description": "Streamlit Data Science Capstone platform with Multi-Source Data Ingestion (Bundled CSV, File Upload, Webhook HMAC, DB, REST API), Sales Analytics & Profit Prediction, Customer Churn, and HR Attrition.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

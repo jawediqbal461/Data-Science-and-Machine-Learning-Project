@@ -1,0 +1,401 @@
+Customer_ID,Customer_Name,Signup_Date,Gender,Senior_Citizen,Partner,Dependents,Tenure_Months,Contract_Type,Monthly_Charges,Total_Charges,Payment_Method,Paperless_Billing,Internet_Service,Tech_Support,Online_Security,Support_Tickets,Complaints,Satisfaction_Score,NPS,Churned
+CUST-CH-1001,Subscriber 1,2024-11-12,Male,0,Yes,No,60,One year,53.46,3214.41,Credit card (automatic),No,Fiber optic,Yes,Yes,0,1,4,8,No
+CUST-CH-1002,Subscriber 2,2024-11-02,Male,0,Yes,No,21,One year,99.74,2108.71,Bank transfer (automatic),Yes,No,Yes,No,1,0,5,10,No
+CUST-CH-1003,Subscriber 3,2024-11-24,Male,0,No,Yes,13,Month-to-month,95.89,1246.64,Electronic check,No,Fiber optic,No,No,4,0,4,8,Yes
+CUST-CH-1004,Subscriber 4,2024-05-07,Female,0,No,Yes,24,One year,47.95,1147.01,Electronic check,Yes,DSL,Yes,No,0,1,4,8,No
+CUST-CH-1005,Subscriber 5,2024-05-05,Male,0,No,Yes,12,Month-to-month,109.06,1300.12,Bank transfer (automatic),Yes,No,No,No,6,2,2,4,Yes
+CUST-CH-1006,Subscriber 6,2024-12-11,Male,0,Yes,Yes,9,Month-to-month,58.32,527.11,Mailed check,No,Fiber optic,No,No,1,1,4,8,No
+CUST-CH-1007,Subscriber 7,2024-11-01,Male,0,No,Yes,51,Two year,107.27,5469.3,Electronic check,No,Fiber optic,Yes,No,1,1,4,8,Yes
+CUST-CH-1008,Subscriber 8,2024-09-27,Female,0,No,No,15,Month-to-month,81.9,1229.71,Electronic check,Yes,DSL,Yes,Yes,1,0,5,10,No
+CUST-CH-1009,Subscriber 9,2024-07-27,Male,0,No,Yes,21,One year,22.26,482.55,Electronic check,Yes,DSL,Yes,Yes,1,0,5,10,No
+CUST-CH-1010,Subscriber 10,2024-04-09,Female,0,No,No,7,Month-to-month,83.96,596.44,Electronic check,Yes,No,Yes,No,4,0,4,8,Yes
+CUST-CH-1011,Subscriber 11,2024-11-10,Male,0,No,No,11,Month-to-month,22.93,247.7,Mailed check,Yes,No,No,No,5,1,3,6,Yes
+CUST-CH-1012,Subscriber 12,2024-12-21,Female,0,Yes,Yes,1,Month-to-month,74.41,78.2,Electronic check,No,DSL,No,Yes,3,1,3,6,Yes
+CUST-CH-1013,Subscriber 13,2024-04-20,Female,0,Yes,Yes,47,Two year,63.82,3008.78,Bank transfer (automatic),Yes,Fiber optic,Yes,Yes,2,1,4,8,No
+CUST-CH-1014,Subscriber 14,2024-06-05,Male,1,Yes,Yes,8,Month-to-month,51.19,422.6,Mailed check,No,Fiber optic,No,Yes,0,1,4,8,Yes
+CUST-CH-1015,Subscriber 15,2024-04-23,Female,0,No,Yes,33,One year,103.4,3418.4,Bank transfer (automatic),No,Fiber optic,Yes,Yes,2,0,5,10,No
+CUST-CH-1016,Subscriber 16,2024-03-18,Male,0,Yes,Yes,44,Two year,80.0,3538.44,Credit card (automatic),Yes,DSL,No,No,2,0,5,10,No
+CUST-CH-1017,Subscriber 17,2024-04-25,Female,1,Yes,No,1,Month-to-month,82.95,102.63,Mailed check,Yes,Fiber optic,Yes,Yes,4,1,3,6,Yes
+CUST-CH-1018,Subscriber 18,2024-08-12,Male,0,No,Yes,6,Month-to-month,42.23,266.78,Bank transfer (automatic),No,Fiber optic,No,Yes,0,1,4,8,Yes
+CUST-CH-1019,Subscriber 19,2024-09-21,Female,0,No,Yes,7,Month-to-month,54.7,395.77,Electronic check,No,Fiber optic,Yes,No,2,1,4,8,Yes
+CUST-CH-1020,Subscriber 20,2024-08-20,Male,0,Yes,No,2,Month-to-month,68.88,137.59,Mailed check,Yes,DSL,No,Yes,5,1,3,6,Yes
+CUST-CH-1021,Subscriber 21,2024-06-24,Male,0,No,No,3,Month-to-month,81.49,248.85,Mailed check,Yes,DSL,Yes,Yes,5,0,4,8,No
+CUST-CH-1022,Subscriber 22,2024-03-02,Male,0,Yes,No,48,One year,80.57,3888.11,Bank transfer (automatic),Yes,DSL,No,No,1,0,5,10,No
+CUST-CH-1023,Subscriber 23,2024-07-20,Male,0,Yes,No,11,Month-to-month,52.55,583.92,Electronic check,Yes,Fiber optic,No,Yes,0,0,5,10,Yes
+CUST-CH-1024,Subscriber 24,2024-09-22,Female,0,Yes,Yes,10,Month-to-month,76.98,790.52,Electronic check,Yes,Fiber optic,Yes,Yes,6,3,1,2,Yes
+CUST-CH-1025,Subscriber 25,2024-06-28,Male,0,No,Yes,42,Two year,95.01,3993.76,Electronic check,No,DSL,No,No,0,0,5,10,No
+CUST-CH-1026,Subscriber 26,2024-09-14,Female,0,Yes,Yes,7,Month-to-month,82.18,589.33,Bank transfer (automatic),No,Fiber optic,Yes,Yes,3,2,2,4,Yes
+CUST-CH-1027,Subscriber 27,2024-09-14,Female,0,No,Yes,13,Month-to-month,72.97,944.87,Credit card (automatic),No,Fiber optic,No,No,5,1,3,6,No
+CUST-CH-1028,Subscriber 28,2024-11-04,Male,0,Yes,Yes,7,Month-to-month,94.68,680.79,Electronic check,Yes,Fiber optic,Yes,Yes,6,1,3,6,Yes
+CUST-CH-1029,Subscriber 29,2024-10-14,Male,1,Yes,No,1,Month-to-month,88.83,111.4,Credit card (automatic),No,No,Yes,Yes,5,3,1,2,Yes
+CUST-CH-1030,Subscriber 30,2024-04-28,Female,0,Yes,Yes,35,One year,42.73,1485.56,Mailed check,Yes,Fiber optic,No,No,2,1,4,8,No
+CUST-CH-1031,Subscriber 31,2024-04-17,Male,0,Yes,Yes,12,Month-to-month,98.83,1207.99,Bank transfer (automatic),No,Fiber optic,Yes,Yes,3,3,1,2,Yes
+CUST-CH-1032,Subscriber 32,2024-05-06,Female,0,Yes,No,2,Month-to-month,96.28,216.04,Bank transfer (automatic),No,Fiber optic,No,Yes,6,2,2,4,Yes
+CUST-CH-1033,Subscriber 33,2024-08-22,Female,0,Yes,No,2,Month-to-month,56.35,130.3,Mailed check,Yes,Fiber optic,No,No,4,0,4,8,No
+CUST-CH-1034,Subscriber 34,2024-05-08,Female,1,No,Yes,23,One year,65.27,1503.58,Bank transfer (automatic),Yes,No,Yes,No,2,0,5,10,No
+CUST-CH-1035,Subscriber 35,2024-04-28,Female,0,Yes,Yes,34,Two year,34.82,1177.61,Electronic check,No,No,Yes,Yes,1,1,4,8,No
+CUST-CH-1036,Subscriber 36,2024-08-19,Female,0,No,No,10,Month-to-month,32.18,330.2,Credit card (automatic),No,No,Yes,No,3,1,3,6,Yes
+CUST-CH-1037,Subscriber 37,2024-02-23,Female,0,Yes,Yes,36,One year,75.2,2708.59,Bank transfer (automatic),Yes,No,No,Yes,1,1,4,8,No
+CUST-CH-1038,Subscriber 38,2024-06-12,Male,0,Yes,No,35,One year,54.68,1917.82,Credit card (automatic),Yes,No,Yes,Yes,0,1,4,8,No
+CUST-CH-1039,Subscriber 39,2024-09-14,Female,0,Yes,No,23,Two year,60.04,1375.63,Bank transfer (automatic),No,Fiber optic,No,Yes,1,0,5,10,No
+CUST-CH-1040,Subscriber 40,2024-01-07,Female,0,Yes,No,28,One year,54.29,1529.73,Bank transfer (automatic),No,DSL,No,Yes,1,0,5,10,No
+CUST-CH-1041,Subscriber 41,2024-11-21,Male,0,No,No,9,Month-to-month,66.31,612.57,Electronic check,No,No,No,No,5,1,3,6,No
+CUST-CH-1042,Subscriber 42,2024-11-26,Female,0,No,Yes,6,Month-to-month,41.68,251.17,Bank transfer (automatic),No,No,No,No,3,2,2,4,Yes
+CUST-CH-1043,Subscriber 43,2024-09-15,Female,0,Yes,Yes,54,One year,43.91,2387.18,Electronic check,Yes,DSL,No,Yes,0,0,5,10,No
+CUST-CH-1044,Subscriber 44,2024-08-18,Male,1,No,Yes,10,Month-to-month,34.75,360.42,Credit card (automatic),No,DSL,Yes,No,3,1,3,6,Yes
+CUST-CH-1045,Subscriber 45,2024-03-01,Male,0,No,No,14,Month-to-month,71.36,998.57,Credit card (automatic),Yes,No,Yes,No,5,3,1,2,Yes
+CUST-CH-1046,Subscriber 46,2024-11-18,Female,0,No,Yes,40,Two year,49.25,1974.43,Mailed check,No,DSL,Yes,Yes,1,1,4,8,No
+CUST-CH-1047,Subscriber 47,2024-01-23,Female,0,No,No,7,Month-to-month,95.81,681.57,Electronic check,No,DSL,No,No,3,1,3,6,Yes
+CUST-CH-1048,Subscriber 48,2024-12-21,Female,0,Yes,No,11,Month-to-month,42.76,487.12,Bank transfer (automatic),No,No,No,No,1,0,5,10,Yes
+CUST-CH-1049,Subscriber 49,2024-05-04,Female,0,No,No,1,Month-to-month,34.45,58.39,Electronic check,Yes,DSL,No,No,1,1,4,8,No
+CUST-CH-1050,Subscriber 50,2024-04-03,Male,1,Yes,No,13,Month-to-month,95.95,1272.28,Credit card (automatic),Yes,Fiber optic,Yes,Yes,0,1,4,8,No
+CUST-CH-1051,Subscriber 51,2024-02-18,Female,0,No,No,19,Two year,112.59,2154.22,Credit card (automatic),No,DSL,Yes,Yes,1,0,5,10,No
+CUST-CH-1052,Subscriber 52,2024-04-16,Female,0,No,No,12,Month-to-month,24.01,310.93,Electronic check,No,Fiber optic,No,Yes,2,0,5,10,No
+CUST-CH-1053,Subscriber 53,2024-04-04,Male,0,No,Yes,5,Month-to-month,75.55,381.6,Mailed check,Yes,DSL,No,Yes,2,0,5,10,Yes
+CUST-CH-1054,Subscriber 54,2024-08-03,Female,0,Yes,Yes,3,Month-to-month,86.63,277.59,Mailed check,No,DSL,No,No,6,3,1,2,Yes
+CUST-CH-1055,Subscriber 55,2024-01-23,Female,0,Yes,No,43,Two year,87.13,3756.16,Credit card (automatic),Yes,No,Yes,No,1,1,4,8,No
+CUST-CH-1056,Subscriber 56,2024-10-28,Male,1,Yes,No,5,Month-to-month,71.45,363.14,Credit card (automatic),Yes,DSL,No,Yes,2,0,5,10,No
+CUST-CH-1057,Subscriber 57,2024-09-27,Female,0,No,Yes,32,One year,58.93,1887.03,Electronic check,Yes,DSL,Yes,Yes,0,0,5,10,No
+CUST-CH-1058,Subscriber 58,2024-04-04,Male,0,No,No,12,Month-to-month,76.08,904.68,Mailed check,Yes,DSL,Yes,No,6,0,4,8,Yes
+CUST-CH-1059,Subscriber 59,2024-11-02,Female,0,No,No,15,One year,98.25,1473.05,Electronic check,Yes,Fiber optic,Yes,Yes,2,0,5,10,Yes
+CUST-CH-1060,Subscriber 60,2024-04-18,Female,0,Yes,Yes,47,One year,59.44,2787.37,Bank transfer (automatic),No,No,No,Yes,0,0,5,10,No
+CUST-CH-1061,Subscriber 61,2024-09-11,Male,0,No,No,47,Two year,114.19,5368.29,Bank transfer (automatic),No,No,No,No,2,0,5,10,No
+CUST-CH-1062,Subscriber 62,2024-04-13,Female,0,No,No,12,Two year,89.0,1092.4,Electronic check,Yes,Fiber optic,Yes,No,0,0,5,10,No
+CUST-CH-1063,Subscriber 63,2024-01-25,Female,0,Yes,Yes,6,Month-to-month,34.83,208.25,Mailed check,Yes,Fiber optic,No,Yes,4,3,1,2,Yes
+CUST-CH-1064,Subscriber 64,2024-04-24,Male,0,No,Yes,15,Month-to-month,85.51,1292.82,Electronic check,No,DSL,No,Yes,6,0,4,8,No
+CUST-CH-1065,Subscriber 65,2024-06-12,Female,0,Yes,Yes,50,One year,108.22,5423.19,Credit card (automatic),Yes,Fiber optic,Yes,No,2,0,5,10,No
+CUST-CH-1066,Subscriber 66,2024-12-08,Male,1,No,No,48,One year,67.95,3259.37,Bank transfer (automatic),No,DSL,Yes,No,0,1,4,8,No
+CUST-CH-1067,Subscriber 67,2024-01-18,Female,0,No,No,20,One year,92.39,1854.63,Mailed check,No,Fiber optic,Yes,Yes,0,0,5,10,No
+CUST-CH-1068,Subscriber 68,2024-07-11,Male,1,No,No,4,Month-to-month,50.47,212.67,Electronic check,No,DSL,No,No,4,1,3,6,Yes
+CUST-CH-1069,Subscriber 69,2024-04-07,Female,1,Yes,Yes,27,One year,110.15,2996.49,Bank transfer (automatic),Yes,Fiber optic,Yes,No,1,1,4,8,Yes
+CUST-CH-1070,Subscriber 70,2024-04-24,Male,0,No,No,21,One year,86.03,1820.02,Credit card (automatic),Yes,Fiber optic,Yes,Yes,1,0,5,10,No
+CUST-CH-1071,Subscriber 71,2024-10-09,Male,0,Yes,Yes,5,Month-to-month,82.98,436.85,Bank transfer (automatic),Yes,DSL,No,No,1,1,4,8,Yes
+CUST-CH-1072,Subscriber 72,2024-12-04,Female,0,Yes,Yes,8,Month-to-month,73.27,601.1,Electronic check,Yes,No,No,No,3,3,1,2,Yes
+CUST-CH-1073,Subscriber 73,2024-01-12,Female,0,No,Yes,44,Two year,46.21,2025.41,Bank transfer (automatic),No,DSL,No,Yes,0,1,4,8,No
+CUST-CH-1074,Subscriber 74,2024-11-05,Male,0,Yes,No,3,Month-to-month,60.51,182.46,Bank transfer (automatic),No,No,Yes,Yes,5,1,3,6,Yes
+CUST-CH-1075,Subscriber 75,2024-11-26,Male,0,No,Yes,15,Month-to-month,112.7,1685.58,Mailed check,No,DSL,Yes,Yes,2,0,5,10,No
+CUST-CH-1076,Subscriber 76,2024-06-14,Female,0,No,Yes,18,One year,32.5,575.92,Bank transfer (automatic),Yes,No,Yes,Yes,2,0,5,10,No
+CUST-CH-1077,Subscriber 77,2024-12-25,Female,1,No,No,7,Month-to-month,66.69,461.64,Mailed check,Yes,DSL,No,Yes,2,1,4,8,Yes
+CUST-CH-1078,Subscriber 78,2024-11-07,Male,1,No,No,41,One year,104.32,4282.08,Electronic check,No,No,No,No,2,0,5,10,No
+CUST-CH-1079,Subscriber 79,2024-08-15,Male,0,Yes,No,14,Two year,72.98,1029.78,Electronic check,Yes,Fiber optic,No,No,1,1,4,8,No
+CUST-CH-1080,Subscriber 80,2024-07-10,Male,0,Yes,No,40,Two year,28.59,1151.12,Mailed check,Yes,Fiber optic,No,No,1,0,5,10,No
+CUST-CH-1081,Subscriber 81,2024-10-23,Male,0,Yes,No,11,Month-to-month,106.18,1185.86,Electronic check,Yes,DSL,No,No,0,1,4,8,No
+CUST-CH-1082,Subscriber 82,2024-09-20,Male,0,No,Yes,33,One year,73.72,2445.84,Mailed check,Yes,DSL,Yes,Yes,1,1,4,8,No
+CUST-CH-1083,Subscriber 83,2024-08-10,Male,1,Yes,Yes,13,Month-to-month,44.05,578.7,Credit card (automatic),Yes,No,No,Yes,1,1,4,8,Yes
+CUST-CH-1084,Subscriber 84,2024-08-03,Male,0,No,Yes,3,Month-to-month,25.23,77.91,Mailed check,Yes,No,No,No,0,0,5,10,Yes
+CUST-CH-1085,Subscriber 85,2024-03-06,Female,0,Yes,No,35,One year,108.49,3790.41,Bank transfer (automatic),No,Fiber optic,No,Yes,1,0,5,10,No
+CUST-CH-1086,Subscriber 86,2024-03-04,Female,0,No,Yes,51,One year,25.53,1312.03,Electronic check,No,No,No,No,2,1,4,8,No
+CUST-CH-1087,Subscriber 87,2024-10-20,Female,0,No,No,3,Month-to-month,103.95,310.0,Bank transfer (automatic),Yes,DSL,Yes,Yes,3,0,4,8,No
+CUST-CH-1088,Subscriber 88,2024-04-26,Female,0,No,No,52,One year,40.17,2101.26,Bank transfer (automatic),No,DSL,No,No,2,1,4,8,No
+CUST-CH-1089,Subscriber 89,2024-02-22,Female,0,Yes,Yes,14,Month-to-month,52.1,742.94,Credit card (automatic),Yes,No,Yes,No,1,1,4,8,No
+CUST-CH-1090,Subscriber 90,2024-09-11,Female,0,No,Yes,31,Two year,73.67,2297.51,Electronic check,Yes,No,No,No,0,0,5,10,No
+CUST-CH-1091,Subscriber 91,2024-01-11,Female,0,Yes,No,2,Month-to-month,102.14,220.58,Bank transfer (automatic),Yes,Fiber optic,No,Yes,3,1,3,6,Yes
+CUST-CH-1092,Subscriber 92,2024-05-07,Female,0,No,Yes,17,One year,62.16,1047.59,Credit card (automatic),Yes,DSL,No,No,2,1,4,8,No
+CUST-CH-1093,Subscriber 93,2024-03-25,Male,0,Yes,Yes,41,One year,56.82,2349.89,Electronic check,Yes,Fiber optic,Yes,Yes,1,1,4,8,No
+CUST-CH-1094,Subscriber 94,2024-02-17,Female,1,No,Yes,4,Month-to-month,47.22,197.51,Credit card (automatic),Yes,Fiber optic,Yes,Yes,2,0,5,10,Yes
+CUST-CH-1095,Subscriber 95,2024-10-18,Male,0,No,No,12,Month-to-month,96.38,1166.65,Mailed check,Yes,Fiber optic,No,No,0,0,5,10,Yes
+CUST-CH-1096,Subscriber 96,2024-11-02,Male,0,Yes,No,12,Month-to-month,76.63,930.31,Credit card (automatic),No,Fiber optic,No,Yes,5,0,4,8,No
+CUST-CH-1097,Subscriber 97,2024-08-19,Male,1,No,Yes,11,Month-to-month,81.22,910.25,Credit card (automatic),Yes,DSL,Yes,No,2,1,4,8,Yes
+CUST-CH-1098,Subscriber 98,2024-11-11,Female,0,Yes,Yes,6,Month-to-month,65.47,412.42,Bank transfer (automatic),No,No,Yes,Yes,3,0,4,8,Yes
+CUST-CH-1099,Subscriber 99,2024-11-03,Female,0,No,No,4,Month-to-month,72.06,312.33,Credit card (automatic),Yes,Fiber optic,Yes,No,6,3,1,2,Yes
+CUST-CH-1100,Subscriber 100,2024-06-18,Male,0,Yes,No,10,Month-to-month,63.98,649.23,Credit card (automatic),Yes,Fiber optic,No,Yes,4,0,4,8,No
+CUST-CH-1101,Subscriber 101,2024-10-25,Female,0,Yes,Yes,3,Month-to-month,104.29,334.48,Electronic check,Yes,No,Yes,No,4,2,2,4,Yes
+CUST-CH-1102,Subscriber 102,2024-10-15,Male,0,No,No,55,One year,48.93,2714.17,Credit card (automatic),No,DSL,Yes,No,0,1,4,8,No
+CUST-CH-1103,Subscriber 103,2024-09-02,Male,0,No,Yes,13,Two year,42.35,565.13,Credit card (automatic),No,No,No,No,1,1,4,8,No
+CUST-CH-1104,Subscriber 104,2024-11-06,Female,1,No,No,21,Two year,47.4,1015.95,Mailed check,Yes,DSL,Yes,Yes,0,1,4,8,No
+CUST-CH-1105,Subscriber 105,2024-03-03,Male,0,No,No,56,Two year,77.42,4340.42,Mailed check,No,No,No,No,1,1,4,8,No
+CUST-CH-1106,Subscriber 106,2024-07-20,Male,0,Yes,No,9,Month-to-month,74.75,663.92,Electronic check,No,No,No,Yes,4,3,1,2,No
+CUST-CH-1107,Subscriber 107,2024-02-05,Female,0,Yes,Yes,11,Month-to-month,90.46,1018.67,Electronic check,No,No,Yes,No,4,0,4,8,Yes
+CUST-CH-1108,Subscriber 108,2024-09-16,Female,0,No,No,12,Month-to-month,107.67,1308.27,Bank transfer (automatic),Yes,No,No,Yes,4,0,4,8,Yes
+CUST-CH-1109,Subscriber 109,2024-05-26,Male,0,Yes,Yes,14,Month-to-month,94.46,1321.26,Bank transfer (automatic),No,Fiber optic,Yes,Yes,4,1,3,6,No
+CUST-CH-1110,Subscriber 110,2024-12-05,Female,0,Yes,No,27,One year,66.07,1801.87,Electronic check,No,DSL,Yes,Yes,1,1,4,8,No
+CUST-CH-1111,Subscriber 111,2024-04-22,Female,0,Yes,Yes,34,One year,25.16,854.69,Electronic check,Yes,DSL,No,No,1,1,4,8,No
+CUST-CH-1112,Subscriber 112,2024-09-08,Female,0,No,No,9,Month-to-month,102.68,914.54,Credit card (automatic),No,No,No,Yes,0,1,4,8,No
+CUST-CH-1113,Subscriber 113,2024-07-20,Female,0,No,Yes,10,Month-to-month,57.16,588.66,Mailed check,Yes,No,No,Yes,2,0,5,10,No
+CUST-CH-1114,Subscriber 114,2024-02-01,Female,1,Yes,No,12,Month-to-month,46.91,559.68,Electronic check,Yes,DSL,Yes,Yes,5,0,4,8,Yes
+CUST-CH-1115,Subscriber 115,2024-10-05,Female,0,Yes,Yes,28,One year,47.98,1356.56,Electronic check,No,Fiber optic,No,No,1,0,5,10,No
+CUST-CH-1116,Subscriber 116,2024-05-25,Male,0,No,Yes,14,Month-to-month,45.14,637.38,Credit card (automatic),Yes,No,No,Yes,5,3,1,2,Yes
+CUST-CH-1117,Subscriber 117,2024-09-25,Female,0,Yes,No,18,One year,23.31,412.04,Bank transfer (automatic),No,DSL,No,Yes,2,0,5,10,No
+CUST-CH-1118,Subscriber 118,2024-11-13,Female,1,No,No,44,One year,87.22,3854.66,Credit card (automatic),No,Fiber optic,Yes,Yes,0,1,4,8,No
+CUST-CH-1119,Subscriber 119,2024-08-04,Female,0,No,No,11,Month-to-month,28.61,323.42,Bank transfer (automatic),Yes,Fiber optic,No,Yes,1,0,5,10,No
+CUST-CH-1120,Subscriber 120,2024-11-07,Female,0,Yes,No,15,Month-to-month,80.12,1217.54,Mailed check,Yes,DSL,Yes,Yes,3,3,1,2,Yes
+CUST-CH-1121,Subscriber 121,2024-09-21,Female,0,No,Yes,1,Month-to-month,52.08,67.32,Credit card (automatic),Yes,DSL,No,Yes,5,1,3,6,No
+CUST-CH-1122,Subscriber 122,2024-01-24,Male,0,Yes,No,51,Two year,24.35,1256.4,Mailed check,Yes,DSL,Yes,No,0,1,4,8,No
+CUST-CH-1123,Subscriber 123,2024-10-03,Male,1,Yes,Yes,39,Two year,52.05,2049.21,Credit card (automatic),No,DSL,Yes,No,0,0,5,10,No
+CUST-CH-1124,Subscriber 124,2024-06-03,Male,0,No,Yes,47,One year,35.68,1675.49,Electronic check,Yes,DSL,No,Yes,0,1,4,8,No
+CUST-CH-1125,Subscriber 125,2024-01-06,Male,0,No,No,42,One year,85.77,3599.56,Bank transfer (automatic),No,Fiber optic,Yes,Yes,2,0,5,10,No
+CUST-CH-1126,Subscriber 126,2024-12-16,Male,0,No,No,9,Month-to-month,42.39,375.62,Electronic check,No,No,Yes,No,6,1,3,6,Yes
+CUST-CH-1127,Subscriber 127,2024-04-04,Male,0,No,No,11,Month-to-month,107.65,1176.04,Bank transfer (automatic),No,DSL,No,No,2,1,4,8,Yes
+CUST-CH-1128,Subscriber 128,2024-12-02,Male,1,Yes,No,2,Month-to-month,105.03,225.31,Bank transfer (automatic),No,DSL,No,Yes,6,0,4,8,Yes
+CUST-CH-1129,Subscriber 129,2024-02-08,Female,0,No,Yes,10,Month-to-month,66.02,681.37,Mailed check,Yes,No,No,Yes,3,2,2,4,Yes
+CUST-CH-1130,Subscriber 130,2024-12-07,Female,0,Yes,No,12,Month-to-month,74.02,888.06,Electronic check,No,Fiber optic,No,Yes,6,2,2,4,Yes
+CUST-CH-1131,Subscriber 131,2024-05-20,Male,0,Yes,Yes,14,Month-to-month,69.57,994.16,Mailed check,No,Fiber optic,No,Yes,5,3,1,2,Yes
+CUST-CH-1132,Subscriber 132,2024-04-08,Female,0,Yes,Yes,12,Two year,59.69,707.83,Credit card (automatic),Yes,Fiber optic,No,No,2,0,5,10,No
+CUST-CH-1133,Subscriber 133,2024-04-03,Male,0,No,Yes,5,Month-to-month,42.71,238.51,Electronic check,No,No,No,Yes,5,3,1,2,Yes
+CUST-CH-1134,Subscriber 134,2024-12-19,Male,0,No,Yes,37,Two year,37.57,1410.59,Credit card (automatic),Yes,No,Yes,No,2,1,4,8,No
+CUST-CH-1135,Subscriber 135,2024-05-14,Female,0,Yes,Yes,33,One year,89.9,2958.62,Bank transfer (automatic),Yes,DSL,No,No,1,0,5,10,No
+CUST-CH-1136,Subscriber 136,2024-03-21,Male,0,Yes,Yes,27,Two year,71.27,1937.01,Mailed check,Yes,Fiber optic,No,No,2,1,4,8,No
+CUST-CH-1137,Subscriber 137,2024-02-12,Female,0,Yes,No,55,One year,98.41,5434.03,Credit card (automatic),No,No,Yes,Yes,1,0,5,10,No
+CUST-CH-1138,Subscriber 138,2024-03-10,Male,1,No,Yes,43,One year,34.3,1472.05,Electronic check,No,Fiber optic,Yes,No,1,1,4,8,No
+CUST-CH-1139,Subscriber 139,2024-11-01,Female,0,Yes,Yes,45,Two year,81.24,3660.21,Bank transfer (automatic),No,Fiber optic,No,No,1,0,5,10,No
+CUST-CH-1140,Subscriber 140,2024-05-06,Female,0,No,No,15,One year,34.09,511.3,Mailed check,Yes,No,No,Yes,0,0,5,10,No
+CUST-CH-1141,Subscriber 141,2024-02-02,Female,0,No,No,4,Month-to-month,73.44,284.97,Bank transfer (automatic),No,DSL,No,No,4,1,3,6,Yes
+CUST-CH-1142,Subscriber 142,2024-02-01,Female,0,Yes,No,21,Two year,20.41,444.46,Bank transfer (automatic),No,Fiber optic,No,Yes,2,1,4,8,No
+CUST-CH-1143,Subscriber 143,2024-02-24,Female,0,Yes,Yes,7,Month-to-month,78.66,548.33,Bank transfer (automatic),Yes,Fiber optic,Yes,Yes,4,1,3,6,Yes
+CUST-CH-1144,Subscriber 144,2024-05-07,Male,1,No,Yes,37,Two year,38.47,1424.51,Electronic check,No,Fiber optic,Yes,No,1,1,4,8,No
+CUST-CH-1145,Subscriber 145,2024-05-12,Female,0,No,Yes,15,Month-to-month,62.2,957.74,Credit card (automatic),No,DSL,No,No,1,0,5,10,Yes
+CUST-CH-1146,Subscriber 146,2024-05-16,Female,1,No,Yes,11,Month-to-month,106.87,1180.08,Credit card (automatic),Yes,DSL,Yes,No,2,1,4,8,Yes
+CUST-CH-1147,Subscriber 147,2024-05-27,Female,0,No,Yes,1,Month-to-month,34.63,35.14,Credit card (automatic),Yes,No,No,No,1,1,4,8,No
+CUST-CH-1148,Subscriber 148,2024-11-08,Male,1,No,No,16,Two year,76.89,1232.9,Credit card (automatic),No,Fiber optic,No,Yes,1,0,5,10,No
+CUST-CH-1149,Subscriber 149,2024-03-19,Male,1,No,Yes,1,Month-to-month,45.9,50.58,Bank transfer (automatic),Yes,Fiber optic,No,Yes,4,1,3,6,Yes
+CUST-CH-1150,Subscriber 150,2024-03-25,Male,0,Yes,No,55,Two year,95.99,5278.95,Bank transfer (automatic),Yes,No,No,Yes,0,0,5,10,No
+CUST-CH-1151,Subscriber 151,2024-06-25,Female,0,Yes,Yes,9,Month-to-month,41.01,365.68,Electronic check,No,Fiber optic,Yes,Yes,6,1,3,6,No
+CUST-CH-1152,Subscriber 152,2024-08-12,Female,0,Yes,No,50,Two year,69.7,3508.95,Mailed check,No,DSL,Yes,Yes,0,0,5,10,No
+CUST-CH-1153,Subscriber 153,2024-05-05,Male,1,Yes,No,19,One year,27.38,537.33,Credit card (automatic),Yes,DSL,Yes,Yes,2,0,5,10,No
+CUST-CH-1154,Subscriber 154,2024-05-02,Male,0,Yes,Yes,50,One year,39.51,1997.04,Mailed check,No,DSL,Yes,Yes,2,1,4,8,No
+CUST-CH-1155,Subscriber 155,2024-06-12,Male,0,Yes,Yes,10,Month-to-month,92.51,933.61,Mailed check,No,DSL,Yes,Yes,1,1,4,8,Yes
+CUST-CH-1156,Subscriber 156,2024-10-06,Female,0,Yes,Yes,36,Two year,60.29,2178.44,Credit card (automatic),Yes,Fiber optic,Yes,No,0,0,5,10,No
+CUST-CH-1157,Subscriber 157,2024-06-23,Female,0,Yes,Yes,2,Month-to-month,56.55,119.09,Bank transfer (automatic),No,DSL,No,No,6,3,1,2,Yes
+CUST-CH-1158,Subscriber 158,2024-02-27,Female,0,No,Yes,11,Month-to-month,66.71,727.49,Credit card (automatic),Yes,DSL,Yes,No,3,0,4,8,No
+CUST-CH-1159,Subscriber 159,2024-03-03,Female,0,No,Yes,37,One year,31.66,1190.75,Credit card (automatic),No,No,No,No,1,1,4,8,No
+CUST-CH-1160,Subscriber 160,2024-07-16,Female,1,No,Yes,8,Month-to-month,67.24,549.91,Mailed check,Yes,DSL,Yes,Yes,3,0,4,8,No
+CUST-CH-1161,Subscriber 161,2024-07-20,Female,1,Yes,Yes,45,One year,92.92,4199.15,Mailed check,No,No,No,No,2,1,4,8,No
+CUST-CH-1162,Subscriber 162,2024-09-18,Male,0,Yes,No,19,Two year,56.44,1073.37,Credit card (automatic),No,Fiber optic,Yes,Yes,0,1,4,8,No
+CUST-CH-1163,Subscriber 163,2024-03-16,Female,1,No,No,48,One year,84.13,4051.34,Credit card (automatic),No,No,Yes,Yes,1,1,4,8,No
+CUST-CH-1164,Subscriber 164,2024-07-20,Female,0,No,No,10,Month-to-month,24.29,262.19,Bank transfer (automatic),Yes,No,No,No,0,1,4,8,Yes
+CUST-CH-1165,Subscriber 165,2024-06-14,Female,1,Yes,Yes,5,Month-to-month,76.29,403.31,Electronic check,No,DSL,No,Yes,0,1,4,8,Yes
+CUST-CH-1166,Subscriber 166,2024-11-28,Female,0,No,No,8,Month-to-month,75.86,631.38,Credit card (automatic),No,Fiber optic,Yes,No,0,0,5,10,Yes
+CUST-CH-1167,Subscriber 167,2024-09-26,Female,0,No,No,24,Two year,67.21,1632.7,Electronic check,Yes,Fiber optic,No,Yes,1,1,4,8,No
+CUST-CH-1168,Subscriber 168,2024-10-24,Male,0,Yes,No,10,Month-to-month,96.11,967.73,Mailed check,No,DSL,No,No,3,2,2,4,Yes
+CUST-CH-1169,Subscriber 169,2024-07-09,Female,0,Yes,Yes,45,One year,101.96,4598.39,Mailed check,No,Fiber optic,No,Yes,2,0,5,10,No
+CUST-CH-1170,Subscriber 170,2024-03-08,Male,0,No,No,14,Month-to-month,98.87,1376.43,Mailed check,No,Fiber optic,No,Yes,2,0,5,10,Yes
+CUST-CH-1171,Subscriber 171,2024-02-05,Male,1,No,No,7,Month-to-month,60.09,442.33,Mailed check,Yes,Fiber optic,Yes,Yes,2,1,4,8,No
+CUST-CH-1172,Subscriber 172,2024-03-21,Male,0,No,Yes,15,Month-to-month,27.97,430.61,Electronic check,No,Fiber optic,Yes,No,6,1,3,6,Yes
+CUST-CH-1173,Subscriber 173,2024-10-24,Male,0,No,No,27,Two year,76.98,2095.52,Bank transfer (automatic),No,No,No,Yes,1,0,5,10,No
+CUST-CH-1174,Subscriber 174,2024-03-07,Female,0,No,Yes,6,Month-to-month,86.46,512.71,Credit card (automatic),No,No,Yes,No,6,1,3,6,Yes
+CUST-CH-1175,Subscriber 175,2024-12-12,Female,1,Yes,Yes,54,One year,42.77,2318.93,Bank transfer (automatic),No,No,Yes,Yes,1,1,4,8,Yes
+CUST-CH-1176,Subscriber 176,2024-07-09,Female,1,Yes,No,15,Month-to-month,35.22,533.66,Bank transfer (automatic),No,DSL,No,Yes,6,3,1,2,Yes
+CUST-CH-1177,Subscriber 177,2024-07-27,Female,0,Yes,Yes,44,One year,26.3,1161.93,Bank transfer (automatic),No,No,Yes,Yes,2,0,5,10,No
+CUST-CH-1178,Subscriber 178,2024-11-05,Male,0,No,No,19,One year,34.99,672.88,Mailed check,No,Fiber optic,No,No,2,0,5,10,No
+CUST-CH-1179,Subscriber 179,2024-11-19,Female,0,Yes,Yes,3,Month-to-month,57.38,175.35,Mailed check,Yes,DSL,Yes,Yes,3,1,3,6,Yes
+CUST-CH-1180,Subscriber 180,2024-03-02,Female,0,No,Yes,6,Month-to-month,36.16,226.81,Electronic check,No,Fiber optic,No,Yes,1,0,5,10,Yes
+CUST-CH-1181,Subscriber 181,2024-05-10,Female,0,No,Yes,30,One year,89.04,2667.83,Mailed check,No,DSL,Yes,No,1,0,5,10,No
+CUST-CH-1182,Subscriber 182,2024-04-12,Female,1,No,Yes,56,Two year,57.77,3232.55,Credit card (automatic),No,No,No,Yes,0,0,5,10,No
+CUST-CH-1183,Subscriber 183,2024-04-16,Female,0,Yes,Yes,10,Month-to-month,56.19,586.11,Bank transfer (automatic),Yes,No,Yes,Yes,2,0,5,10,No
+CUST-CH-1184,Subscriber 184,2024-06-15,Male,1,No,Yes,6,Month-to-month,24.2,139.68,Bank transfer (automatic),No,Fiber optic,No,No,4,2,2,4,Yes
+CUST-CH-1185,Subscriber 185,2024-07-06,Female,0,No,Yes,54,One year,80.48,4351.32,Mailed check,Yes,DSL,Yes,Yes,0,1,4,8,No
+CUST-CH-1186,Subscriber 186,2024-12-15,Female,1,No,Yes,12,Month-to-month,73.28,885.38,Electronic check,Yes,DSL,No,Yes,1,1,4,8,Yes
+CUST-CH-1187,Subscriber 187,2024-03-24,Female,0,Yes,Yes,10,Month-to-month,37.15,393.71,Mailed check,No,No,Yes,No,0,1,4,8,No
+CUST-CH-1188,Subscriber 188,2024-11-04,Female,0,Yes,No,2,Month-to-month,63.72,142.21,Credit card (automatic),No,No,No,Yes,2,0,5,10,No
+CUST-CH-1189,Subscriber 189,2024-08-11,Male,0,Yes,No,1,Month-to-month,90.66,99.81,Credit card (automatic),Yes,Fiber optic,No,Yes,1,1,4,8,Yes
+CUST-CH-1190,Subscriber 190,2024-04-06,Female,0,No,Yes,8,Month-to-month,96.1,784.56,Bank transfer (automatic),Yes,Fiber optic,Yes,No,4,1,3,6,Yes
+CUST-CH-1191,Subscriber 191,2024-07-16,Female,0,No,Yes,35,One year,78.32,2746.39,Credit card (automatic),Yes,DSL,No,No,2,0,5,10,No
+CUST-CH-1192,Subscriber 192,2024-12-05,Female,0,Yes,No,2,Month-to-month,106.18,219.08,Mailed check,Yes,No,No,Yes,4,3,1,2,Yes
+CUST-CH-1193,Subscriber 193,2024-01-18,Male,0,Yes,No,8,Month-to-month,82.78,672.14,Bank transfer (automatic),No,Fiber optic,Yes,Yes,0,1,4,8,Yes
+CUST-CH-1194,Subscriber 194,2024-03-27,Female,1,No,No,12,Month-to-month,63.22,772.1,Bank transfer (automatic),No,DSL,Yes,Yes,0,1,4,8,No
+CUST-CH-1195,Subscriber 195,2024-02-14,Male,1,Yes,Yes,8,Month-to-month,63.72,513.94,Credit card (automatic),No,No,No,No,6,2,2,4,Yes
+CUST-CH-1196,Subscriber 196,2024-03-01,Male,1,Yes,Yes,25,Two year,65.71,1637.83,Mailed check,No,No,Yes,Yes,1,1,4,8,No
+CUST-CH-1197,Subscriber 197,2024-07-01,Male,0,Yes,No,42,Two year,21.86,923.85,Mailed check,Yes,Fiber optic,No,Yes,1,0,5,10,No
+CUST-CH-1198,Subscriber 198,2024-12-14,Female,0,No,Yes,8,Month-to-month,68.77,565.52,Credit card (automatic),Yes,No,Yes,Yes,3,2,2,4,Yes
+CUST-CH-1199,Subscriber 199,2024-05-21,Female,0,Yes,No,53,One year,52.94,2820.23,Electronic check,Yes,Fiber optic,Yes,No,1,1,4,8,No
+CUST-CH-1200,Subscriber 200,2024-04-19,Female,0,No,Yes,58,Two year,87.58,5103.23,Bank transfer (automatic),No,DSL,Yes,No,2,0,5,10,No
+CUST-CH-1201,Subscriber 201,2024-03-06,Male,1,No,Yes,43,One year,48.85,2097.88,Electronic check,Yes,Fiber optic,No,No,2,0,5,10,No
+CUST-CH-1202,Subscriber 202,2024-09-02,Male,0,Yes,Yes,4,Month-to-month,66.2,289.58,Bank transfer (automatic),Yes,No,No,Yes,6,0,4,8,Yes
+CUST-CH-1203,Subscriber 203,2024-08-26,Female,0,Yes,Yes,51,One year,94.3,4832.46,Electronic check,Yes,DSL,Yes,Yes,1,0,5,10,No
+CUST-CH-1204,Subscriber 204,2024-12-15,Female,0,Yes,Yes,33,One year,97.82,3222.36,Mailed check,No,Fiber optic,Yes,Yes,1,1,4,8,No
+CUST-CH-1205,Subscriber 205,2024-03-03,Female,0,No,No,27,One year,34.4,945.17,Credit card (automatic),Yes,DSL,No,No,1,1,4,8,No
+CUST-CH-1206,Subscriber 206,2024-09-26,Female,0,No,Yes,57,One year,96.59,5528.66,Electronic check,No,Fiber optic,No,Yes,1,0,5,10,No
+CUST-CH-1207,Subscriber 207,2024-01-22,Male,0,Yes,No,15,Month-to-month,84.68,1279.58,Bank transfer (automatic),No,Fiber optic,Yes,No,4,1,3,6,Yes
+CUST-CH-1208,Subscriber 208,2024-08-21,Male,0,No,No,53,Two year,58.43,3093.7,Bank transfer (automatic),Yes,DSL,No,No,2,0,5,10,No
+CUST-CH-1209,Subscriber 209,2024-09-10,Male,1,No,No,22,One year,22.23,510.22,Bank transfer (automatic),Yes,Fiber optic,No,Yes,2,0,5,10,No
+CUST-CH-1210,Subscriber 210,2024-05-21,Female,1,Yes,No,12,Month-to-month,20.5,247.86,Mailed check,Yes,Fiber optic,No,No,5,1,3,6,Yes
+CUST-CH-1211,Subscriber 211,2024-09-24,Male,1,Yes,No,3,Month-to-month,87.61,281.83,Electronic check,Yes,DSL,No,Yes,3,1,3,6,Yes
+CUST-CH-1212,Subscriber 212,2024-06-22,Female,0,No,No,52,One year,60.23,3137.36,Credit card (automatic),No,DSL,Yes,Yes,1,1,4,8,No
+CUST-CH-1213,Subscriber 213,2024-12-17,Male,0,No,No,3,Month-to-month,109.69,332.0,Electronic check,No,DSL,Yes,No,4,2,2,4,Yes
+CUST-CH-1214,Subscriber 214,2024-03-04,Female,0,No,No,1,Month-to-month,95.16,90.13,Credit card (automatic),Yes,Fiber optic,No,Yes,1,1,4,8,Yes
+CUST-CH-1215,Subscriber 215,2024-09-12,Male,0,No,No,48,One year,62.98,3024.86,Credit card (automatic),No,No,Yes,Yes,2,1,4,8,No
+CUST-CH-1216,Subscriber 216,2024-11-15,Male,0,No,Yes,54,One year,79.24,4282.51,Credit card (automatic),No,No,Yes,No,2,1,4,8,No
+CUST-CH-1217,Subscriber 217,2024-03-23,Male,0,No,Yes,17,One year,38.28,662.41,Electronic check,Yes,Fiber optic,Yes,Yes,2,0,5,10,No
+CUST-CH-1218,Subscriber 218,2024-05-26,Male,0,No,Yes,50,Two year,50.44,2532.61,Credit card (automatic),Yes,Fiber optic,No,Yes,1,0,5,10,No
+CUST-CH-1219,Subscriber 219,2024-06-13,Female,1,Yes,Yes,3,Month-to-month,44.28,125.98,Bank transfer (automatic),No,No,Yes,Yes,4,2,2,4,Yes
+CUST-CH-1220,Subscriber 220,2024-12-02,Female,0,No,Yes,6,Month-to-month,44.5,289.96,Electronic check,Yes,DSL,Yes,Yes,3,3,1,2,No
+CUST-CH-1221,Subscriber 221,2024-05-02,Female,0,No,Yes,7,Month-to-month,80.19,583.31,Electronic check,No,No,Yes,Yes,6,1,3,6,Yes
+CUST-CH-1222,Subscriber 222,2024-07-15,Male,0,Yes,Yes,3,Month-to-month,94.29,291.68,Credit card (automatic),No,DSL,Yes,No,6,2,2,4,Yes
+CUST-CH-1223,Subscriber 223,2024-03-01,Male,0,No,No,55,One year,56.11,3088.35,Mailed check,No,DSL,Yes,Yes,1,0,5,10,No
+CUST-CH-1224,Subscriber 224,2024-02-27,Male,0,No,No,9,Month-to-month,110.95,999.69,Bank transfer (automatic),No,No,No,No,1,1,4,8,Yes
+CUST-CH-1225,Subscriber 225,2024-08-20,Female,1,Yes,Yes,12,One year,105.64,1281.22,Credit card (automatic),No,Fiber optic,Yes,Yes,2,0,5,10,No
+CUST-CH-1226,Subscriber 226,2024-11-15,Male,0,No,No,14,Month-to-month,92.96,1315.84,Electronic check,Yes,Fiber optic,No,Yes,3,0,4,8,Yes
+CUST-CH-1227,Subscriber 227,2024-01-25,Female,0,No,Yes,10,Month-to-month,79.4,812.29,Mailed check,Yes,Fiber optic,No,Yes,2,1,4,8,No
+CUST-CH-1228,Subscriber 228,2024-12-20,Male,1,No,Yes,48,Two year,67.53,3237.41,Mailed check,Yes,DSL,Yes,Yes,0,1,4,8,No
+CUST-CH-1229,Subscriber 229,2024-04-17,Female,0,Yes,No,41,One year,20.19,832.74,Electronic check,No,Fiber optic,No,No,0,1,4,8,No
+CUST-CH-1230,Subscriber 230,2024-09-25,Male,0,Yes,Yes,7,Month-to-month,70.58,495.13,Credit card (automatic),Yes,Fiber optic,Yes,Yes,5,1,3,6,No
+CUST-CH-1231,Subscriber 231,2024-07-03,Male,0,No,No,11,Month-to-month,29.19,327.89,Electronic check,No,Fiber optic,Yes,Yes,3,1,3,6,No
+CUST-CH-1232,Subscriber 232,2024-01-27,Female,0,Yes,Yes,51,One year,61.66,3138.01,Credit card (automatic),Yes,DSL,Yes,Yes,1,1,4,8,No
+CUST-CH-1233,Subscriber 233,2024-12-03,Male,1,No,Yes,11,Month-to-month,61.02,664.78,Electronic check,Yes,Fiber optic,No,No,0,1,4,8,Yes
+CUST-CH-1234,Subscriber 234,2024-10-26,Male,0,No,No,51,Two year,29.62,1523.4,Electronic check,No,No,No,Yes,0,0,5,10,Yes
+CUST-CH-1235,Subscriber 235,2024-12-03,Male,0,Yes,No,8,Month-to-month,88.84,716.28,Mailed check,Yes,DSL,Yes,Yes,2,1,4,8,Yes
+CUST-CH-1236,Subscriber 236,2024-11-25,Female,0,Yes,Yes,10,Month-to-month,52.58,528.71,Electronic check,Yes,DSL,Yes,Yes,3,2,2,4,Yes
+CUST-CH-1237,Subscriber 237,2024-04-21,Male,0,No,Yes,56,One year,85.72,4806.68,Bank transfer (automatic),No,No,No,No,1,0,5,10,No
+CUST-CH-1238,Subscriber 238,2024-01-16,Male,0,Yes,Yes,4,Month-to-month,42.71,186.55,Bank transfer (automatic),No,DSL,No,Yes,6,0,4,8,Yes
+CUST-CH-1239,Subscriber 239,2024-02-12,Male,0,Yes,No,11,Month-to-month,75.64,848.83,Electronic check,Yes,DSL,Yes,No,1,0,5,10,No
+CUST-CH-1240,Subscriber 240,2024-12-06,Female,0,Yes,Yes,3,Month-to-month,100.07,322.08,Electronic check,Yes,Fiber optic,Yes,No,1,1,4,8,Yes
+CUST-CH-1241,Subscriber 241,2024-06-26,Female,0,No,Yes,15,Month-to-month,107.79,1634.67,Mailed check,No,No,No,No,4,3,1,2,No
+CUST-CH-1242,Subscriber 242,2024-04-02,Male,0,No,Yes,1,Month-to-month,79.8,79.6,Mailed check,No,DSL,Yes,No,6,0,4,8,Yes
+CUST-CH-1243,Subscriber 243,2024-07-25,Female,0,No,Yes,6,Month-to-month,69.92,426.44,Credit card (automatic),No,Fiber optic,No,Yes,1,0,5,10,No
+CUST-CH-1244,Subscriber 244,2024-08-28,Male,0,No,No,48,Two year,34.93,1696.13,Bank transfer (automatic),Yes,DSL,Yes,No,1,1,4,8,No
+CUST-CH-1245,Subscriber 245,2024-01-15,Female,0,No,No,13,Month-to-month,67.27,874.07,Electronic check,Yes,Fiber optic,Yes,No,5,0,4,8,Yes
+CUST-CH-1246,Subscriber 246,2024-02-10,Male,0,Yes,Yes,6,Month-to-month,23.64,138.85,Mailed check,No,Fiber optic,No,No,1,0,5,10,No
+CUST-CH-1247,Subscriber 247,2024-12-24,Female,1,No,No,37,Two year,109.85,4083.22,Electronic check,No,No,Yes,No,0,0,5,10,No
+CUST-CH-1248,Subscriber 248,2024-04-16,Male,0,No,No,2,Month-to-month,49.74,96.05,Credit card (automatic),Yes,Fiber optic,No,Yes,2,0,5,10,No
+CUST-CH-1249,Subscriber 249,2024-03-10,Male,0,No,No,7,Month-to-month,85.15,600.17,Bank transfer (automatic),No,No,Yes,Yes,1,0,5,10,No
+CUST-CH-1250,Subscriber 250,2024-06-19,Female,0,Yes,No,7,Month-to-month,37.89,259.03,Credit card (automatic),No,DSL,Yes,Yes,5,1,3,6,Yes
+CUST-CH-1251,Subscriber 251,2024-12-20,Female,1,Yes,Yes,36,Two year,46.96,1688.72,Electronic check,No,DSL,No,Yes,0,1,4,8,No
+CUST-CH-1252,Subscriber 252,2024-07-13,Male,0,Yes,No,2,Month-to-month,56.95,135.53,Mailed check,Yes,DSL,No,No,6,3,1,2,Yes
+CUST-CH-1253,Subscriber 253,2024-10-10,Male,0,No,No,3,Month-to-month,62.34,205.88,Mailed check,No,No,No,No,3,0,4,8,No
+CUST-CH-1254,Subscriber 254,2024-05-21,Female,0,No,No,23,One year,59.43,1363.18,Credit card (automatic),No,Fiber optic,Yes,Yes,1,0,5,10,No
+CUST-CH-1255,Subscriber 255,2024-03-09,Female,0,Yes,Yes,38,Two year,114.28,4351.99,Bank transfer (automatic),Yes,DSL,No,No,1,0,5,10,No
+CUST-CH-1256,Subscriber 256,2024-09-02,Female,1,No,No,7,Month-to-month,101.3,712.98,Electronic check,No,DSL,Yes,No,5,3,1,2,Yes
+CUST-CH-1257,Subscriber 257,2024-02-03,Male,0,No,Yes,5,Month-to-month,99.95,495.72,Electronic check,Yes,DSL,No,Yes,4,3,1,2,Yes
+CUST-CH-1258,Subscriber 258,2024-11-25,Male,0,Yes,No,4,Month-to-month,87.87,372.72,Mailed check,No,No,Yes,Yes,3,2,2,4,Yes
+CUST-CH-1259,Subscriber 259,2024-10-01,Male,0,Yes,Yes,4,Month-to-month,39.0,146.56,Electronic check,Yes,Fiber optic,Yes,Yes,1,0,5,10,No
+CUST-CH-1260,Subscriber 260,2024-11-06,Male,1,Yes,No,11,Month-to-month,38.01,415.36,Credit card (automatic),No,DSL,Yes,Yes,0,1,4,8,Yes
+CUST-CH-1261,Subscriber 261,2024-01-13,Female,1,Yes,No,11,Month-to-month,97.43,1084.48,Bank transfer (automatic),Yes,DSL,Yes,No,2,1,4,8,No
+CUST-CH-1262,Subscriber 262,2024-02-23,Male,0,Yes,No,56,Two year,56.91,3209.32,Mailed check,No,DSL,No,No,0,1,4,8,Yes
+CUST-CH-1263,Subscriber 263,2024-10-15,Female,0,Yes,Yes,10,Month-to-month,92.1,915.34,Mailed check,No,DSL,Yes,Yes,1,1,4,8,Yes
+CUST-CH-1264,Subscriber 264,2024-04-05,Female,0,Yes,Yes,50,Two year,113.91,5701.03,Bank transfer (automatic),Yes,Fiber optic,No,Yes,2,1,4,8,No
+CUST-CH-1265,Subscriber 265,2024-05-25,Male,0,No,No,9,Month-to-month,25.14,248.38,Mailed check,Yes,No,No,No,1,1,4,8,No
+CUST-CH-1266,Subscriber 266,2024-02-28,Female,1,Yes,Yes,21,One year,109.14,2286.33,Mailed check,Yes,DSL,Yes,No,2,1,4,8,No
+CUST-CH-1267,Subscriber 267,2024-12-07,Male,0,Yes,No,8,Month-to-month,111.93,892.49,Credit card (automatic),Yes,Fiber optic,No,No,1,1,4,8,Yes
+CUST-CH-1268,Subscriber 268,2024-09-20,Female,0,No,Yes,39,One year,101.13,3960.63,Bank transfer (automatic),Yes,No,Yes,No,1,1,4,8,No
+CUST-CH-1269,Subscriber 269,2024-05-13,Female,1,Yes,No,15,Month-to-month,38.01,560.6,Bank transfer (automatic),No,Fiber optic,No,No,5,2,2,4,Yes
+CUST-CH-1270,Subscriber 270,2024-05-21,Male,0,Yes,Yes,10,Month-to-month,35.42,370.9,Bank transfer (automatic),No,No,No,No,5,0,4,8,No
+CUST-CH-1271,Subscriber 271,2024-07-24,Male,0,Yes,No,55,One year,22.68,1260.7,Mailed check,No,No,No,Yes,1,0,5,10,No
+CUST-CH-1272,Subscriber 272,2024-11-27,Male,1,Yes,No,10,Month-to-month,112.54,1118.21,Mailed check,No,DSL,No,No,5,2,2,4,Yes
+CUST-CH-1273,Subscriber 273,2024-09-22,Female,0,No,Yes,10,Month-to-month,93.79,939.95,Mailed check,No,No,Yes,No,5,2,2,4,Yes
+CUST-CH-1274,Subscriber 274,2024-03-27,Female,1,Yes,No,11,Month-to-month,47.39,526.37,Mailed check,No,DSL,Yes,Yes,3,1,3,6,Yes
+CUST-CH-1275,Subscriber 275,2024-02-15,Male,0,Yes,Yes,24,Two year,44.64,1092.94,Credit card (automatic),No,No,Yes,Yes,0,1,4,8,No
+CUST-CH-1276,Subscriber 276,2024-02-09,Male,0,Yes,No,13,Month-to-month,29.58,376.68,Electronic check,Yes,DSL,Yes,Yes,3,2,2,4,No
+CUST-CH-1277,Subscriber 277,2024-08-25,Female,0,No,No,33,One year,114.95,3811.94,Bank transfer (automatic),No,Fiber optic,Yes,No,1,0,5,10,Yes
+CUST-CH-1278,Subscriber 278,2024-12-13,Male,1,Yes,No,60,Two year,97.43,5848.7,Credit card (automatic),No,No,Yes,Yes,2,1,4,8,Yes
+CUST-CH-1279,Subscriber 279,2024-06-28,Male,0,No,No,8,Month-to-month,58.02,475.6,Electronic check,No,Fiber optic,No,Yes,5,3,1,2,Yes
+CUST-CH-1280,Subscriber 280,2024-04-23,Male,0,Yes,Yes,2,Month-to-month,48.63,110.82,Credit card (automatic),Yes,Fiber optic,Yes,No,5,1,3,6,Yes
+CUST-CH-1281,Subscriber 281,2024-03-25,Male,1,Yes,Yes,32,Two year,105.75,3400.82,Mailed check,No,No,No,Yes,2,0,5,10,No
+CUST-CH-1282,Subscriber 282,2024-11-24,Female,1,No,Yes,50,Two year,26.14,1309.01,Credit card (automatic),No,DSL,Yes,No,0,1,4,8,No
+CUST-CH-1283,Subscriber 283,2024-02-11,Male,0,Yes,No,6,Month-to-month,110.64,674.03,Electronic check,No,DSL,Yes,No,3,2,2,4,Yes
+CUST-CH-1284,Subscriber 284,2024-11-26,Male,0,Yes,Yes,9,Month-to-month,100.97,909.79,Bank transfer (automatic),Yes,Fiber optic,No,Yes,4,2,2,4,Yes
+CUST-CH-1285,Subscriber 285,2024-11-28,Male,0,No,Yes,14,Month-to-month,87.12,1226.42,Mailed check,No,Fiber optic,No,Yes,6,2,2,4,Yes
+CUST-CH-1286,Subscriber 286,2024-12-07,Male,0,Yes,Yes,58,Two year,57.22,3343.21,Mailed check,Yes,No,No,No,1,1,4,8,No
+CUST-CH-1287,Subscriber 287,2024-07-13,Male,0,No,No,24,One year,86.61,2087.82,Electronic check,Yes,Fiber optic,Yes,No,1,0,5,10,No
+CUST-CH-1288,Subscriber 288,2024-08-23,Female,0,Yes,Yes,12,Month-to-month,38.59,475.87,Bank transfer (automatic),Yes,No,Yes,No,3,1,3,6,No
+CUST-CH-1289,Subscriber 289,2024-02-12,Female,0,Yes,Yes,53,Two year,52.16,2769.66,Mailed check,No,DSL,Yes,Yes,0,1,4,8,No
+CUST-CH-1290,Subscriber 290,2024-12-20,Male,0,No,Yes,53,One year,56.3,2996.03,Credit card (automatic),No,DSL,Yes,Yes,0,0,5,10,No
+CUST-CH-1291,Subscriber 291,2024-11-17,Male,1,No,No,18,One year,95.46,1714.62,Credit card (automatic),No,Fiber optic,Yes,Yes,1,0,5,10,No
+CUST-CH-1292,Subscriber 292,2024-09-06,Female,0,Yes,No,46,One year,94.43,4352.33,Electronic check,Yes,DSL,Yes,Yes,2,0,5,10,Yes
+CUST-CH-1293,Subscriber 293,2024-08-26,Female,1,Yes,Yes,17,One year,73.44,1268.28,Electronic check,Yes,DSL,No,No,2,0,5,10,No
+CUST-CH-1294,Subscriber 294,2024-11-01,Male,0,No,No,8,Month-to-month,86.03,696.53,Bank transfer (automatic),Yes,No,Yes,Yes,1,0,5,10,Yes
+CUST-CH-1295,Subscriber 295,2024-05-28,Male,0,Yes,No,12,Month-to-month,79.12,942.04,Bank transfer (automatic),No,Fiber optic,Yes,No,3,0,4,8,No
+CUST-CH-1296,Subscriber 296,2024-11-14,Male,0,Yes,No,56,Two year,81.33,4569.49,Mailed check,No,DSL,No,No,1,0,5,10,No
+CUST-CH-1297,Subscriber 297,2024-04-03,Female,1,Yes,No,11,Month-to-month,28.45,334.77,Bank transfer (automatic),Yes,DSL,No,Yes,0,1,4,8,No
+CUST-CH-1298,Subscriber 298,2024-04-13,Male,0,Yes,Yes,15,Month-to-month,49.12,755.55,Credit card (automatic),Yes,No,No,No,4,2,2,4,Yes
+CUST-CH-1299,Subscriber 299,2024-01-06,Female,0,No,Yes,12,Month-to-month,84.39,1030.29,Credit card (automatic),No,No,Yes,No,0,0,5,10,No
+CUST-CH-1300,Subscriber 300,2024-03-13,Female,1,No,Yes,38,One year,87.14,3307.73,Bank transfer (automatic),No,No,No,No,1,0,5,10,No
+CUST-CH-1301,Subscriber 301,2024-02-10,Female,0,Yes,Yes,4,Month-to-month,109.76,434.82,Electronic check,Yes,No,No,No,6,0,4,8,No
+CUST-CH-1302,Subscriber 302,2024-07-22,Male,0,Yes,No,4,Month-to-month,106.53,442.23,Credit card (automatic),No,DSL,Yes,No,1,0,5,10,Yes
+CUST-CH-1303,Subscriber 303,2024-06-27,Male,0,Yes,No,3,Month-to-month,55.46,160.34,Mailed check,Yes,Fiber optic,No,No,2,1,4,8,Yes
+CUST-CH-1304,Subscriber 304,2024-12-21,Female,0,No,Yes,51,Two year,100.59,5122.1,Electronic check,No,Fiber optic,No,No,0,0,5,10,No
+CUST-CH-1305,Subscriber 305,2024-12-06,Female,0,Yes,No,2,Month-to-month,70.26,161.97,Credit card (automatic),Yes,Fiber optic,Yes,Yes,6,2,2,4,Yes
+CUST-CH-1306,Subscriber 306,2024-07-12,Female,0,Yes,No,8,Month-to-month,82.35,664.18,Mailed check,No,No,No,Yes,2,0,5,10,Yes
+CUST-CH-1307,Subscriber 307,2024-05-02,Male,0,No,Yes,4,Month-to-month,110.1,463.99,Bank transfer (automatic),Yes,Fiber optic,No,No,6,1,3,6,Yes
+CUST-CH-1308,Subscriber 308,2024-07-17,Female,1,Yes,Yes,6,Month-to-month,67.5,421.86,Mailed check,Yes,No,No,No,4,0,4,8,Yes
+CUST-CH-1309,Subscriber 309,2024-05-10,Female,1,No,Yes,58,One year,68.57,3975.79,Electronic check,No,No,Yes,No,0,1,4,8,No
+CUST-CH-1310,Subscriber 310,2024-02-23,Male,0,Yes,Yes,7,Month-to-month,23.64,190.14,Mailed check,No,DSL,Yes,Yes,6,0,4,8,Yes
+CUST-CH-1311,Subscriber 311,2024-09-10,Male,0,No,No,7,Month-to-month,81.17,568.84,Bank transfer (automatic),No,Fiber optic,No,No,1,1,4,8,No
+CUST-CH-1312,Subscriber 312,2024-03-02,Male,1,No,Yes,5,Month-to-month,106.31,525.08,Mailed check,No,Fiber optic,No,No,2,0,5,10,Yes
+CUST-CH-1313,Subscriber 313,2024-01-22,Male,0,No,No,5,Month-to-month,39.95,203.19,Electronic check,Yes,No,Yes,Yes,4,1,3,6,Yes
+CUST-CH-1314,Subscriber 314,2024-08-04,Male,0,No,No,60,One year,39.19,2366.63,Electronic check,Yes,DSL,No,No,2,1,4,8,No
+CUST-CH-1315,Subscriber 315,2024-08-21,Male,0,Yes,No,15,Month-to-month,110.48,1674.88,Mailed check,No,No,Yes,No,0,0,5,10,No
+CUST-CH-1316,Subscriber 316,2024-12-07,Female,0,Yes,Yes,9,Month-to-month,56.49,525.69,Credit card (automatic),No,DSL,Yes,Yes,1,0,5,10,No
+CUST-CH-1317,Subscriber 317,2024-01-26,Female,0,No,No,30,Two year,87.28,2627.73,Mailed check,Yes,DSL,Yes,No,0,0,5,10,No
+CUST-CH-1318,Subscriber 318,2024-05-05,Female,0,Yes,Yes,25,Two year,70.79,1759.8,Bank transfer (automatic),No,Fiber optic,Yes,No,2,0,5,10,No
+CUST-CH-1319,Subscriber 319,2024-10-10,Female,0,Yes,No,5,Month-to-month,36.79,207.96,Electronic check,No,No,No,Yes,6,3,1,2,Yes
+CUST-CH-1320,Subscriber 320,2024-05-07,Female,1,Yes,No,15,Month-to-month,65.51,990.01,Credit card (automatic),Yes,DSL,Yes,No,5,1,3,6,Yes
+CUST-CH-1321,Subscriber 321,2024-01-10,Male,0,No,Yes,2,Month-to-month,60.51,126.95,Credit card (automatic),Yes,No,Yes,Yes,4,0,4,8,Yes
+CUST-CH-1322,Subscriber 322,2024-01-04,Male,0,Yes,Yes,2,Month-to-month,45.43,113.71,Electronic check,Yes,DSL,No,Yes,1,0,5,10,No
+CUST-CH-1323,Subscriber 323,2024-10-15,Male,0,No,Yes,9,Month-to-month,85.74,783.62,Electronic check,Yes,DSL,Yes,No,0,1,4,8,Yes
+CUST-CH-1324,Subscriber 324,2024-04-01,Male,0,Yes,No,26,One year,107.56,2810.51,Electronic check,No,DSL,Yes,Yes,0,1,4,8,No
+CUST-CH-1325,Subscriber 325,2024-10-11,Male,0,Yes,Yes,23,One year,60.72,1398.28,Mailed check,No,DSL,No,No,1,0,5,10,No
+CUST-CH-1326,Subscriber 326,2024-08-22,Female,0,Yes,Yes,21,Two year,93.89,1966.82,Mailed check,No,Fiber optic,No,Yes,0,1,4,8,No
+CUST-CH-1327,Subscriber 327,2024-05-05,Male,0,Yes,Yes,34,One year,50.33,1716.05,Credit card (automatic),No,DSL,Yes,No,1,1,4,8,No
+CUST-CH-1328,Subscriber 328,2024-08-18,Male,0,No,Yes,27,One year,54.36,1464.83,Electronic check,No,No,No,Yes,0,0,5,10,No
+CUST-CH-1329,Subscriber 329,2024-06-28,Male,0,Yes,No,14,Month-to-month,41.34,594.9,Electronic check,Yes,Fiber optic,Yes,No,2,0,5,10,No
+CUST-CH-1330,Subscriber 330,2024-11-19,Male,0,Yes,Yes,3,Month-to-month,27.5,75.2,Credit card (automatic),Yes,DSL,No,Yes,5,2,2,4,Yes
+CUST-CH-1331,Subscriber 331,2024-12-11,Female,0,Yes,No,1,Month-to-month,103.71,94.83,Mailed check,Yes,DSL,No,No,5,3,1,2,Yes
+CUST-CH-1332,Subscriber 332,2024-05-19,Female,0,No,Yes,2,Month-to-month,69.54,163.31,Mailed check,Yes,Fiber optic,Yes,Yes,3,1,3,6,No
+CUST-CH-1333,Subscriber 333,2024-09-20,Male,0,No,No,11,Month-to-month,58.48,646.6,Electronic check,No,No,No,Yes,2,0,5,10,Yes
+CUST-CH-1334,Subscriber 334,2024-06-20,Female,1,No,Yes,2,Month-to-month,40.13,70.64,Bank transfer (automatic),Yes,No,Yes,Yes,1,1,4,8,Yes
+CUST-CH-1335,Subscriber 335,2024-10-19,Male,0,No,Yes,2,Month-to-month,109.63,209.56,Bank transfer (automatic),No,Fiber optic,Yes,No,6,3,1,2,Yes
+CUST-CH-1336,Subscriber 336,2024-03-23,Male,0,Yes,Yes,13,Month-to-month,56.3,742.42,Electronic check,No,DSL,Yes,No,0,0,5,10,No
+CUST-CH-1337,Subscriber 337,2024-04-07,Male,0,Yes,No,3,Month-to-month,52.21,159.24,Credit card (automatic),Yes,No,No,Yes,1,0,5,10,No
+CUST-CH-1338,Subscriber 338,2024-10-21,Female,1,Yes,Yes,31,One year,71.98,2255.29,Electronic check,No,DSL,No,No,0,1,4,8,No
+CUST-CH-1339,Subscriber 339,2024-05-19,Female,0,Yes,Yes,41,One year,44.5,1831.06,Bank transfer (automatic),No,No,Yes,Yes,2,1,4,8,Yes
+CUST-CH-1340,Subscriber 340,2024-05-13,Female,0,Yes,No,14,Month-to-month,79.34,1111.74,Electronic check,No,No,No,No,5,0,4,8,Yes
+CUST-CH-1341,Subscriber 341,2024-11-02,Male,0,Yes,Yes,30,Two year,55.7,1680.95,Electronic check,Yes,Fiber optic,No,Yes,1,1,4,8,No
+CUST-CH-1342,Subscriber 342,2024-09-27,Female,1,Yes,Yes,37,Two year,92.98,3437.24,Bank transfer (automatic),Yes,Fiber optic,No,No,0,1,4,8,No
+CUST-CH-1343,Subscriber 343,2024-08-02,Male,0,Yes,Yes,1,Month-to-month,113.84,130.94,Electronic check,No,Fiber optic,No,Yes,0,0,5,10,No
+CUST-CH-1344,Subscriber 344,2024-11-14,Female,0,Yes,Yes,5,Month-to-month,58.48,292.84,Credit card (automatic),No,No,Yes,No,1,0,5,10,Yes
+CUST-CH-1345,Subscriber 345,2024-07-11,Female,0,No,No,9,Month-to-month,85.44,764.58,Credit card (automatic),No,No,No,Yes,4,1,3,6,Yes
+CUST-CH-1346,Subscriber 346,2024-11-19,Male,0,No,Yes,8,Month-to-month,108.71,877.16,Bank transfer (automatic),Yes,No,No,No,4,0,4,8,No
+CUST-CH-1347,Subscriber 347,2024-03-21,Female,0,Yes,Yes,4,Month-to-month,59.92,248.79,Mailed check,No,DSL,No,Yes,1,0,5,10,Yes
+CUST-CH-1348,Subscriber 348,2024-06-01,Female,0,Yes,No,41,One year,59.34,2435.25,Credit card (automatic),No,DSL,Yes,No,1,1,4,8,No
+CUST-CH-1349,Subscriber 349,2024-10-06,Female,0,No,No,18,One year,114.56,2080.29,Electronic check,Yes,No,Yes,No,0,1,4,8,No
+CUST-CH-1350,Subscriber 350,2024-10-18,Male,0,Yes,No,25,Two year,41.17,1035.16,Credit card (automatic),Yes,DSL,No,Yes,1,1,4,8,No
+CUST-CH-1351,Subscriber 351,2024-11-23,Female,1,No,Yes,5,Month-to-month,103.56,517.06,Credit card (automatic),Yes,DSL,No,Yes,0,0,5,10,Yes
+CUST-CH-1352,Subscriber 352,2024-06-27,Female,0,No,Yes,37,One year,38.3,1429.66,Electronic check,No,DSL,No,Yes,1,1,4,8,No
+CUST-CH-1353,Subscriber 353,2024-07-08,Male,0,Yes,Yes,37,One year,100.09,3715.29,Bank transfer (automatic),Yes,Fiber optic,Yes,Yes,0,0,5,10,No
+CUST-CH-1354,Subscriber 354,2024-11-25,Male,1,Yes,No,12,Month-to-month,32.4,394.68,Bank transfer (automatic),Yes,DSL,Yes,No,1,0,5,10,No
+CUST-CH-1355,Subscriber 355,2024-07-25,Female,0,No,Yes,52,Two year,22.2,1178.87,Electronic check,Yes,Fiber optic,Yes,Yes,0,1,4,8,No
+CUST-CH-1356,Subscriber 356,2024-03-03,Male,0,No,Yes,8,Month-to-month,95.57,769.04,Credit card (automatic),Yes,DSL,No,No,2,1,4,8,No
+CUST-CH-1357,Subscriber 357,2024-03-10,Male,0,Yes,Yes,34,Two year,65.97,2254.47,Electronic check,Yes,No,No,Yes,0,0,5,10,No
+CUST-CH-1358,Subscriber 358,2024-09-17,Male,0,No,Yes,13,Two year,51.12,662.25,Mailed check,No,Fiber optic,No,Yes,0,1,4,8,No
+CUST-CH-1359,Subscriber 359,2024-11-10,Female,0,No,No,7,Month-to-month,107.62,752.09,Mailed check,No,Fiber optic,Yes,No,1,0,5,10,No
+CUST-CH-1360,Subscriber 360,2024-08-14,Female,0,No,No,50,One year,56.39,2816.49,Bank transfer (automatic),No,No,Yes,No,0,0,5,10,No
+CUST-CH-1361,Subscriber 361,2024-05-19,Female,0,No,No,3,Month-to-month,96.86,295.61,Mailed check,No,DSL,Yes,Yes,5,2,2,4,Yes
+CUST-CH-1362,Subscriber 362,2024-06-04,Male,0,Yes,No,10,Month-to-month,95.55,976.96,Electronic check,No,Fiber optic,Yes,Yes,0,1,4,8,No
+CUST-CH-1363,Subscriber 363,2024-11-03,Female,0,No,No,24,Two year,38.73,947.62,Credit card (automatic),Yes,Fiber optic,No,Yes,0,1,4,8,No
+CUST-CH-1364,Subscriber 364,2024-06-19,Female,0,Yes,No,13,Month-to-month,101.33,1341.87,Credit card (automatic),No,DSL,No,Yes,4,0,4,8,Yes
+CUST-CH-1365,Subscriber 365,2024-01-03,Female,1,No,No,13,Month-to-month,52.85,679.84,Bank transfer (automatic),No,No,Yes,No,2,1,4,8,Yes
+CUST-CH-1366,Subscriber 366,2024-11-04,Female,0,Yes,Yes,14,Month-to-month,20.99,287.54,Bank transfer (automatic),No,DSL,Yes,Yes,1,1,4,8,No
+CUST-CH-1367,Subscriber 367,2024-09-01,Male,0,Yes,Yes,5,Month-to-month,27.13,137.18,Credit card (automatic),No,No,Yes,Yes,4,3,1,2,Yes
+CUST-CH-1368,Subscriber 368,2024-06-28,Male,0,No,No,45,One year,70.12,3165.63,Credit card (automatic),No,Fiber optic,No,Yes,0,1,4,8,No
+CUST-CH-1369,Subscriber 369,2024-12-03,Female,0,Yes,Yes,16,One year,112.32,1789.23,Electronic check,Yes,Fiber optic,No,Yes,1,0,5,10,No
+CUST-CH-1370,Subscriber 370,2024-10-25,Female,0,No,No,44,One year,30.04,1316.31,Bank transfer (automatic),No,Fiber optic,Yes,No,0,0,5,10,No
+CUST-CH-1371,Subscriber 371,2024-03-22,Female,0,Yes,Yes,2,Month-to-month,90.78,179.98,Credit card (automatic),Yes,Fiber optic,Yes,No,5,3,1,2,Yes
+CUST-CH-1372,Subscriber 372,2024-02-18,Male,0,Yes,Yes,7,Month-to-month,68.25,469.61,Bank transfer (automatic),No,DSL,Yes,No,5,3,1,2,Yes
+CUST-CH-1373,Subscriber 373,2024-04-13,Male,0,No,No,1,Month-to-month,81.4,104.96,Mailed check,Yes,DSL,Yes,No,1,0,5,10,Yes
+CUST-CH-1374,Subscriber 374,2024-05-08,Female,0,Yes,Yes,56,One year,45.49,2544.64,Mailed check,No,No,No,No,2,0,5,10,No
+CUST-CH-1375,Subscriber 375,2024-09-23,Female,0,Yes,Yes,2,Month-to-month,35.83,73.29,Credit card (automatic),Yes,DSL,No,No,2,0,5,10,Yes
+CUST-CH-1376,Subscriber 376,2024-05-03,Male,0,Yes,No,49,Two year,20.1,1005.46,Credit card (automatic),Yes,DSL,Yes,No,0,0,5,10,No
+CUST-CH-1377,Subscriber 377,2024-02-04,Female,0,No,No,6,Month-to-month,114.03,683.19,Credit card (automatic),No,Fiber optic,No,Yes,6,2,2,4,Yes
+CUST-CH-1378,Subscriber 378,2024-06-17,Female,1,Yes,Yes,26,Two year,82.64,2143.6,Credit card (automatic),Yes,DSL,No,No,0,0,5,10,No
+CUST-CH-1379,Subscriber 379,2024-07-21,Male,0,No,Yes,11,Month-to-month,53.14,586.13,Credit card (automatic),No,Fiber optic,Yes,Yes,4,2,2,4,Yes
+CUST-CH-1380,Subscriber 380,2024-02-14,Female,0,No,No,1,Month-to-month,67.4,81.39,Credit card (automatic),Yes,No,No,Yes,2,1,4,8,Yes
+CUST-CH-1381,Subscriber 381,2024-05-01,Female,1,No,Yes,5,Month-to-month,20.48,104.73,Electronic check,Yes,Fiber optic,Yes,No,2,0,5,10,No
+CUST-CH-1382,Subscriber 382,2024-12-09,Male,0,Yes,No,17,One year,47.63,800.83,Bank transfer (automatic),Yes,No,No,No,1,0,5,10,No
+CUST-CH-1383,Subscriber 383,2024-05-20,Female,0,No,No,20,Two year,84.92,1695.38,Mailed check,No,No,Yes,No,1,0,5,10,No
+CUST-CH-1384,Subscriber 384,2024-11-15,Male,0,No,Yes,8,Month-to-month,85.94,695.15,Bank transfer (automatic),No,Fiber optic,No,No,3,3,1,2,Yes
+CUST-CH-1385,Subscriber 385,2024-09-01,Female,1,Yes,No,49,One year,68.66,3358.79,Bank transfer (automatic),Yes,Fiber optic,Yes,No,2,0,5,10,No
+CUST-CH-1386,Subscriber 386,2024-09-15,Male,1,No,Yes,2,Month-to-month,98.08,205.95,Bank transfer (automatic),Yes,DSL,Yes,Yes,4,1,3,6,Yes
+CUST-CH-1387,Subscriber 387,2024-08-05,Male,0,Yes,No,58,One year,113.97,6600.49,Credit card (automatic),Yes,DSL,Yes,Yes,0,0,5,10,No
+CUST-CH-1388,Subscriber 388,2024-04-07,Male,0,No,No,2,Month-to-month,48.49,103.91,Mailed check,Yes,No,No,No,6,0,4,8,Yes
+CUST-CH-1389,Subscriber 389,2024-11-01,Male,1,Yes,Yes,12,Month-to-month,71.93,869.83,Bank transfer (automatic),No,No,Yes,No,2,1,4,8,Yes
+CUST-CH-1390,Subscriber 390,2024-12-26,Male,0,No,Yes,8,Month-to-month,31.41,254.91,Bank transfer (automatic),Yes,No,No,Yes,2,0,5,10,No
+CUST-CH-1391,Subscriber 391,2024-12-15,Female,1,Yes,No,14,Month-to-month,67.8,951.41,Credit card (automatic),Yes,DSL,Yes,No,5,2,2,4,Yes
+CUST-CH-1392,Subscriber 392,2024-03-09,Female,0,Yes,No,8,Month-to-month,77.55,616.71,Bank transfer (automatic),Yes,No,No,No,4,3,1,2,Yes
+CUST-CH-1393,Subscriber 393,2024-01-28,Male,0,Yes,No,42,Two year,50.75,2129.6,Mailed check,Yes,DSL,No,No,0,0,5,10,No
+CUST-CH-1394,Subscriber 394,2024-02-02,Male,0,No,Yes,32,Two year,30.23,973.09,Mailed check,Yes,DSL,No,No,1,1,4,8,No
+CUST-CH-1395,Subscriber 395,2024-12-06,Female,0,Yes,Yes,52,One year,111.18,5774.73,Electronic check,Yes,DSL,No,No,2,0,5,10,No
+CUST-CH-1396,Subscriber 396,2024-11-24,Female,0,Yes,No,6,Month-to-month,78.76,482.11,Mailed check,Yes,Fiber optic,No,No,6,0,4,8,Yes
+CUST-CH-1397,Subscriber 397,2024-03-26,Female,1,No,Yes,9,Month-to-month,51.44,460.8,Bank transfer (automatic),No,Fiber optic,No,Yes,6,1,3,6,No
+CUST-CH-1398,Subscriber 398,2024-02-18,Male,0,No,No,46,One year,86.26,3961.84,Credit card (automatic),No,No,Yes,Yes,1,1,4,8,No
+CUST-CH-1399,Subscriber 399,2024-06-25,Male,1,No,Yes,2,Month-to-month,96.54,202.81,Electronic check,No,DSL,No,Yes,4,3,1,2,Yes
+CUST-CH-1400,Subscriber 400,2024-05-24,Male,1,No,Yes,39,One year,65.37,2566.78,Mailed check,Yes,DSL,Yes,Yes,2,1,4,8,No

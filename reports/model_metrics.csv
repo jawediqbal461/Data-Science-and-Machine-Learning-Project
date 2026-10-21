@@ -1,0 +1,14 @@
+Model,Track,Primary_Metric,Score,Secondary_Metric,Secondary_Score,Status
+Random Forest Regressor,SALES,R2_Score,0.884,MAE ($),14.20,CHOSEN_PRODUCTION
+Gradient Boosting Regressor,SALES,R2_Score,0.867,MAE ($),15.10,EVALUATED
+Decision Tree Regressor,SALES,R2_Score,0.795,MAE ($),18.90,EVALUATED
+Linear Regression,SALES,R2_Score,0.712,MAE ($),24.60,BASELINE
+Gradient Boosting Classifier,CHURN,F1_Score,0.858,ROC_AUC,0.931,CHOSEN_PRODUCTION
+Random Forest Classifier,CHURN,F1_Score,0.837,ROC_AUC,0.918,EVALUATED
+Logistic Regression,CHURN,F1_Score,0.772,ROC_AUC,0.864,BASELINE
+Decision Tree Classifier,CHURN,F1_Score,0.747,ROC_AUC,0.825,EVALUATED
+K-Nearest Neighbors,CHURN,F1_Score,0.720,ROC_AUC,0.802,EVALUATED
+Random Forest Classifier,HR_ATTRITION,F1_Score,0.853,5_Fold_CV_F1,0.849,CHOSEN_PRODUCTION
+Gradient Boosting Classifier,HR_ATTRITION,F1_Score,0.839,5_Fold_CV_F1,0.835,EVALUATED
+Logistic Regression,HR_ATTRITION,F1_Score,0.787,5_Fold_CV_F1,0.782,BASELINE
+Decision Tree Classifier,HR_ATTRITION,F1_Score,0.747,5_Fold_CV_F1,0.740,EVALUATED
