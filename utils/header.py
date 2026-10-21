@@ -217,7 +217,7 @@ def render_header() -> None:
     with st.container():
         st.markdown('<div class="capstone-header">', unsafe_allow_html=True)
 
-        col_title, col_tabs, col_actions = st.columns([3.2, 3.3, 3.5], vertical_alignment="center")
+        col_title, col_tabs, col_actions = st.columns([2.4, 4.4, 3.2], vertical_alignment="center")
 
         with col_title:
             st.markdown(
@@ -259,24 +259,26 @@ def render_header() -> None:
             st.session_state["_prev_project_option"] = selected
 
         with col_actions:
-            a1, a2, a3 = st.columns(3)
+            a1, a2, a3 = st.columns([1.3, 1.5, 1.5])
             with a1:
                 test_mode = st.toggle(
-                    "🧪 Test Mode",
+                    "🧪 Test",
                     value=st.session_state.simulate_missing_dataset,
                     help="Developer tool: simulate what happens when no dataset is loaded.",
                     key="simulate_missing_dataset",
                 )
             with a2:
-                if st.button("⬆️ Upload Dataset", use_container_width=True, type="primary"):
+                if st.button("⬆️ Upload", use_container_width=True, type="primary",
+                             help="Upload a dataset or connect another ingestion adapter"):
                     _upload_dialog()
             with a3:
                 st.download_button(
-                    "⬇️ Download Zip",
+                    "⬇️ Zip",
                     data=_build_submission_zip(),
                     file_name=f"Jawed_Iqbal_DataScience_Capstone_{st.session_state.project_option}_Submission.zip",
                     mime="application/zip",
                     use_container_width=True,
+                    help="Download the project source as a submission .zip",
                 )
 
         st.markdown("</div>", unsafe_allow_html=True)
