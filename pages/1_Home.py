@@ -10,10 +10,6 @@ st.set_page_config(page_title="Executive Overview — Capstone", page_icon="🏠
 from utils.header import render_header
 render_header()
 
-st.title("🏛️ Data Science & ML Capstone: Executive Overview")
-st.markdown("### Capstone Assignment Project by **Jawed Iqbal**")
-st.caption("Course: Data Science and Machine Learning | Submission Deadline: 22 October 2026")
-
 col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("""
