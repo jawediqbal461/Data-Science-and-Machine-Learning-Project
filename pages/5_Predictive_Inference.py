@@ -79,6 +79,17 @@ st.caption(
     "Fields not shown below are filled from the dataset's own median/mode."
 )
 
+
+def _download_prediction_button(inputs: dict, results: dict, key: str) -> None:
+    """Bonus: downloadable prediction result — the inputs the user entered
+    plus the model's output, as a one-row CSV."""
+    row = {**inputs, **results, "model_used": best_name, "project_track": project_opt}
+    csv_bytes = pd.DataFrame([row]).to_csv(index=False).encode("utf-8")
+    st.download_button(
+        "⬇️ Download This Prediction (CSV)", data=csv_bytes,
+        file_name=f"{project_opt.lower()}_prediction_result.csv", mime="text/csv", key=key,
+    )
+
 if project_opt == "SALES":
     st.markdown("#### Predict Order Profit & Check Margin Floor")
     c1, c2, c3 = st.columns(3)
@@ -116,6 +127,7 @@ if project_opt == "SALES":
             )
         else:
             st.success(f"Profit Health: Safe margin tier ({category_label}).")
+        _download_prediction_button(overrides, {"predicted_profit": pred_profit, "profit_category": category_label}, "dl_sales")
 
 elif project_opt == "CHURN":
     st.markdown("#### Predict Subscriber Churn Risk & Dynamic Threshold")
@@ -151,6 +163,7 @@ elif project_opt == "CHURN":
             st.error(f"🚨 ACTION REQUIRED: Classified as Churn at cutoff {threshold:.2f}. Trigger retention outreach!")
         else:
             st.success(f"✅ Classified as Retained at cutoff {threshold:.2f}.")
+        _download_prediction_button(overrides, {"churn_probability": prob, "risk_tier": tier, "threshold": threshold}, "dl_churn")
 
 else:
     # HR Attrition
@@ -192,6 +205,7 @@ else:
             st.warning("⚠️ Retention Risk Detected. Schedule proactive voluntary career discussion and review workload/compensation.")
         else:
             st.success("✅ Low departure hazard.")
+        _download_prediction_button(overrides, {"attrition_probability": prob, "risk_tier": tier, "threshold": threshold}, "dl_hr")
 
 st.caption(
     "Predictions use the production pipeline trained live on the dataset currently active in the "
