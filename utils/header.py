@@ -103,6 +103,83 @@ div.capstone-header .cp-badge.src { border-color:#334155; background:rgba(30,41,
 div.capstone-header .cp-bench { color:#34D399; font-family: ui-monospace, Menlo, monospace; }
 
 div[data-testid="stSegmentedControl"] label p { font-size:0.78rem !important; font-weight:600; }
+
+/* ---- Global UI polish applied site-wide (every page calls render_header) ---- */
+
+/* Smoother typography + no default focus outline flash */
+html, body, [class*="css"] { -webkit-font-smoothing: antialiased; }
+
+/* st.metric cards: give the KPI numbers a real card instead of bare text */
+div[data-testid="stMetric"] {
+    background: rgba(30, 41, 59, 0.55);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    border-radius: 12px;
+    padding: 0.85rem 1rem 0.7rem 1rem;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
+div[data-testid="stMetric"]:hover {
+    border-color: rgba(96, 165, 250, 0.45);
+    transform: translateY(-1px);
+}
+div[data-testid="stMetricLabel"] { font-size: 0.78rem; color: #94A3B8; }
+div[data-testid="stMetricValue"] { font-size: 1.5rem; }
+
+/* st.container(border=True) cards — used for recommendation / finding cards */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    border-radius: 14px !important;
+    border-color: rgba(148, 163, 184, 0.18) !important;
+    transition: border-color 0.15s ease;
+}
+div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    border-color: rgba(96, 165, 250, 0.35) !important;
+}
+
+/* Buttons: slightly rounder, subtle lift on hover */
+.stButton > button, .stDownloadButton > button, .stLinkButton > a {
+    border-radius: 9px !important;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.stButton > button:hover, .stDownloadButton > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* Tabs: clearer active-tab accent */
+button[data-testid="stTab"][aria-selected="true"] {
+    border-bottom-color: #3B82F6 !important;
+}
+button[data-testid="stTab"] p { font-weight: 600; }
+
+/* Expanders: match the card radius language */
+div[data-testid="stExpander"] {
+    border-radius: 12px !important;
+    border-color: rgba(148, 163, 184, 0.18) !important;
+}
+
+/* DataFrames: rounder corners so tables match the rest of the UI */
+div[data-testid="stDataFrame"], div[data-testid="stTable"] {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Alerts (info/success/warning/error) — slightly rounder + a left accent bar */
+div[data-testid="stAlert"] {
+    border-radius: 10px;
+    border-left-width: 4px;
+}
+
+/* Sidebar nav: highlight the active page more clearly */
+section[data-testid="stSidebarNav"] a[aria-current="page"] {
+    background: rgba(37, 99, 235, 0.16) !important;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Thin, unobtrusive scrollbars for the dark theme */
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(100, 116, 139, 0.45); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(100, 116, 139, 0.7); }
 </style>
 """
 
