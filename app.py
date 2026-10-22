@@ -18,7 +18,7 @@ st.set_page_config(
 )
 
 from utils.header import render_header, TRACK_PILL_LABELS as TRACK_LABELS, TARGET_COLUMNS
-from utils.validation import validate_dataset
+from utils.validation import validate_dataset, REQUIRED_COLUMNS
 
 # Renders the shared ingestion/upload + track-switcher control panel at the
 # top of the sidebar, and syncs st.session_state.active_df / active_meta.
@@ -51,13 +51,7 @@ if active_df is None:
 # Schema Validation Gate per §2.6
 st.subheader("🔍 Schema Validation Gate")
 target_col = TARGET_COLUMNS[st.session_state.project_option]
-
-if st.session_state.project_option == "SALES":
-    required_cols = ["Sales", "Quantity", "Discount", "Shipping_Cost", "Region", "Category", "Sub_Category"]
-elif st.session_state.project_option == "CHURN":
-    required_cols = ["Tenure_Months", "Contract_Type", "Monthly_Charges", "Total_Charges", "Support_Tickets", "Complaints"]
-else:
-    required_cols = ["Age", "Department", "Job_Role", "Monthly_Income", "Job_Level", "Years_At_Company", "Overtime", "Work_Life_Balance"]
+required_cols = REQUIRED_COLUMNS[st.session_state.project_option]
 
 report = validate_dataset(
     df=active_df,
@@ -66,6 +60,15 @@ report = validate_dataset(
     column_mapping=st.session_state.column_mapping
 )
 
+# Auto-mapping (applied inside render_header, before this report was even
+# computed) already renamed any fuzzy-matched columns to their canonical
+# names this run -- surface what it just did so the user can see it
+# happened, rather than silently.
+auto_mapped = st.session_state.get("_auto_mapped_this_run") or {}
+if auto_mapped:
+    pairs = ", ".join(f"`{src}` → `{canon}`" for canon, src in auto_mapped.items())
+    st.success(f"🧩 Column-Mapping auto-detected and applied: {pairs}")
+
 if report.is_valid:
     st.success(f"✅ Schema Validation Passed: All {report.total_columns_required} required columns and target '{target_col}' verified.")
 else:
@@ -73,9 +76,13 @@ else:
     for msg in report.summary_messages:
         st.write(f"- {msg}")
 
-    # Column Mapping UI per §2.6
+    # Column Mapping UI — only reached for columns auto-mapping genuinely
+    # couldn't guess (no similarly-named column exists in the upload).
+    # Every selection below applies immediately: Streamlit reruns on
+    # selectbox change, and render_header() renames the column on that
+    # next rerun, so no separate "Apply" step is needed.
     st.markdown("#### 🧩 Column-Mapping Interface")
-    st.caption("Map existing dataset columns to canonical model features below:")
+    st.caption("These columns couldn't be auto-detected from the uploaded file's own column names — map them manually below (applies immediately):")
     existing_cols = list(active_df.columns) if hasattr(active_df, "columns") else []
 
     cols_grid = st.columns(min(3, max(1, len(report.missing_columns))))
@@ -85,11 +92,9 @@ else:
         opts = ["-- Select mapping --"] + existing_cols
         def_idx = opts.index(suggested) if suggested in opts else 0
         mapped_choice = col_ui.selectbox(f"Map `{missing_col}` to:", opts, index=def_idx, key=f"map_{missing_col}")
-        if mapped_choice != "-- Select mapping --":
+        if mapped_choice != "-- Select mapping --" and st.session_state.column_mapping.get(missing_col) != mapped_choice:
             st.session_state.column_mapping[missing_col] = mapped_choice
-
-    if st.button("Apply Column Mappings"):
-        st.rerun()
+            st.rerun()
 
 # Overview metrics
 m1, m2, m3, m4 = st.columns(4)

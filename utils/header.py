@@ -25,6 +25,7 @@ from utils.data_source import (
     DatabaseReadOnlySource,
     RestAPIPullSource,
 )
+from utils.validation import REQUIRED_COLUMNS, suggest_column_mappings
 
 PROJECT_OPTIONS = ["SALES", "CHURN", "HR_ATTRITION"]
 
@@ -466,6 +467,43 @@ def render_header() -> None:
     else:
         effective_df = st.session_state.active_df
         effective_meta = st.session_state.active_meta
+
+    # --- auto column-mapping: the moment a non-bundled dataset is active,
+    # fuzzy-match any missing canonical columns against the uploaded file's
+    # own column names and apply the rename immediately -- no manual
+    # selection or button click required. A column the user has already
+    # mapped explicitly (e.g. to correct a wrong auto-guess) is never
+    # overridden. This is also what makes column mapping actually DO
+    # something: previously it only satisfied the schema-validation badge
+    # on app.py, while cleaning/feature-engineering/training downstream
+    # kept reading the dataframe's original (unmapped) column names.
+    st.session_state.setdefault("_auto_mapped_this_run", {})
+    st.session_state["_auto_mapped_this_run"] = {}
+    if (
+        selected_source != "bundled"
+        and effective_df is not None
+        and hasattr(effective_df, "columns")
+    ):
+        track_for_mapping = st.session_state.project_option
+        required = REQUIRED_COLUMNS.get(track_for_mapping, []) + [TARGET_COLUMNS[track_for_mapping]]
+        existing_cols = list(effective_df.columns)
+        auto_suggestions = suggest_column_mappings(existing_cols, required)
+        newly_mapped = {
+            canon: src for canon, src in auto_suggestions.items()
+            if canon not in st.session_state.column_mapping
+        }
+        if newly_mapped:
+            st.session_state.column_mapping.update(newly_mapped)
+            st.session_state["_auto_mapped_this_run"] = newly_mapped
+
+        rename_dict = {
+            src: canon for canon, src in st.session_state.column_mapping.items()
+            if src in effective_df.columns and canon not in effective_df.columns
+        }
+        if rename_dict:
+            effective_df = effective_df.rename(columns=rename_dict)
+            if st.session_state.active_df is not None and hasattr(st.session_state.active_df, "rename"):
+                st.session_state.active_df = st.session_state.active_df.rename(columns=rename_dict)
 
     # --- info strip ---
     track = st.session_state.project_option
