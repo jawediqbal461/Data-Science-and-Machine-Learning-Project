@@ -6,3 +6,11 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Compiled Python bytecode must never be committed: a stale tracked .pyc
+# can shadow an updated .py source on import (this caused a live ImportError
+# on Streamlit Cloud after utils/recommendations.py was rewritten but its
+# old __pycache__/recommendations.cpython-310.pyc stayed tracked).
+__pycache__/
+*.pyc
+*.pyo
